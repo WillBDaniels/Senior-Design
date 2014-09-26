@@ -1,0 +1,71 @@
+apply plugin: 'application'
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'maven'
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+mainClassName = "edu.csci.standalone_server.MultiThreadedHttpServer"
+def mainAppName = "license_server"
+version = "1.0"
+
+test {
+    useJUnit()
+    //forkEvery = 1
+}
+
+dependencies {
+    compile fileTree(dir: 'lib', includes: ['*.jar']) 
+    testCompile 'junit:junit:4.11'
+    compile 'org.slf4j:jcl104-over-slf4j:1.5.11'
+    compile 'com.sun.mail:javax.mail:1.5.2'
+    compile 'javax.mail:javax.mail-api:1.5.2'
+    compile 'mysql:mysql-connector-java:5.1.31'
+    compile 'org.slf4j:slf4j-parent:1.7.7'
+    compile 'org.apache.logging.log4j:log4j:2.0-rc2'
+    compile 'org.apache.httpcomponents:httpclient:4.3.3'
+    compile 'org.slf4j:slf4j-api:1.7.7'
+    compile 'org.slf4j:slf4j-simple:1.7.7'
+    compile 'log4j:log4j:1.2.17'
+}
+repositories {
+    mavenCentral()
+}
+task wrapper(type: Wrapper){
+    gradleVersion = '2.0'
+}
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+jar{
+    configurations.compile.collect { it.isDirectory() ? it: zipTree(it)}
+    //    //This is sort of a hack, but whatever, it works. This makes it so we don't
+    //    //get a 'duplicate entry' warning screaming bloody murder at us when we try to
+    //    //make the fat jar.
+    from(configurations.compile) { 
+    }
+    manifest{
+        attributes("Main-Class": mainClassName);
+        attributes("Class-Path": ".");
+    }
+}
+
+task docs(type:Exec) {
+    ext {
+        outputDir = file('build/docs')
+    }
+    if (System.getenv("PATH").toLowerCase().contains("doxygen")){
+        commandLine 'doxygen'
+        inputs.file file("Doxyfile");
+        inputs.files sourceSets.main.java, sourceSets.test.java
+        outputs.dir outputDir
+    }else{
+        System.out.println("I'm sorry, you need doxygen installed to run the program, \n"
+            + "please visit http://www.stack.nl/~dimitri/doxygen/download.html\n"
+            + "to download the lastest version of doxygen. ");
+    }
+}
+
+
+
+build.dependsOn (distTar)
+task all (dependsOn: [build, assemble])

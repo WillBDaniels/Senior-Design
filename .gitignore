@@ -1,0 +1,4 @@
+.nb-gradle/
+Standalone_Server/.nb-gradle/
+Standalone_Server/build/
+Standalone_Server/.gradle/
