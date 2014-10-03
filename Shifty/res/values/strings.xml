@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Shifty</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_login_text">Submit</string>
+    <string name="str_username_hint">Username</string>
+    <string name="str_password_hint">Password</string>
+    <string name="title_activity_default_start_page">DefaultStartPage</string>
+	<string name="str_home1">Home 1</string>
+	<string name="str_home2">Home 2</string>
+	<string name="str_home3">Home 3</string>
+	<string name="str_home4">Home 4</string>
+	<string name="str_home5">Home 5</string>
+	<string name="str_home6">Home 6</string>
+	<string name="str_home7">Home 7</string>
+	<string name="str_home8">Home 8</string>
+	<string name="str_home9">Home 9</string>
+	<string name="str_home10">Home 10</string>
+</resources>
