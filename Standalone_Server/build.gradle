@@ -6,7 +6,7 @@ apply plugin: 'maven'
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 mainClassName = "edu.csci.standalone_server.MultiThreadedHttpServer"
 def mainAppName = "license_server"
-version = "1.0"
+version = "1.1"
 
 test {
     useJUnit()
@@ -23,6 +23,8 @@ dependencies {
     compile 'org.slf4j:slf4j-parent:1.7.7'
     compile 'org.apache.logging.log4j:log4j:2.0-rc2'
     compile 'org.apache.httpcomponents:httpclient:4.3.3'
+    compile 'commons-httpclient:commons-httpclient:3.1'
+
     compile 'org.slf4j:slf4j-api:1.7.7'
     compile 'org.slf4j:slf4j-simple:1.7.7'
     compile 'log4j:log4j:1.2.17'

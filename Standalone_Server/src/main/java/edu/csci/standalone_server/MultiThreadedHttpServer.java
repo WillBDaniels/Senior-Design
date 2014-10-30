@@ -1,5 +1,7 @@
 package edu.csci.standalone_server;
 
+
+
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
@@ -15,7 +17,7 @@ import java.util.concurrent.Executors;
  */
 public class MultiThreadedHttpServer {
 
-    protected int          serverPort   = 80;
+    protected static int          serverPort   = 443;
     protected HttpServer serverSocket = null;
     protected boolean      isStopped    = false;
     protected Thread       runningThread= null;
@@ -23,12 +25,12 @@ public class MultiThreadedHttpServer {
     protected ExecutorService threadPool =
             Executors.newFixedThreadPool(80);
     public static void main(String[] args){
-	   MultiThreadedHttpServer test = new MultiThreadedHttpServer(80);
+	   MultiThreadedHttpServer test = new MultiThreadedHttpServer(serverPort);
 
     }
 
     public MultiThreadedHttpServer(int port){
-        this.serverPort = port;
+        MultiThreadedHttpServer.serverPort = port;
         openServerSocket();
     }
 
