@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Accordion maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="webapptest.FXMLDocumentController">
+  <panes>
+    <TitledPane animated="false" text="Add/Remove Shifts">
+         <content>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="682.0" prefWidth="560.0">
+                     <children>
+                        <VBox prefHeight="278.0" prefWidth="373.0">
+                           <children>
+                              <Label text="Shift Time:" />
+                              <TextField fx:id="userName" />
+                              <Label text="Employee ID:" />
+                              <TextField fx:id="userName1" />
+                              <Label text="Facility ID:" />
+                              <TextField fx:id="userName2" />
+                              <HBox>
+                                 <children>
+                                    <Button fx:id="userButton" mnemonicParsing="false" prefHeight="31.0" prefWidth="154.0" text="Add User" />
+                                    <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="158.0" text="Remove User" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <ScrollPane prefHeight="682.0" prefWidth="627.0">
+                     <content>
+                        <VBox fx:id="displayUsers" prefHeight="282.0" prefWidth="299.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </HBox>
+         </content>
+    </TitledPane>
+    <TitledPane animated="false" text="Add/Remove Facilities">
+         <content>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="682.0" prefWidth="565.0">
+                     <children>
+                        <Label text="Add Facility:" />
+                        <Label text="Facility ID:" />
+                        <TextField fx:id="facilityID" />
+                        <Label text="Facility Neighborhood:" />
+                        <TextField fx:id="facilityNeighborhood" />
+                        <HBox>
+                           <children>
+                              <Pane prefHeight="31.0" prefWidth="462.0" />
+                              <Button mnemonicParsing="false" onAction="#addFacilityButton" text="Add Facility" />
+                           </children>
+                        </HBox>
+                        <Label text="Remove Facility:" />
+                        <Label text="Facility ID:" />
+                        <TextField />
+                        <Label text="Facility Neighborhood:" />
+                        <TextField />
+                        <HBox>
+                           <children>
+                              <Pane prefHeight="31.0" prefWidth="440.0" />
+                              <Button mnemonicParsing="false" text="Remove Facility" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+    </TitledPane>
+    <TitledPane animated="false" text="Add/Remove Employees">
+         <content>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="682.0" prefWidth="564.0">
+                     <children>
+                        <Label text="Employee Name:" />
+                        <TextField fx:id="empName" />
+                        <Label text="Employee Phone Number:" />
+                        <TextField fx:id="empPhone" />
+                        <Label text="Employee Main Facility:" />
+                        <TextField fx:id="empFacility" />
+                        <Label text="Employee ID:" />
+                        <TextField fx:id="empID" />
+                        <Label text="User Name:" />
+                        <TextField fx:id="empUserName" />
+                        <Label text="Password:" />
+                        <PasswordField fx:id="empPassword" />
+                        <Button fx:id="EmployeeButton" mnemonicParsing="false" onAction="#employeeButtonPressed" text="Add Employee" />
+                        <CheckBox fx:id="managerCheck" mnemonicParsing="false" text="Is this employee a manager?" />
+                        <HBox prefHeight="28.0" prefWidth="554.0">
+                           <children>
+                              <Pane prefHeight="31.0" prefWidth="380.0" />
+                              <Button fx:id="refreshButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#refreshButtonPressed" prefHeight="31.0" prefWidth="160.0" text="Refresh Employees" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="374.0" prefHeight="28.0" prefWidth="554.0">
+                           <children>
+                              <Label prefHeight="21.0" prefWidth="102.0" text="Employee ID" />
+                              <TextField fx:id="deleteID" prefHeight="31.0" prefWidth="279.0" />
+                              <Button fx:id="deleteEmpButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="159.0" text="Delete Employee" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="682.0" prefWidth="630.0">
+                     <children>
+                        <ScrollPane prefHeight="679.0" prefWidth="442.0">
+                           <content>
+                              <VBox fx:id="employeeList" prefHeight="688.0" prefWidth="616.0">
+                                 <children>
+                                    <HBox prefHeight="30.0" prefWidth="293.0">
+                                       <children>
+                                          <TextField prefHeight="31.0" prefWidth="88.0" text="Name" />
+                                          <TextField prefHeight="31.0" prefWidth="119.0" text="Phone" />
+                                          <TextField prefHeight="31.0" prefWidth="114.0" text="Facility" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+    </TitledPane>
+  </panes>
+</Accordion>
