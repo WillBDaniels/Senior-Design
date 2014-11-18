@@ -71,8 +71,6 @@ public class WorkerRunnable implements Runnable {
                     handleNewHouse(in);
                 }else if (line.contains("new_shift")){
                     handleNewShift(in);
-                }else if (line.contains("employee_info")){
-                    handleGetEmployeeInfo(in);
                 }else {
                     try (OutputStream output = new DataOutputStream(clientSocket.getResponseBody())) {
                         dataToSend += "Unknown Request, please try again";
@@ -90,11 +88,6 @@ public class WorkerRunnable implements Runnable {
         clientSocket.close();
     }
 
-    /**
-     * This method handles the new shift creation
-     * 
-     * @param in 
-     */
     private void handleNewShift(BufferedReader in){
         String output;
         String username = "", password= "";
@@ -129,6 +122,7 @@ public class WorkerRunnable implements Runnable {
                 }
             }
             statement += ");";
+            System.out.println("This is the statement in handleCheckLogin: " + statement);
             pstmt = con.prepareStatement(statement);
             pstmt.execute();
             dataToWrite += "Done";
@@ -138,23 +132,9 @@ public class WorkerRunnable implements Runnable {
             }
         }catch (IOException | SQLException e){
             e.printStackTrace(System.err);
-            try{
-                try (OutputStream os = new DataOutputStream(clientSocket.getResponseBody())) {
-                    String error = "I'm sorry, an error occured with your parameters, please try again.";
-                    clientSocket.sendResponseHeaders(200, error.length());
-                    os.write(error.getBytes());
-                }
-            }catch(IOException ex){
-                ex.printStackTrace(System.err);
-            }
         }
     }
     
-    /**
-     * This method handles the creation of a new house
-     * 
-     * @param in The buffered reader we get from the client. 
-     */
     private void handleNewHouse(BufferedReader in){
         String line;
         try {
@@ -184,6 +164,7 @@ public class WorkerRunnable implements Runnable {
                 }
             }
             statement += ");";
+            System.out.println("This is the statement in handleNewHouse: " + statement);
             pstmt = con.prepareStatement(statement);
             pstmt.execute();
             dataToWrite += "Done";
@@ -193,15 +174,6 @@ public class WorkerRunnable implements Runnable {
             }
         }catch (IOException | SQLException e){
             e.printStackTrace(System.err);
-            try{
-                try (OutputStream os = new DataOutputStream(clientSocket.getResponseBody())) {
-                    String error = "I'm sorry, an error occured with your parameters, please try again.";
-                    clientSocket.sendResponseHeaders(200, error.length());
-                    os.write(error.getBytes());
-                }
-            }catch(IOException ex){
-                ex.printStackTrace(System.err);
-            }
         }
         
     }
@@ -268,7 +240,7 @@ public class WorkerRunnable implements Runnable {
             e.printStackTrace(System.err);
             try{
                 try (OutputStream os = new DataOutputStream(clientSocket.getResponseBody())) {
-                    String error = "I'm sorry, an error occured with your parameters, please try again.";
+                    String error = "I'm sorry, an error occured, please try again.";
                     clientSocket.sendResponseHeaders(200, error.length());
                     os.write(error.getBytes());
                 }
@@ -278,12 +250,6 @@ public class WorkerRunnable implements Runnable {
         }
     }
     
-    /**
-     * This method creates a branch new user. It assumes it will get data in exactly the 
-     * correct order, and with all values present 
-     * 
-     * @param in 
-     */
     private void handleNewUser(BufferedReader in){
         String output;
         String username = "", password= "";
@@ -330,15 +296,6 @@ public class WorkerRunnable implements Runnable {
             }
         }catch (IOException | SQLException e){
             e.printStackTrace(System.err);
-            try{
-                try (OutputStream os = new DataOutputStream(clientSocket.getResponseBody())) {
-                        String error = "I'm sorry, an error occured with your parameters, please try again.";
-                        clientSocket.sendResponseHeaders(200, error.length());
-                        os.write(error.getBytes());
-                    }
-            }catch(IOException ex){
-                ex.printStackTrace(System.err);
-            }
         }
         
         
@@ -433,7 +390,7 @@ public class WorkerRunnable implements Runnable {
      * This query will return all of the details available for the specified shift. 
      * All information must be present in the query, otherwise 'insufficient parameters' will
      * be given out (unable to recognize unique shift).
-     * This will return data in the form:  "{column_name}"="{column_value}"&...&|repeat|Done
+     * This will return data in the form:  "{column_name}"="{column_value}"&...|repeat|Done
      * 
      * @param in The BufferedReader we are using from the client socket. 
      */
@@ -521,7 +478,7 @@ public class WorkerRunnable implements Runnable {
     /**
      * Get a list of current houses: 
      *	query = "get_all_houses"
-     *	This will return the entire list of houses as such: "{column_name}"="{column_value}"&...&|repeat|Done
+     *	This will return the entire list of houses as such: "{column_name}"="{column_value}"&...|repeat|Done
      * 
      * @param in The BufferedReader being used.  
      */
@@ -620,6 +577,7 @@ public class WorkerRunnable implements Runnable {
 
             PreparedStatement pstmt;
             output = "";
+            System.out.println("This is the first statement in handle_get_backups: " + statement);
 
             pstmt = con.prepareStatement(statement);
             pstmt.execute();
@@ -651,7 +609,7 @@ public class WorkerRunnable implements Runnable {
     }
     
     /**
-     * Get a specific house. This will return the data of the first house that meets the parameters
+     * Get a specific house. THis will return the data of the first house that meets the parameters
      * query = get_house_specific\nhouse_neightborhood="{house_neighborhood}"\nhouse_id="{house_id}"
      * This will return data of the form: 
      * shift_1="{shift_time}"&employee_name="{employee name}"|shift_2="{shift_time}&employee_name="{employee_name}"|repeat|Done
@@ -751,7 +709,7 @@ public class WorkerRunnable implements Runnable {
         String line;
         try {
             boolean firstLine = true;
-            String statement = "SELECT employee_id, phone_number FROM Employee";
+            String statement = "SELECT employee_name, employee_id FROM Employee";
 
             con = createInitialCon();
             if (con == null) {
@@ -785,7 +743,7 @@ public class WorkerRunnable implements Runnable {
             ResultSet rs = pstmt.getResultSet();
             while (rs != null && rs.next()) {
                 ResultSetMetaData rsmd = rs.getMetaData();
-                output += '"' + rs.getString("employee_name") + "\"=\"" + rs.getString("phone_number") + "\"&|";
+                output += '"' + rs.getString("employee_name") + "\"=\"" + rs.getString("employee_id") + "\"&|";
                 dataToWrite += (output) + "\n";
                 output = "";
             }
@@ -811,88 +769,6 @@ public class WorkerRunnable implements Runnable {
     }
 
 
-    
-    private void handleGetEmployeeInfo(BufferedReader in){
-        String output;
-        String line;
-        try {
-            boolean firstLine = true;
-            String statement = "SELECT * FROM Employee";
-
-            con = createInitialCon();
-            if (con == null) {
-                try (OutputStream os = new DataOutputStream(clientSocket.getResponseBody())) {
-                    String error = "I'm sorry, an error occured, please try again.";
-                    clientSocket.sendResponseHeaders(200, error.length());
-                    os.write(error.getBytes());
-                }
-                return;
-            }
-            String dataToWrite = "";
-
-            PreparedStatement pstmt;
-            output = "";
-
-            while ((line = in.readLine()) != null) {
-                if (firstLine) {
-                    statement += " WHERE ";
-                    firstLine = false;
-                } else {
-                    statement += " OR ";
-                }
-                statement += line;
-            }
-            statement += ";";
-            System.out.println("This is the statement in get_numbers: " + statement);
-
-            pstmt = con.prepareStatement(statement);
-            pstmt.execute();
-
-            ResultSet rs = pstmt.getResultSet();
-            while (rs != null && rs.next()) {
-                ResultSetMetaData rsmd = rs.getMetaData();
-               for (int i = 1; i < rsmd.getColumnCount() + 1; i++) {
-                    switch (rsmd.getColumnType(i)) {
-                        case Types.BIT: {
-                            output += "\"" + rsmd.getColumnName(i) + "\"=\"" + String.valueOf(rs.getInt(i)) + "\"&";
-                            break;
-                        }
-                        case Types.VARCHAR: {
-                            output += "\"" + rsmd.getColumnName(i) + "\"=\"" + rs.getString(i) + "\"&";
-                            break;
-                        }
-                        case Types.INTEGER: {
-                            output += "\"" + rsmd.getColumnName(i) + "\"=\"" + String.valueOf(rs.getInt(i) + "\"&");
-                            break;
-                        }
-                        default: 
-                            break;
-                    }
-                }
-                dataToWrite += (output + "|");
-                output = "";
-            }
-
-            dataToWrite += ("Done");
-
-            try (OutputStream os = new DataOutputStream(clientSocket.getResponseBody())) {
-                clientSocket.sendResponseHeaders(200, dataToWrite.length());
-                os.write(dataToWrite.getBytes());
-            }
-        } catch (SQLException | IOException e) {
-            e.printStackTrace(System.err);
-            try{
-                try (OutputStream os = new DataOutputStream(clientSocket.getResponseBody())) {
-                    String error = "I'm sorry, an error occured, please try again.";
-                    clientSocket.sendResponseHeaders(200, error.length());
-                    os.write(error.getBytes());
-                }
-            }catch(IOException ex){
-                ex.printStackTrace(System.err);
-            }
-        }
-    }
-    
     /**
      * This method creates the initial connection to our Employee DB.
      *
