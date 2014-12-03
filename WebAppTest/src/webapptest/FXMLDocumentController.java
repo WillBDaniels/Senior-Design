@@ -20,14 +20,15 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import org.apache.commons.codec.binary.Hex;
 import static webapptest.WebAppTest.sendData;
 
@@ -42,6 +43,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML private VBox employeeList;
     @FXML private VBox facilityList;
     @FXML private VBox shiftList;
+    @FXML private VBox deleteEmpBox;
     @FXML private CheckBox managerCheck;
     @FXML private TextField empName;
     @FXML private TextField empPhone;
@@ -53,20 +55,55 @@ public class FXMLDocumentController implements Initializable {
     @FXML private TextField shiftTime;
     @FXML private TextField shiftEmpID;
     @FXML private TextField shiftFacilityID;
-    @FXML private TextField deleteID;
+    @FXML private TextField empDeleteID;
+    @FXML private TextField empDeleteName;
+    @FXML private VBox empDeleteDisplay;
+    private Boolean employeeDelete;
+    
     
     @FXML
+    public void shiftDeleteButtonPressed(ActionEvent event){
+        
+    }
+    
+    @FXML //If the textfield isnt empty then it deletes the chosen user
+    public void deleteConfirmPressed(ActionEvent event) throws IOException{
+        if(!( empDeleteID.getText().isEmpty() ) && (employeeDelete == true) && !( empDeleteName.getText().isEmpty() ) ){
+            List<String> temp = new ArrayList<>();
+            temp.add("delete_user");
+            temp.add("\"employee_id\"=" + empDeleteID.getText());
+            temp.add("\"employee_name\"=" + empDeleteName.getText() + "\"");
+        
+            String debug = sendData(temp);
+            System.out.println(debug);
+        }
+        
+        //disables employee deletes again.
+        employeeDelete = false;
+        empDeleteID.clear();
+        empDeleteName.clear();
+        empDeleteDisplay.getChildren().clear();
+        
+    }
+    
+    @FXML //Pressed to cancel a delete
+    public void deleteCancelPressed(ActionEvent event) throws IOException{
+        //Disables deletes
+        employeeDelete = false;
+        //clears the delete fields
+        empDeleteID.clear();
+        empDeleteName.clear();
+        empDeleteDisplay.getChildren().clear();
+    }
+    
+    @FXML //Pressed to initiate a delete for an employee
     public void deleteEmpButtonPressed(ActionEvent event) throws IOException{
-                
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("DeleteConfirmation.fxml"));     
+        //enables deleting of an employee
+        employeeDelete = true;
         
-        Stage stage = new Stage(StageStyle.DECORATED);
-        stage.setScene(new Scene( (Pane) fxmlLoader.load() ));
-        
-        DeleteConfirmationController controller = fxmlLoader.<DeleteConfirmationController>getController();
-        controller.setEmpID(deleteID.getText());  
-
-        stage.show();  
+        //displays the employee id to be deleted inside the delete area
+        empDeleteDisplay.getChildren().add(new TextField(empDeleteID.getText()));
+        empDeleteDisplay.getChildren().add(new TextField(empDeleteName.getText()));
     }
     
     @FXML //DIsplays the shifts from the server
@@ -382,7 +419,7 @@ public class FXMLDocumentController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
+        employeeDelete = false;
     }       
 }
     
