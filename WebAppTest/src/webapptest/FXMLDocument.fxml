@@ -12,7 +12,7 @@
                <children>
                   <VBox prefHeight="682.0" prefWidth="560.0">
                      <children>
-                        <VBox prefHeight="278.0" prefWidth="373.0">
+                        <VBox prefHeight="651.0" prefWidth="554.0">
                            <children>
                               <Label text="Shift Time:" />
                               <TextField fx:id="shiftTime" />
@@ -29,12 +29,29 @@
                               </HBox>
                               <Label layoutX="10.0" layoutY="10.0" text="Remove Shift:" />
                               <Label layoutX="10.0" layoutY="197.0" text="Shift ID:" />
-                              <TextField fx:id="shiftDelete" layoutX="10.0" layoutY="31.0" />
+                              <TextField fx:id="shiftDeleteID" layoutX="10.0" layoutY="31.0" />
+                              <Label text="Employee ID:" />
+                              <TextField fx:id="shiftDeleteEmpID" />
                               <HBox prefHeight="30.0" prefWidth="554.0">
                                  <children>
                                     <Button fx:id="shiftDeleteButton" mnemonicParsing="false" onAction="#shiftDeleteButtonPressed" prefHeight="31.0" prefWidth="135.0" text="Remove Shift" />
                                  </children>
                               </HBox>
+                              <VBox fx:id="deleteEmpBox2" prefHeight="246.0" prefWidth="554.0">
+                                 <children>
+                                    <Pane prefHeight="62.0" prefWidth="554.0" />
+                                    <Label text="Shift Delete Confirmation:" />
+                                    <VBox fx:id="shiftDeleteDisplay" prefHeight="37.0" prefWidth="554.0" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Pane prefHeight="100.0" prefWidth="89.0" />
+                                          <Button mnemonicParsing="false" onAction="#deleteShiftConfirmPressed" text="Confirm" />
+                                          <Pane prefHeight="100.0" prefWidth="231.0" />
+                                          <Button mnemonicParsing="false" onAction="#deleteShiftCancelPressed" text="Cancel" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
                            </children>
                         </VBox>
                      </children>
@@ -73,15 +90,30 @@
                         </HBox>
                         <Label text="Remove Facility:" />
                         <Label text="Facility ID:" />
-                        <TextField />
+                        <TextField fx:id="facDeleteID" />
                         <Label text="Facility Neighborhood:" />
-                        <TextField />
+                        <TextField fx:id="facDeleteNeighborhood" />
                         <HBox>
                            <children>
                               <Pane prefHeight="31.0" prefWidth="440.0" />
-                              <Button mnemonicParsing="false" text="Remove Facility" />
+                              <Button mnemonicParsing="false" onAction="#deleteFacButtonPressed" text="Remove Facility" />
                            </children>
                         </HBox>
+                        <VBox fx:id="deleteEmpBox1" prefHeight="223.0" prefWidth="554.0">
+                           <children>
+                              <Pane prefHeight="62.0" prefWidth="554.0" />
+                              <Label text="Facility Delete Confirmation:" />
+                              <VBox fx:id="facDeleteDisplay" prefHeight="37.0" prefWidth="554.0" />
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Pane prefHeight="100.0" prefWidth="89.0" />
+                                    <Button mnemonicParsing="false" onAction="#deleteFacilityConfirmPressed" text="Confirm" />
+                                    <Pane prefHeight="100.0" prefWidth="231.0" />
+                                    <Button mnemonicParsing="false" onAction="#deleteFacilityCancelPressed" text="Cancel" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
                      </children>
                   </VBox>
                   <ScrollPane prefViewportHeight="682.0" prefViewportWidth="611.0">
@@ -161,6 +193,72 @@
             </HBox>
          </content>
     </TitledPane>
-      <TitledPane prefHeight="200.0" prefWidth="200.0" text="Add/Remove Lists" />
+      <TitledPane prefHeight="200.0" prefWidth="200.0" text="Add/Remove Lists">
+         <content>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="651.0" prefWidth="1193.0">
+                     <children>
+                        <VBox prefHeight="682.0" prefWidth="564.0">
+                           <children>
+                              <Label text="Group Name:" />
+                              <TextField fx:id="groupName" />
+                              <Label text="Manager ID:" />
+                              <TextField fx:id="groupManagerID" />
+                              <Label text="Group ID:" />
+                              <TextField fx:id="groupID" />
+                              <Label text="Employee IDs: (Please enter all ID's here with a &amp; character between each)" />
+                              <TextField fx:id="groupEmpIDs" />
+                              <Button fx:id="groupCreateButton" mnemonicParsing="false" onAction="#groupCreateButtonPressed" text="Add Group" />
+                              <HBox prefHeight="28.0" prefWidth="554.0">
+                                 <children>
+                                    <Pane prefHeight="31.0" prefWidth="380.0" />
+                                    <Button fx:id="groupRefreshButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#groupRefreshButtonPressed" prefHeight="31.0" prefWidth="160.0" text="Refresh Groups" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="374.0" prefHeight="28.0" prefWidth="554.0">
+                                 <children>
+                                    <Label prefHeight="21.0" prefWidth="102.0" text="Group ID:" />
+                                    <TextField fx:id="groupDeleteID" prefHeight="31.0" prefWidth="279.0" />
+                                    <Button fx:id="groupDeleteButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#groupDeleteButtonPressed" prefHeight="31.0" prefWidth="159.0" text="Delete Groups" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="405.0" prefHeight="28.0" prefWidth="554.0">
+                                 <children>
+                                    <Label prefHeight="21.0" prefWidth="101.0" text="Group Name:" />
+                                    <TextField fx:id="groupDeleteName" prefHeight="31.0" prefWidth="283.0" />
+                                 </children>
+                              </HBox>
+                              <VBox fx:id="deleteEmpBox3" prefHeight="223.0" prefWidth="554.0">
+                                 <children>
+                                    <Pane prefHeight="62.0" prefWidth="554.0" />
+                                    <Label text="Group Delete Confirmation:" />
+                                    <VBox fx:id="groupDeleteDisplay" prefHeight="37.0" prefWidth="554.0" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Pane prefHeight="100.0" prefWidth="89.0" />
+                                          <Button mnemonicParsing="false" onAction="#deleteGroupConfirmPressed" text="Confirm" />
+                                          <Pane prefHeight="100.0" prefWidth="231.0" />
+                                          <Button mnemonicParsing="false" onAction="#deleteGroupCancelPressed" text="Cancel" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="682.0" prefWidth="630.0">
+                           <children>
+                              <ScrollPane prefHeight="679.0" prefWidth="442.0">
+                                 <content>
+                                    <VBox fx:id="groupList" prefHeight="688.0" prefWidth="616.0" />
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </content></TitledPane>
   </panes>
 </Accordion>
