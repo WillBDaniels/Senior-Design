@@ -20,7 +20,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author fritz
+ * @author Mitch McLaughlin
  */
 public class WebAppTest extends Application {
     

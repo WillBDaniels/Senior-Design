@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author fritz
+ * @author Mitch McLaughlin
  */
 public class Member {
     public String groupID;

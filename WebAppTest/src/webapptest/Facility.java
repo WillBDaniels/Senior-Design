@@ -7,7 +7,7 @@ package webapptest;
 
 /**
  *
- * @author fritz
+ * @author Mitch McLaughlin
  */
 public class Facility {
     public String houseID;

@@ -11,7 +11,7 @@ import java.util.List;
  */
 /**
  *
- * @author fritz
+ * @author Mitch McLaughlin
  */
 public class Group {
     public String groupID;
