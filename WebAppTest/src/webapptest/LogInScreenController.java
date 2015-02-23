@@ -23,7 +23,7 @@ import static webapptest.WebAppTest.sendData;
 
 /**
  *
- * @author Mitch McLaughlin
+ * @author fritz
  */
 public class LogInScreenController {
     

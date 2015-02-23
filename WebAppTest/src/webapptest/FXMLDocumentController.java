@@ -26,7 +26,7 @@ import static webapptest.WebAppTest.sendData;
 
 /**
  *
- * @author Mitch McLaughlin
+ * @author fritz
  */
 public class FXMLDocumentController implements Initializable {
     //Areas for the database stored information to be displayed.

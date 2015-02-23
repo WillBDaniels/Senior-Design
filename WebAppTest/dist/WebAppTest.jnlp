@@ -11,9 +11,9 @@
   </resources>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="WebAppTest.jar" size="24080" download="eager" />
+    <jar href="WebAppTest.jar" size="24078" download="eager" />
     <jar href="lib/commons-codec-1.9.jar" size="285653" download="eager" />
-    <jar href="lib/fluent-hc-4.3.5.jar" size="33378" download="eager" />
+    <jar href="lib/fluent-hc-4.3.5.jar" size="33379" download="eager" />
   </resources>
 <security>
   <all-permissions/>

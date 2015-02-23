@@ -9,7 +9,7 @@ import javafx.beans.property.SimpleStringProperty;
 
 /**
  *
- * @author Mitch McLaughlin
+ * @author fritz
  */
 public class Employee {
     public String empName;

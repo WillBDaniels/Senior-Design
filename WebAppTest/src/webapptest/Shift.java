@@ -7,7 +7,7 @@ package webapptest;
  */
 /**
  *
- * @author Mitch McLaughlin
+ * @author fritz
  */
 public class Shift {
     public String shiftID;
