@@ -14,7 +14,7 @@ test {
 }
 
 dependencies {
-    compile fileTree(dir: 'lib', includes: ['*.jar']) 
+    compile fileTree(dir: 'lib', includes: ['*.jar'])
     testCompile 'junit:junit:4.11'
     compile 'org.slf4j:jcl104-over-slf4j:1.5.11'
     compile 'com.sun.mail:javax.mail:1.5.2'
@@ -24,6 +24,7 @@ dependencies {
     compile 'org.apache.logging.log4j:log4j:2.0-rc2'
     compile 'org.apache.httpcomponents:httpclient:4.3.3'
     compile 'commons-httpclient:commons-httpclient:3.1'
+    compile 'com.google.code.gson:gson:2.3.1'
 
     compile 'org.slf4j:slf4j-api:1.7.7'
     compile 'org.slf4j:slf4j-simple:1.7.7'
@@ -43,7 +44,7 @@ jar{
     //    //This is sort of a hack, but whatever, it works. This makes it so we don't
     //    //get a 'duplicate entry' warning screaming bloody murder at us when we try to
     //    //make the fat jar.
-    from(configurations.compile) { 
+    from(configurations.compile) {
     }
     manifest{
         attributes("Main-Class": mainClassName);

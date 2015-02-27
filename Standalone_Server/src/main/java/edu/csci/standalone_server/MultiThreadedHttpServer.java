@@ -1,7 +1,6 @@
 package edu.csci.standalone_server;
 
-
-
+import com.sun.net.httpserver.HttpContext;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
@@ -12,46 +11,48 @@ import java.util.concurrent.Executors;
 
 /**
  *
- * 09-2014 
+ * 09-2014
+ *
  * @author William
  */
 public class MultiThreadedHttpServer {
 
-    protected static int          serverPort   = 443;
+    protected static int serverPort = 8085;
     protected HttpServer serverSocket = null;
-    protected boolean      isStopped    = false;
-    protected Thread       runningThread= null;
+    protected boolean isStopped = false;
+    protected Thread runningThread = null;
 
-    protected ExecutorService threadPool =
-            Executors.newFixedThreadPool(80);
-    public static void main(String[] args){
-	   MultiThreadedHttpServer test = new MultiThreadedHttpServer(serverPort);
+    protected ExecutorService threadPool
+            = Executors.newFixedThreadPool(80);
+
+    public static void main(String[] args) {
+        MultiThreadedHttpServer test = new MultiThreadedHttpServer(serverPort);
 
     }
 
-    public MultiThreadedHttpServer(int port){
+    public MultiThreadedHttpServer(int port) {
         MultiThreadedHttpServer.serverPort = port;
         openServerSocket();
     }
 
-
     private void openServerSocket() {
         try {
-            this.serverSocket = HttpServer.create(new InetSocketAddress(this.serverPort), 0);
+            this.serverSocket = HttpServer.create(new InetSocketAddress(MultiThreadedHttpServer.serverPort), 0);
             serverSocket.setExecutor(threadPool);
-            serverSocket.createContext("/", new MyHandler());
+            HttpContext context = serverSocket.createContext("/", new MyHandler());
+            context.getFilters().add(new ParameterFilter());
             serverSocket.start();
         } catch (IOException e) {
             e.printStackTrace(System.out);
         }
     }
 
-    
     static class MyHandler implements HttpHandler {
+
         @Override
         public void handle(HttpExchange he) throws IOException {
             (new Thread((new WorkerRunnable(he)))).start();
         }
-        
+
     }
 }
