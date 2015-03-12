@@ -11,6 +11,15 @@ public class Employee {
     private int employeeID = 0;
     private long phoneNumber = 0;
     private boolean isBackup = false;
+    private boolean isManager = false;
+
+    public boolean isIsManager() {
+        return isManager;
+    }
+
+    public void setIsManager(boolean isManager) {
+        this.isManager = isManager;
+    }
 
     public String getName() {
         return name;

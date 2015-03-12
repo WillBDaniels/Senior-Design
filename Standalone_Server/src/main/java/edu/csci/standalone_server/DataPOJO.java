@@ -19,7 +19,7 @@ public class DataPOJO {
     private boolean lastActionSuccess = false;
     private boolean isAdmin = false;
     private List<Employee> favorites = new ArrayList<>();
-    private List<List<Employee>> groupList = new ArrayList<>();
+    private List<Group> groupList = new ArrayList<>();
     private List<House> houseList = new ArrayList<>();
     private List<Employee> allEmployees = new ArrayList<>();
 
@@ -103,11 +103,11 @@ public class DataPOJO {
         this.favorites = favorites;
     }
 
-    public List<List<Employee>> getGroupList() {
+    public List<Group> getGroupList() {
         return groupList;
     }
 
-    public void setGroupList(List<List<Employee>> groupList) {
+    public void setGroupList(List<Group> groupList) {
         this.groupList = groupList;
     }
 

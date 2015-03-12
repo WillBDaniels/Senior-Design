@@ -4,6 +4,8 @@ import com.google.gson.Gson;
 import com.sun.net.httpserver.HttpExchange;
 import edu.csci.standalone_server.DataPOJO;
 import edu.csci.standalone_server.Employee;
+import edu.csci.standalone_server.House;
+import edu.csci.standalone_server.Shift;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -60,6 +62,12 @@ public class HandleCheckLogin extends JSONHandler {
         return gson.toJson(outputData, DataPOJO.class);
     }
 
+    /**
+     * This method gathers loads of data from our database and aggregates it all
+     * into one single POJO object that we can send back to the client user.
+     *
+     * @param inputPOJO
+     */
     private void fillDataPojo(DataPOJO inputPOJO) {
         try {
             String query;
@@ -78,19 +86,53 @@ public class HandleCheckLogin extends JSONHandler {
                 inputPOJO.setEmployeeID(rs.getInt("id"));
                 inputPOJO.setIsAdmin(rs.getBoolean("isAdmin"));
             }
+            query = "SELECT * FROM Group WHERE manager_id=?";
+            pstmt = con.prepareStatement(query);
+            pstmt.setInt(0, inputPOJO.getEmployeeID());
+            rs = pstmt.executeQuery();
+            while (rs != null && rs.next()) {
+                //Find some way to build a list of groups here. 
+            }
             query = "SELECT * FROM House;";
             pstmt = con.prepareStatement(query);
             rs = pstmt.executeQuery();
+            List<House> houseList = new ArrayList<>();
             while (rs != null && rs.next()) {
+                House temp = new House();
+                temp.setHouseID(rs.getInt("id"));
+                temp.setHouseLocation(rs.getString("location"));
+                temp.setIsActive(rs.getBoolean(("isActive")));
                 //get everything we need from houses and such.. yea.
                 query = "SELECT * FROM Shift WHERE house_id=?;";
                 pstmt = con.prepareStatement(query);
                 pstmt.setInt(0, rs.getInt("house_id"));
                 rsInner = pstmt.executeQuery();
+                List<Shift> shiftList = new ArrayList<>();
                 while (rsInner != null && rsInner.next()) {
+                    Shift tempInner = new Shift();
+                    tempInner.setName(rsInner.getString("name"));
+                    tempInner.setTime(rsInner.getString("time"));
+                    query = "SELECT * FROM asignee_list, (SELECT * FROM EMPLOYEE) AS t WHERE shift_id =? AND t.id = employee_id;";
+                    pstmt.setInt(0, rs.getInt("id"));
+                    pstmt = con.prepareStatement(query);
+                    ResultSet rsInner2 = pstmt.executeQuery();
+                    List<Employee> empList = new ArrayList<>();
+                    while (rsInner2 != null && rsInner2.next()) {
+                        Employee asignee = new Employee();
+                        asignee.setEmployeeID(rsInner2.getInt("employee_id"));
+                        asignee.setIsBackup(rsInner2.getBoolean("is_backup"));
+                        asignee.setName(rsInner2.getString("name"));
+                        asignee.setPhoneNumber(rsInner2.getLong("phone_number"));
+                        empList.add(asignee);
+                    }
+                    tempInner.setAsigneeList(empList);
+                    shiftList.add(tempInner);
                     //Set all of the shifts for this house. coolio.
                 }
+                temp.setShiftList(shiftList);
+                houseList.add(temp);
             }
+            inputPOJO.setHouseList(houseList);
 
             //Building up the list of all the employees.
             query = "SELECT * FROM Employee WHERE isManager=0;";

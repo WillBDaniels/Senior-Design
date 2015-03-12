@@ -11,6 +11,24 @@ public class Shift {
 
     private String name = "";
     private String time = "";
+    private int houseID = 0;
+    private int shiftID = 0;
+
+    public int getHouseID() {
+        return houseID;
+    }
+
+    public void setHouseID(int houseID) {
+        this.houseID = houseID;
+    }
+
+    public int getShiftID() {
+        return shiftID;
+    }
+
+    public void setShiftID(int shiftID) {
+        this.shiftID = shiftID;
+    }
     private List<Employee> asigneeList = new ArrayList<>();
 
     public String getName() {
