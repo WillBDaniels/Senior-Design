@@ -2,9 +2,9 @@ package edu.csci.standalone_server.jsonhandler;
 
 import com.google.gson.Gson;
 import com.sun.net.httpserver.HttpExchange;
-import edu.csci.standalone_server.DataPOJO;
-import edu.csci.standalone_server.House;
-import edu.csci.standalone_server.Shift;
+import edu.csci.standalone_server.Structures.DataPOJO;
+import edu.csci.standalone_server.Structures.House;
+import edu.csci.standalone_server.Structures.Shift;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
@@ -33,13 +33,14 @@ public class HandleCreateNewShift extends JSONHandler {
         for (House g : jsonData.getHouseList()) {
             for (Shift shift : g.getShiftList()) {
                 try {
-                    query = "INSERT INTO SHIFT ('shiftID', 'shiftName', 'houseID', 'time') VALUES "
+                    query = "INSERT INTO shift ( `shift_name`, `house_id`, `shift_time`, `employee_id`) VALUES "
                             + "(?,?,?,?);";
                     pstmt = con.prepareStatement(query);
-                    pstmt.setInt(0, shift.getShiftID());
+                    System.out.println("This is the query: " + query);
                     pstmt.setString(1, shift.getName());
                     pstmt.setInt(2, shift.getHouseID());
                     pstmt.setString(3, shift.getTime());
+                    pstmt.setInt(4, shift.getEmployeeID());
                     returnCode = pstmt.executeUpdate();
 
                 } catch (SQLException ex) {

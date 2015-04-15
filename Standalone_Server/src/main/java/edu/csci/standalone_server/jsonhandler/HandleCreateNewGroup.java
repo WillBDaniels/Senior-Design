@@ -2,9 +2,9 @@ package edu.csci.standalone_server.jsonhandler;
 
 import com.google.gson.Gson;
 import com.sun.net.httpserver.HttpExchange;
-import edu.csci.standalone_server.DataPOJO;
-import edu.csci.standalone_server.Employee;
-import edu.csci.standalone_server.Group;
+import edu.csci.standalone_server.Structures.DataPOJO;
+import edu.csci.standalone_server.Structures.Employee;
+import edu.csci.standalone_server.Structures.Group;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
@@ -33,12 +33,13 @@ public class HandleCreateNewGroup extends JSONHandler {
         for (Group g : jsonData.getGroupList()) {
             for (Employee emp : g.getEmpList()) {
                 try {
-                    query = "INSERT INTO GROUP ('groupID', 'groupName', 'employeeID') VALUES "
-                            + "(?,?, ?);";
+                    query = "INSERT INTO `groups` (`group_id`, `group_name`, `employee_id`, `manager_id`) VALUES "
+                            + "(?,?, ?, ?);";
                     pstmt = con.prepareStatement(query);
-                    pstmt.setInt(0, g.getGroupID());
-                    pstmt.setString(1, g.getGroupName());
-                    pstmt.setInt(2, emp.getEmployeeID());
+                    pstmt.setInt(1, g.getGroupID());
+                    pstmt.setString(2, g.getGroupName());
+                    pstmt.setInt(3, emp.getEmployeeID());
+                    pstmt.setInt(4, g.getManagerID());
                     returnCode = pstmt.executeUpdate();
 
                 } catch (SQLException ex) {

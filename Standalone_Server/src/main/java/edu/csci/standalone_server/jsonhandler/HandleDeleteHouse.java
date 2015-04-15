@@ -2,8 +2,8 @@ package edu.csci.standalone_server.jsonhandler;
 
 import com.google.gson.Gson;
 import com.sun.net.httpserver.HttpExchange;
-import edu.csci.standalone_server.DataPOJO;
-import edu.csci.standalone_server.House;
+import edu.csci.standalone_server.Structures.DataPOJO;
+import edu.csci.standalone_server.Structures.House;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
@@ -27,11 +27,11 @@ public class HandleDeleteHouse extends JSONHandler {
         Gson gson = new Gson();
         for (House house : data.getHouseList()) {
             try {
-                String deleteStatement = "DELETE FROM House WHERE house_id=?";
+                String deleteStatement = "DELETE FROM house WHERE house_id=?";
                 PreparedStatement pstmt = dbm.getConnection().prepareStatement(deleteStatement);
-                pstmt.setInt(0, house.getHouseID());
+                pstmt.setInt(1, house.getHouseID());
                 pstmt.executeUpdate();
-                data.getHouseList().remove(house);
+                //data.getHouseList().remove(house);
             } catch (SQLException ex) {
                 ex.printStackTrace(System.err);
             }

@@ -1,80 +1,103 @@
 package webapptest;
 
-
 import java.util.ArrayList;
 import java.util.List;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 /**
  *
- * @author fritz
+ * @author William
  */
 public class Group {
-    public String groupID;
-    public String groupManagerID;
-    public String groupName;
-    public List<Member> empIDs;
-    public String ID;
-    
-    public Group(){
-        ID = "";
-        groupID = "";
-        groupManagerID = "";
-        groupName = "";
-        empIDs = new ArrayList();
+
+    private int groupID = 0;
+    private IntegerProperty groupIDProp;
+
+    public void setGroupIDProp(Integer value) {
+        groupIDPropProperty().set(value);
     }
-    
-    public Group(String I, String i, String m, String n, List<Member> e){
-        ID = I;
-        groupID = i;
-        groupManagerID = m;
-        groupName = n;
-        empIDs = e;
+
+    public Integer getGroupIDProp() {
+        return groupIDPropProperty().get();
     }
-            
-    
-    //Setters
-    void setGroupID(String i){
-        groupID = i;
+
+    public IntegerProperty groupIDPropProperty() {
+        if (groupIDProp == null) {
+            groupIDProp = new SimpleIntegerProperty(this, "groupIDProp");
+        }
+        return groupIDProp;
     }
-    
-    void setID(String i){
-        ID = i;
+
+    private int managerID = 0;
+    private IntegerProperty managerIDProp;
+
+    public void setManagerIDProp(Integer value) {
+        managerIDPropProperty().set(value);
     }
-    
-    void setManager(String m){
-        groupManagerID = m;
+
+    public Integer getManagerIDProp() {
+        return managerIDPropProperty().get();
     }
-    
-    void setName(String n){
-        groupName = n;
+
+    public IntegerProperty managerIDPropProperty() {
+        if (managerIDProp == null) {
+            managerIDProp = new SimpleIntegerProperty(this, "managerIDProp");
+        }
+        return managerIDProp;
     }
-    
-    void addEmp( Member i){
-        empIDs.add(i);
+
+    private String groupName = "";
+    private StringProperty groupNameProp;
+
+    public void setGroupNameProp(String value) {
+        groupNamePropProperty().set(value);
     }
-    
-    //Getters
-    String getGroupID(){
+
+    public String getGroupNameProp() {
+        return groupNamePropProperty().get();
+    }
+
+    public StringProperty groupNamePropProperty() {
+        if (groupNameProp == null) {
+            groupNameProp = new SimpleStringProperty(this, "groupNameProp");
+        }
+        return groupNameProp;
+    }
+    private List<Employee> empList = new ArrayList<>();
+
+    public List<Employee> getEmpList() {
+        return empList;
+    }
+
+    public void setEmpList(List<Employee> empList) {
+        this.empList = empList;
+    }
+
+    public int getGroupID() {
         return groupID;
     }
-    
-    String getID(){
-        return ID;
+
+    public void setGroupID(int groupID) {
+        this.groupID = groupID;
     }
-    String getManager(){
-        return groupManagerID;
+
+    public int getManagerID() {
+        return managerID;
     }
-    String getName(){
+
+    public void setManagerID(int managerID) {
+        this.managerID = managerID;
+    }
+
+    public String getGroupName() {
         return groupName;
     }
-    List<Member> getEmps(){
-        return empIDs;
+
+    public void setGroupName(String groupName) {
+        this.groupName = groupName;
     }
-    
-    
+
 }

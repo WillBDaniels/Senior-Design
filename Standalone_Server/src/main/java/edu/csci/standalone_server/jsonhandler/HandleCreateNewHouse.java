@@ -2,8 +2,8 @@ package edu.csci.standalone_server.jsonhandler;
 
 import com.google.gson.Gson;
 import com.sun.net.httpserver.HttpExchange;
-import edu.csci.standalone_server.DataPOJO;
-import edu.csci.standalone_server.House;
+import edu.csci.standalone_server.Structures.DataPOJO;
+import edu.csci.standalone_server.Structures.House;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
@@ -31,13 +31,13 @@ public class HandleCreateNewHouse extends JSONHandler {
         int returnCode;
         for (House g : jsonData.getHouseList()) {
             try {
-                query = "INSERT INTO HOUSE ('houseID', 'houseLocation', 'houseName', 'isActive') VALUES "
+                query = "INSERT INTO house (`house_id`, `house_location`, `house_name`, `is_active`) VALUES "
                         + "(?,?,?,?);";
                 pstmt = con.prepareStatement(query);
-                pstmt.setInt(0, g.getHouseID());
-                pstmt.setString(1, g.getHouseLocation());
+                pstmt.setInt(1, g.getHouseID());
                 pstmt.setString(2, g.getHouseLocation());
-                pstmt.setBoolean(3, g.isIsActive());
+                pstmt.setString(3, g.getHouseLocation());
+                pstmt.setBoolean(4, g.isIsActive());
                 returnCode = pstmt.executeUpdate();
 
             } catch (SQLException ex) {

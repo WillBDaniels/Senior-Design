@@ -1,65 +1,175 @@
 package webapptest;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+import java.util.ArrayList;
+import java.util.List;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
+
 /**
  *
- * @author fritz
+ * @author William
  */
 public class Shift {
-    public String shiftID;
-    public String shiftTime;
-    public String houseID;
-    public String empID;
-    
-    public Shift(){
-        shiftID = "";
-        shiftTime = "";
-        houseID = "";
-        empID = "";
+
+    private String name = "";
+
+    private StringProperty nameProp;
+
+    public void setNameProp(String value) {
+        namePropProperty().set(value);
     }
-    
-    public Shift(String sID, String sT, String hID, String eID) {
-        shiftID = sID;
-        shiftTime = sT;
-        houseID = hID;
-        empID = eID;
+
+    public String getNameProp() {
+        if (namePropProperty().get().isEmpty()) {
+            setNameProp(getName());
+        }
+        return namePropProperty().get();
     }
-    
-    //Setters
-    public void setShiftID(String s){
-        shiftID = s;
+
+    public StringProperty namePropProperty() {
+        if (nameProp == null) {
+            nameProp = new SimpleStringProperty(this, "nameProp");
+        }
+        return nameProp;
     }
-    
-    public void setShiftTime(String t){
-        shiftTime = t;
+
+    private String time = "";
+
+    private StringProperty timeProp;
+
+    public void setTimeProp(String value) {
+        timePropProperty().set(value);
     }
-    
-    public void setHouseID(String h){
-        houseID = h;
+
+    public String getTimeProp() {
+        if (timePropProperty().get().isEmpty()) {
+            setTimeProp(getTime());
+        }
+        return timePropProperty().get();
     }
-    
-    public void setEmpID(String e){
-        empID = e;
+
+    public StringProperty timePropProperty() {
+        if (timeProp == null) {
+            timeProp = new SimpleStringProperty(this, "timeProp");
+        }
+        return timeProp;
     }
-    
-    //Getters
-    String getShiftID(){
-        return shiftID;
+
+    private int houseID = 0;
+
+    private IntegerProperty houseIDProp;
+
+    public void setHouseIDProp(Integer value) {
+        houseIDPropProperty().set(value);
     }
-    
-    String getShiftTime(){
-        return shiftTime;
+
+    public Integer getHouseIDProp() {
+        if (houseIDPropProperty().get() == 0) {
+            setHouseIDProp(getHouseID());
+        }
+        return houseIDPropProperty().get();
     }
-    
-    String getHouseID(){
+
+    public IntegerProperty houseIDPropProperty() {
+        if (houseIDProp == null) {
+            houseIDProp = new SimpleIntegerProperty(this, "houseIDProp");
+        }
+        return houseIDProp;
+    }
+
+    private int shiftID = 0;
+
+    private IntegerProperty shiftIDProp;
+
+    public void setShiftIDProp(Integer value) {
+        shiftIDPropProperty().set(value);
+    }
+
+    public Integer getShiftIDProp() {
+        if (shiftIDPropProperty().get() == 0) {
+            setShiftIDProp(getShiftID());
+        }
+        return shiftIDPropProperty().get();
+    }
+
+    public IntegerProperty shiftIDPropProperty() {
+        if (shiftIDProp == null) {
+            shiftIDProp = new SimpleIntegerProperty(this, "shiftIDProp");
+        }
+        return shiftIDProp;
+    }
+
+    private int employeeID = 0;
+
+    private IntegerProperty employeeIDProp;
+
+    public void setEmployeeIDProp(Integer value) {
+        employeeIDPropProperty().set(value);
+    }
+
+    public Integer getEmployeeIDProp() {
+        if (employeeIDPropProperty().get() == 0) {
+            setEmployeeIDProp(getEmployeeID());
+        }
+        return employeeIDPropProperty().get();
+    }
+
+    public IntegerProperty employeeIDPropProperty() {
+        if (employeeIDProp == null) {
+            employeeIDProp = new SimpleIntegerProperty(this, "employeeIDProp");
+        }
+        return employeeIDProp;
+    }
+
+    public int getEmployeeID() {
+        return employeeID;
+    }
+
+    public void setEmployeeID(int employeeID) {
+        this.employeeID = employeeID;
+    }
+
+    public int getHouseID() {
         return houseID;
     }
-    
-    String getEmpID(){
-        return empID;
+
+    public void setHouseID(int houseID) {
+        this.houseID = houseID;
     }
+
+    public int getShiftID() {
+        return shiftID;
+    }
+
+    public void setShiftID(int shiftID) {
+        this.shiftID = shiftID;
+    }
+    private List<Employee> asigneeList = new ArrayList<>();
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public List<Employee> getAsigneeList() {
+        return asigneeList;
+    }
+
+    public void setAsigneeList(List<Employee> asigneeList) {
+        this.asigneeList = asigneeList;
+    }
+
 }

@@ -1,10 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package webapptest;
 
+import com.google.gson.Gson;
 import java.io.IOException;
 import java.net.URL;
 import java.security.MessageDigest;
@@ -13,258 +9,435 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.ResourceBundle;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.CheckBox;
-import javafx.scene.control.Label;
+import javafx.scene.control.TableCell;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.HBox;
+import javafx.scene.control.cell.CheckBoxTableCell;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.layout.VBox;
+import javafx.util.Callback;
 import org.apache.commons.codec.binary.Hex;
-import static webapptest.WebAppTest.sendData;
 
 /**
  *
  * @author fritz
  */
 public class FXMLDocumentController implements Initializable {
-    //Areas for the database stored information to be displayed.
-    @FXML private VBox employeeList;
-    @FXML private VBox facilityList;
-    @FXML private VBox shiftList;
-    @FXML private VBox groupList;
-    
+
     //Fields for the employee addition
-    @FXML private CheckBox managerCheck;
-    @FXML private TextField empName;
-    @FXML private TextField empPhone;
-    @FXML private TextField empID;
-    @FXML private TextField empUserName;
-    @FXML private TextField empPassword;
-    
+    @FXML
+    private CheckBox managerCheck;
+    @FXML
+    private TextField empName;
+
+    @FXML
+    private CheckBox cb_house_is_active;
+    @FXML
+    private TextField empUserName;
+    @FXML
+    private TextField empPassword;
+    @FXML
+    private CheckBox cb_employee_admin;
+    @FXML
+    private CheckBox cb_employee_backup;
+
     //Fields for the facility addition
-    @FXML private TextField facilityID;
-    @FXML private TextField facilityNeighborhood;
-    
+    @FXML
+    private TextField facilityID;
+
     //Fields for the shift addition
-    @FXML private TextField shiftTime;
-    @FXML private TextField shiftEmpID;
-    @FXML private TextField shiftFacilityID;
-    
+    @FXML
+    private TextField shiftTime;
+    @FXML
+    private TextField shiftEmpID;
+    @FXML
+    private TextField shiftHouseID;
+    @FXML
+    private TextField tf_shift_name;
+
     //Fields for the group addition
-    @FXML private TextField groupName;
-    @FXML private TextField groupManagerID;
-    @FXML private TextField groupID;
-    @FXML private TextField groupEmpIDs;
-    
+    @FXML
+    private TextField groupName;
+    @FXML
+    private TextField groupManagerID;
+    @FXML
+    private TextField groupID;
+    @FXML
+    private TextField groupEmpIDs;
+
     //Fields for the employee delete
-    @FXML private TextField empDeleteID;
-    @FXML private TextField empDeleteName;
-    
+    @FXML
+    private TextField empDeleteID;
+    @FXML
+    private TextField empDeleteName;
+
     //Fields for the shift delete
-    @FXML private TextField shiftDeleteID;
-    @FXML private TextField shiftDeleteEmpID;
-    
+    @FXML
+    private TextField shiftDeleteID;
+    @FXML
+    private TextField shiftDeleteEmpID;
+
     //Fields for the facility delete
-    @FXML private TextField facDeleteID;
-    @FXML private TextField facDeleteNeighborhood;
-    
+    @FXML
+    private TextField facDeleteID;
+    @FXML
+    private TextField facDeleteNeighborhood;
+
     //Fields for the group delete
-    @FXML private TextField groupDeleteID;
-    @FXML private TextField groupDeleteName;
-    
-    //Areas for the deletion information to be displayed 
-    @FXML private VBox empDeleteDisplay;
-    @FXML private VBox shiftDeleteDisplay;
-    @FXML private VBox facDeleteDisplay;
-    @FXML private VBox groupDeleteDisplay;
-    
+    @FXML
+    private TextField groupDeleteID;
+    @FXML
+    private TextField groupDeleteName;
+
+    //Areas for the deletion information to be displayed
+    @FXML
+    private VBox empDeleteDisplay;
+    @FXML
+    private VBox shiftDeleteDisplay;
+    @FXML
+    private VBox facDeleteDisplay;
+    @FXML
+    private VBox groupDeleteDisplay;
+
+    @FXML
+    private TableView tv_group, tv_employee, tv_house, tv_shift;
+
+    /**
+     * Table columns for employee
+     */
+    private TableColumn nameCol, idCol, phoneNumberCol, userNameCol, managerCol, adminCol, backupCol;
+
+    /**
+     * Table columns for shifts
+     */
+    private TableColumn shiftIDCol, timeCol, houseIDCol, empIDCol, shiftNameCol;
+
+    /**
+     * Table columns for facilities
+     */
+    private TableColumn facilityIDCol, neighborhoodCol, houseNameCol, houseIsActiveCol;
+
+    /**
+     * Table columns for groups
+     */
+    private TableColumn groupIDCol, groupNameCol, groupManagerIDCol;
+
     //Booleans to check if it is ok to delete
     private Boolean employeeDelete;
     private Boolean shiftDelete;
     private Boolean facilityDelete;
     private Boolean groupDelete;
-    
+    private final Gson gson = new Gson();
+
     @FXML
-    public void groupCreateButtonPressed(ActionEvent event){
-        List<String> temp = new ArrayList<>();
-        temp.add("create_group");
-        temp.add("managerID=" + groupManagerID.getText());
-        temp.add("groupName=\"" + groupName.getText() + "\"");
-        
-        temp.add("groupID=" + groupID.getText());
+    public void groupCreateButtonPressed() {
+        DataPOJO groupCreate = new DataPOJO();
+        List<Group> groupListInner = new ArrayList<>();
+        Group group = new Group();
+        group.setManagerID(Integer.valueOf(groupManagerID.getText()));
+        group.setGroupName(groupName.getText());
+        group.setGroupID(Integer.valueOf(groupID.getText()));
         //add employee ids here
-        ArrayList<String> eList = new ArrayList<>(Arrays.asList(groupEmpIDs.getText().split("\\&")));
-        for( String e : eList){
-            temp.add(e);
+        ArrayList<String> eList = new ArrayList<>(Arrays.asList(groupEmpIDs.getText().split("\\,")));
+        ArrayList<Employee> realEList = new ArrayList<>();
+        for (String e : eList) {
+            Employee emp = new Employee();
+            emp.setEmployeeID(Integer.valueOf(e));
+            realEList.add(emp);
         }
-        temp.add("Done");
-        
-        sendData(temp);
+        group.setEmpList(realEList);
+        groupListInner.add(group);
+        groupCreate.setGroupList(groupListInner);
+        String response = WebAppTest.postToServer(Type.SHIFTY, Action.ADDGROUP, gson.toJson(groupCreate, DataPOJO.class));
+        System.out.println("This was the response to creating a new group: " + response);
     }
-    
-    public List<Group> parseGroupData(String input){
-        List<Member> mmbr = new ArrayList<>();
-        System.out.println(input);
-        
-        //Loops through the string from the server
-        ArrayList<String> rows = new ArrayList<>(Arrays.asList(input.split("\\|")));
-        //This loops through each employee record
-        for (String row : rows){
-            Member temp = new Member();
-            ArrayList<String> cols = new ArrayList<>(Arrays.asList(row.split("\\&")));
-            //The loops through each field of the group member.
-            for (String col : cols){
-                col = col.replaceAll("\"", "");
-                ArrayList<String> entry = new ArrayList<>(Arrays.asList(col.split("=")));
-                //Adds the found field to the temporary group object
-                switch(entry.get(0)){
-                    case "groupName": temp.setName(entry.get(1));
-                        break;
-                    case "ID": temp.setID(entry.get(1));
-                        break;
-                    case "ManagerID": temp.setManager(entry.get(1));
-                        break;
-                    case "employeeID": temp.addEmp(entry.get(1));
-                        break;
-                    case "groupID": temp.setGroupID(entry.get(1));
-                        break;
-                    default:
-                        System.out.println(entry.get(0));
-                }
-            }  
-            //We have looped through each field of the current employee.
-            //Now we add this employee to our structure of employees
-            mmbr.add(temp);
-        }
-        //loop through the members and separate them into groups
-        //
-        //creates a list of groups
-        List<Group> grps = new ArrayList();
-        for( Member m : mmbr){
-            String g = m.getGroupID();
-            if(!grps.isEmpty()){ //if the group isn't empty
-                //Check if group id exists
-                String correctGroupID = "";
-                for(Group gr : grps){//Finds the correct group if there is one
-                    if(gr.getGroupID().equals(g)){
-                        correctGroupID = g;
+
+    private void initializeEmployeeTableColumns() {
+        nameCol = new TableColumn<>("Name");
+        nameCol.setCellValueFactory(new PropertyValueFactory<>("nameProp"));
+        nameCol.setCellFactory(TextFieldTableCell.forTableColumn());
+        nameCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Employee, String>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<Employee, String> t) {
+                ((Employee) t.getTableView().getItems().get(t.getTablePosition().getRow())).setNameProp(t.getNewValue());
+
+            }
+        });
+
+        phoneNumberCol = new TableColumn<>("Phone #");
+        phoneNumberCol.setCellValueFactory(new PropertyValueFactory<>("phoneNumberProp"));
+        phoneNumberCol.setCellFactory(numberCallback());
+        phoneNumberCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Employee, Integer>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<Employee, Integer> t) {
+                ((Employee) t.getTableView().getItems().get(t.getTablePosition().getRow())).setPhoneNumber(t.getNewValue());
+
+            }
+        });
+
+        userNameCol = new TableColumn<>("Username");
+        userNameCol.setCellValueFactory(new PropertyValueFactory<>("usernameProp"));
+        userNameCol.setCellFactory(TextFieldTableCell.forTableColumn());
+        userNameCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Employee, String>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<Employee, String> t) {
+                ((Employee) t.getTableView().getItems().get(t.getTablePosition().getRow())).setUsername(t.getNewValue());
+
+            }
+        });
+//
+        idCol = new TableColumn<>("ID");
+        idCol.setEditable(true);
+        idCol.setCellValueFactory(new PropertyValueFactory<>("employeeIDProp"));
+        idCol.setCellFactory(numberCallback());
+        idCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Employee, Integer>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<Employee, Integer> t) {
+                ((Employee) t.getTableView().getItems().get(t.getTablePosition().getRow())).setEmployeeIDProp(Integer.valueOf(t.getNewValue()));
+
+            }
+        });
+        managerCol = new TableColumn<>("Is Manager");
+        managerCol.setCellValueFactory(new PropertyValueFactory<>("isManagerProp"));
+        managerCol.setCellFactory(CheckBoxTableCell.forTableColumn(managerCol));
+        managerCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Employee, Boolean>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<Employee, Boolean> t) {
+                ((Employee) t.getTableView().getItems().get(t.getTablePosition().getRow())).setIsManager(t.getNewValue());
+
+            }
+        });
+
+        adminCol = new TableColumn<>("Is Admin");
+        adminCol.setCellValueFactory(new PropertyValueFactory<>("isAdminProp"));
+        adminCol.setCellFactory(CheckBoxTableCell.forTableColumn(adminCol));
+        adminCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Employee, Boolean>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<Employee, Boolean> t) {
+                ((Employee) t.getTableView().getItems().get(t.getTablePosition().getRow())).setIsAdmin(t.getNewValue());
+
+            }
+        });
+
+        backupCol = new TableColumn<>("Is Backup");
+        backupCol.setEditable(true);
+        backupCol.setCellValueFactory(new PropertyValueFactory<>("isBackupProp"));
+        backupCol.setCellFactory(CheckBoxTableCell.forTableColumn(backupCol));
+        backupCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Employee, Boolean>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<Employee, Boolean> t) {
+                ((Employee) t.getTableView().getItems().get(t.getTablePosition().getRow())).setIsBackup(t.getNewValue());
+
+            }
+        });
+        tv_employee.setEditable(true);
+        tv_employee.getColumns().addAll(idCol, nameCol, phoneNumberCol, userNameCol, managerCol, backupCol, adminCol);
+    }
+
+    private Callback<TableColumn, TableCell> numberCallback() {
+        return new Callback<TableColumn, TableCell>() {
+            @Override
+            public TableCell call(TableColumn p) {
+                TableCell cell = new TableCell<Employee, Integer>() {
+                    @Override
+                    public void updateItem(Integer item, boolean empty) {
+                        super.updateItem(item, empty);
+                        setText(empty ? null : getString());
                     }
-                }
-                if(correctGroupID.equals(g)){//the group existed
-                    for(Group currGroup : grps){
-                        if(currGroup.getGroupID().equals(g)){
-                            //The current group is where the member belongs
-                            
-                            //Adds the member to the group
-                            currGroup.addEmp(m);
-                            
+
+                    private String getString() {
+                        String ret;
+                        if (getItem() != null) {
+                            ret = getItem().toString();
+                        } else {
+                            ret = "0";
                         }
+                        return ret;
                     }
-                       
-                    }else{//The current members group doesnt exist
-                        Group _group = new Group();
-                        //Sets the data of the current member for the new group
-                        _group.addEmp(m);
-                        _group.setGroupID(m.getGroupID());
-                        _group.setID(m.getID());
-                        _group.setManager(m.getManager());
-                        _group.setName(m.getName());
-                        
-                        //Adds the group to the list of groups
-                        grps.add(_group);
-                    }
-            }else{ //The group list was empty
-                //Create a new group
-                Group tmp = new Group();
-                //add current employee to new group
-                tmp.addEmp(m);
-                tmp.setGroupID(m.getGroupID());
-                tmp.setID(m.getID());
-                tmp.setManager(m.getManager());
-                tmp.setName(m.getName());
-                //Add new group to the list
-                grps.add(tmp);
+                };
+                return cell;
             }
-        }
-        return grps;
+        };
     }
-    
-    @FXML
-    public void groupRefreshButtonPressed(ActionEvent event){
-        groupList.getChildren().clear();
-        
-        //get the data of employees from the server
-        List<String> temp = new ArrayList<>();
-        temp.add("get_group");
-        String input = sendData(temp);
-        
-        //parse the data into an object
-        List<Group> grps = parseGroupData(input);
-        
-        //display the headings for the group display
-        HBox heading = new HBox();
-        Label ID = new Label("Database ID");
-        Label gid = new Label("Group ID");
-        Label name = new Label("Group Name");
-        Label manager = new Label("Manager ID");
-        Label employee = new Label("Employee ID");
-        
-        heading.getChildren().add(ID);
-        heading.getChildren().add(gid);
-        heading.getChildren().add(name);
-        heading.getChildren().add(manager);
-        heading.getChildren().add(employee);
-        
-        
-        groupList.getChildren().add(heading);
-        for (Group grp : grps) {
-            
-            List<Member> member = grp.getEmps();
-            
-            for(Member mem : member){ //Loops through the members of the group
-                HBox tempLine = new HBox();
-                TextField tfid = new TextField( mem.getID() );
-                TextField tfname = new TextField(mem.getName() );
-                TextField tfgroupid = new TextField(mem.getGroupID());
-                TextField tfmanager = new TextField(mem.getManager());
-                TextField tfemp = new TextField(mem.getEmps() );
-            
-                tempLine.getChildren().add(tfid);
-                tempLine.getChildren().add(tfname);
-                tempLine.getChildren().add(tfgroupid);
-                tempLine.getChildren().add(tfmanager);
-                tempLine.getChildren().add(tfemp);
-                
-                groupList.getChildren().add(tempLine);
+
+    private void initializeShiftTableColumns() {
+        shiftIDCol = new TableColumn<>("Shift ID");
+        shiftIDCol.setCellValueFactory(new PropertyValueFactory<>("shiftIDProp"));
+        shiftIDCol.setCellFactory(numberCallback());
+        shiftIDCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Shift, Integer>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<Shift, Integer> t) {
+                ((Shift) t.getTableView().getItems().get(t.getTablePosition().getRow())).setShiftID(t.getNewValue());
+
             }
-        }
+        });
+        timeCol = new TableColumn<>("Shift Time");
+        timeCol.setCellValueFactory(new PropertyValueFactory<>("timeProp"));
+        timeCol.setCellFactory(TextFieldTableCell.forTableColumn());
+        timeCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Shift, String>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<Shift, String> t) {
+                ((Shift) t.getTableView().getItems().get(t.getTablePosition().getRow())).setTime(t.getNewValue());
+
+            }
+        });
+        empIDCol = new TableColumn<>("Main Employee ID");
+        empIDCol.setCellValueFactory(new PropertyValueFactory<>("employeeIDProp"));
+        empIDCol.setCellFactory(numberCallback());
+        empIDCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Shift, Integer>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<Shift, Integer> t) {
+                ((Shift) t.getTableView().getItems().get(t.getTablePosition().getRow())).setEmployeeID(t.getNewValue());
+
+            }
+        });
+        houseIDCol = new TableColumn<>("House ID");
+        houseIDCol.setCellValueFactory(new PropertyValueFactory<>("houseIDProp"));
+        houseIDCol.setCellFactory(numberCallback());
+        houseIDCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Shift, Integer>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<Shift, Integer> t) {
+                ((Shift) t.getTableView().getItems().get(t.getTablePosition().getRow())).setHouseID(t.getNewValue());
+
+            }
+        });
+        shiftNameCol = new TableColumn<>("Shift Name");
+        shiftNameCol.setCellValueFactory(new PropertyValueFactory<>("nameProp"));
+        shiftNameCol.setCellFactory(TextFieldTableCell.forTableColumn());
+        shiftNameCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Shift, String>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<Shift, String> t) {
+                ((Shift) t.getTableView().getItems().get(t.getTablePosition().getRow())).setNameProp(t.getNewValue());
+
+            }
+        });
+        tv_shift.getColumns().addAll(timeCol, houseIDCol, empIDCol, shiftIDCol, shiftNameCol);
     }
-    
+
+    private void initializeGroupColumns() {
+        groupIDCol = new TableColumn<>("Group ID");
+        groupIDCol.setCellValueFactory(new PropertyValueFactory<>("groupIDProp"));
+        groupIDCol.setCellFactory(numberCallback());
+        groupIDCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Group, Integer>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<Group, Integer> t) {
+                ((Group) t.getTableView().getItems().get(t.getTablePosition().getRow())).setGroupID(t.getNewValue());
+
+            }
+        });
+        groupNameCol = new TableColumn<>("Group Name");
+        groupNameCol.setCellValueFactory(new PropertyValueFactory<>("groupNameProp"));
+        groupNameCol.setCellFactory(TextFieldTableCell.forTableColumn());
+        groupNameCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Group, String>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<Group, String> t) {
+                ((Group) t.getTableView().getItems().get(t.getTablePosition().getRow())).setGroupName(t.getNewValue());
+
+            }
+        });
+        groupManagerIDCol = new TableColumn<>("Manager ID");
+        groupManagerIDCol.setCellValueFactory(new PropertyValueFactory<>("managerIDProp"));
+        groupManagerIDCol.setCellFactory(numberCallback());
+        groupManagerIDCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Group, Integer>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<Group, Integer> t) {
+                ((Group) t.getTableView().getItems().get(t.getTablePosition().getRow())).setManagerID(t.getNewValue());
+
+            }
+        });
+        tv_group.getColumns().addAll(groupIDCol, groupNameCol, groupManagerIDCol);
+    }
+
+    private void initializeHouseColumns() {
+        facilityIDCol = new TableColumn<>("House ID");
+        facilityIDCol.setEditable(true);
+        facilityIDCol.setCellValueFactory(new PropertyValueFactory<>("houseIDProp"));
+        facilityIDCol.setCellFactory(numberCallback());
+        facilityIDCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<House, Integer>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<House, Integer> t) {
+                ((House) t.getTableView().getItems().get(t.getTablePosition().getRow())).setHouseID(t.getNewValue());
+
+            }
+        });
+        neighborhoodCol = new TableColumn<>("Neighborhood");
+        neighborhoodCol.setEditable(true);
+        neighborhoodCol.setCellValueFactory(new PropertyValueFactory<>("houseLocationProp"));
+        neighborhoodCol.setCellFactory(TextFieldTableCell.forTableColumn());
+        neighborhoodCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<House, String>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<House, String> t) {
+                ((House) t.getTableView().getItems().get(t.getTablePosition().getRow())).setHouseLocation(t.getNewValue());
+
+            }
+        });
+        houseNameCol = new TableColumn<>("House Name");
+        houseNameCol.setEditable(true);
+        houseNameCol.setCellValueFactory(new PropertyValueFactory<>("houseNameProp"));
+        houseNameCol.setCellFactory(TextFieldTableCell.forTableColumn());
+        houseNameCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<House, String>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<House, String> t) {
+                ((House) t.getTableView().getItems().get(t.getTablePosition().getRow())).setHouseName(t.getNewValue());
+
+            }
+        });
+        houseIsActiveCol = new TableColumn<>("Is Active");
+        houseIsActiveCol.setEditable(true);
+        houseIsActiveCol.setCellValueFactory(new PropertyValueFactory<>("isActiveProp"));
+        houseIsActiveCol.setCellFactory(CheckBoxTableCell.forTableColumn(houseIsActiveCol));
+        houseIsActiveCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<House, Boolean>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<House, Boolean> t) {
+                ((House) t.getTableView().getItems().get(t.getTablePosition().getRow())).setIsActiveProp(t.getNewValue());
+
+            }
+        });
+        tv_house.getColumns().addAll(neighborhoodCol, facilityIDCol, houseNameCol, houseIsActiveCol);
+    }
+
     @FXML
-    public void groupDeleteButtonPressed(ActionEvent event){
+    public void groupRefreshButtonPressed(ActionEvent event) {
+        tv_group.getItems().clear();
+        DataPOJO result = gson.fromJson(WebAppTest.postToServer(Type.SHIFTY, Action.GETALLDATA, ""), DataPOJO.class);
+        refreshAllTables(result);
+
+    }
+
+    @FXML
+    public void groupDeleteButtonPressed(ActionEvent event) {
         //enables deleting of a facility
         groupDelete = true;
-        
+
         //displays the facility id to be deleted inside the delete area
         groupDeleteDisplay.getChildren().add(new TextField(groupDeleteID.getText()));
         groupDeleteDisplay.getChildren().add(new TextField(groupDeleteName.getText()));
-    
+
     }
-    
+
     @FXML
-    public void deleteGroupConfirmPressed(ActionEvent event){
-        if(!( groupDeleteID.getText().isEmpty() ) && (groupDelete == true) && !( groupDeleteName.getText().isEmpty() ) ){
-            List<String> temp = new ArrayList<>();
-            temp.add("delete_group");
-            temp.add("groupID=" + groupDeleteID.getText());
-            temp.add("groupName=\"" + groupDeleteName.getText() + "\"");
-        
-            String debug = sendData(temp);
-            System.out.println(debug);
+    public void deleteGroupConfirmPressed(ActionEvent event) {
+        DataPOJO delete = new DataPOJO();
+        if (!(groupDeleteID.getText().isEmpty()) && (groupDelete == true) && !(groupDeleteName.getText().isEmpty())) {
+            List<Group> groupListInner = new ArrayList<>();
+            Group group = new Group();
+            group.setGroupID(Integer.valueOf(groupDeleteID.getText()));
+            group.setGroupName(groupDeleteName.getText());
+            groupListInner.add(group);
+            delete.setGroupList(groupListInner);
+            WebAppTest.postToServer(Type.SHIFTY, Action.DELETEGROUP, gson.toJson(delete, DataPOJO.class));
+            refreshButtonPressed(null);
         }
-        
+
         //Disables deletes
         groupDelete = false;
         //clears the delete fields
@@ -272,9 +445,9 @@ public class FXMLDocumentController implements Initializable {
         groupDeleteName.clear();
         groupDeleteDisplay.getChildren().clear();
     }
-    
+
     @FXML
-    public void deleteGroupCancelPressed(ActionEvent event){
+    public void deleteGroupCancelPressed(ActionEvent event) {
         //Disables deletes
         groupDelete = false;
         //clears the delete fields
@@ -282,29 +455,31 @@ public class FXMLDocumentController implements Initializable {
         groupDeleteName.clear();
         groupDeleteDisplay.getChildren().clear();
     }
-    
+
     @FXML //Deletes the employee if the textfields are used and the delete boolean has been set
-    public void deleteFacilityConfirmPressed(ActionEvent event) throws IOException{
-        if(!( facDeleteID.getText().isEmpty() ) && (facilityDelete == true) && !( facDeleteNeighborhood.getText().isEmpty() ) ){
-            List<String> temp = new ArrayList<>();
-            temp.add("delete_house");
-            temp.add("house_id=" + facDeleteID.getText());
-            temp.add("`house_neighborhood`=\"" + facDeleteNeighborhood.getText() + "\"");
-        
-            String debug = sendData(temp);
-            System.out.println(debug);
+    public void deleteHouseConfirmPressed(ActionEvent event) throws IOException {
+        if (!(facDeleteID.getText().isEmpty()) && (facilityDelete == true) && !(facDeleteNeighborhood.getText().isEmpty())) {
+            DataPOJO deleteHouse = new DataPOJO();
+            List<House> houseList = new ArrayList<>();
+            House house = new House();
+            house.setHouseID(Integer.valueOf(facDeleteID.getText()));
+            house.setHouseLocation(facDeleteNeighborhood.getText());
+            houseList.add(house);
+            deleteHouse.setHouseList(houseList);
+            String result = WebAppTest.postToServer(Type.SHIFTY, Action.DELETEHOUSE, gson.toJson(deleteHouse, DataPOJO.class));
+            System.out.println(result);
         }
-        
+
         //disables facility deletes again.
         facilityDelete = false;
         facDeleteID.clear();
         facDeleteNeighborhood.clear();
         facDeleteDisplay.getChildren().clear();
-        
+
     }
-    
+
     @FXML //Pressed to cancel a delete facility action
-    public void deleteFacilityCancelPressed(ActionEvent event) throws IOException{
+    public void deleteHouseCancelPressed(ActionEvent event) throws IOException {
         //Disables deletes
         facilityDelete = false;
         //clears the delete fields
@@ -312,82 +487,88 @@ public class FXMLDocumentController implements Initializable {
         facDeleteNeighborhood.clear();
         facDeleteDisplay.getChildren().clear();
     }
-    
+
     @FXML //Pressed to initiate a delete for a facility
-    public void deleteFacButtonPressed(ActionEvent event) throws IOException{
+    public void deleteFacButtonPressed(ActionEvent event) throws IOException {
         //enables deleting of a facility
         facilityDelete = true;
-        
+
         //displays the facility id to be deleted inside the delete area
         facDeleteDisplay.getChildren().add(new TextField(facDeleteID.getText()));
         facDeleteDisplay.getChildren().add(new TextField(facDeleteNeighborhood.getText()));
     }
-    
-    
+
     @FXML //Deletes the shift if the textfields are used and the delete boolean has been set
-    public void deleteShiftConfirmPressed(ActionEvent event) throws IOException{
-        if(!( shiftDeleteID.getText().isEmpty() ) && (shiftDelete == true) && !( shiftDeleteEmpID.getText().isEmpty() ) ){
-            List<String> temp = new ArrayList<>();
-            temp.add("delete_shift");
-            temp.add("shift_id=" + shiftDeleteID.getText() );
-            temp.add("employee1=" + shiftDeleteEmpID.getText() );
-        
-            String debug = sendData(temp);
-            System.out.println(debug);
+    public void deleteShiftConfirmPressed(ActionEvent event) throws IOException {
+        if (!(shiftDeleteID.getText().isEmpty()) && (shiftDelete == true) && !(shiftDeleteEmpID.getText().isEmpty())) {
+            DataPOJO deleteShift = new DataPOJO();
+            List<House> houseList = new ArrayList<>();
+
+            House house = new House();
+            List<Shift> shiftListInner = new ArrayList<>();
+            Shift shift = new Shift();
+            shift.setShiftID(Integer.valueOf(shiftDeleteID.getText()));
+            shift.setEmployeeID(Integer.valueOf(shiftDeleteEmpID.getText()));
+            shiftListInner.add(shift);
+            house.setShiftList(shiftListInner);
+            houseList.add(house);
+            deleteShift.setHouseList(houseList);
+            String result = WebAppTest.postToServer(Type.SHIFTY, Action.DELETESHIFT, gson.toJson(deleteShift, DataPOJO.class));
         }
-        
+
         //Resets the delete fields for the next use
         shiftDelete = false;
         shiftDeleteID.clear();
         shiftDeleteEmpID.clear();
         shiftDeleteDisplay.getChildren().clear();
-        
+
     }
-    
+
     @FXML //Pressed to cancel a delete employee action
-    public void deleteShiftCancelPressed(ActionEvent event) throws IOException{
+    public void deleteShiftCancelPressed(ActionEvent event) throws IOException {
         //Disables deletes
         shiftDelete = false;
-        
+
         //clears the delete fields
         shiftDeleteID.clear();
         shiftDeleteEmpID.clear();
         shiftDeleteDisplay.getChildren().clear();
     }
-    
+
     @FXML
-    public void shiftDeleteButtonPressed(ActionEvent event){
+    public void shiftDeleteButtonPressed(ActionEvent event) {
         //enables deleting of a shift
         shiftDelete = true;
-        
+
         //displays the shift information to be deleted inside the delete area
         shiftDeleteDisplay.getChildren().add(new TextField(shiftDeleteID.getText()));
         shiftDeleteDisplay.getChildren().add(new TextField(shiftDeleteEmpID.getText()));
-    
+
     }
-    
+
     @FXML //Deletes the employee if the textfields are used and the delete boolean has been set
-    public void deleteConfirmPressed(ActionEvent event) throws IOException{
-        if(!( empDeleteID.getText().isEmpty() ) && (employeeDelete == true) && !( empDeleteName.getText().isEmpty() ) ){
-            List<String> temp = new ArrayList<>();
-            temp.add("delete_user");
-            temp.add("`employee_id`=" + empDeleteID.getText());
-            temp.add("`username`=\"" + empDeleteName.getText() + "\"");
-        
-            String debug = sendData(temp);
-            System.out.println(debug);
+    public void deleteConfirmPressed(ActionEvent event) throws IOException {
+        if (!(empDeleteID.getText().isEmpty()) && (employeeDelete == true) && !(empDeleteName.getText().isEmpty())) {
+            DataPOJO deleteEmp = new DataPOJO();
+            List<Employee> empList = new ArrayList<>();
+            Employee emp = new Employee();
+            emp.setEmployeeID(Integer.valueOf(empDeleteID.getText()));
+            empList.add(emp);
+            deleteEmp.setAllEmployees(empList);
+            String response = WebAppTest.postToServer(Type.SHIFTY, Action.DELETEEMPLOYEE, gson.toJson(deleteEmp, DataPOJO.class));
+            System.out.println(response);
         }
-        
+
         //disables employee deletes again.
         employeeDelete = false;
         empDeleteID.clear();
         empDeleteName.clear();
         empDeleteDisplay.getChildren().clear();
-        
+
     }
-    
+
     @FXML //Pressed to cancel a delete employee action
-    public void deleteCancelPressed(ActionEvent event) throws IOException{
+    public void deleteCancelPressed(ActionEvent event) throws IOException {
         //Disables deletes
         employeeDelete = false;
         //clears the delete fields
@@ -395,333 +576,170 @@ public class FXMLDocumentController implements Initializable {
         empDeleteName.clear();
         empDeleteDisplay.getChildren().clear();
     }
-    
+
     @FXML //Pressed to initiate a delete for an employee
-    public void deleteEmpButtonPressed(ActionEvent event) throws IOException{
+    public void deleteEmpButtonPressed(ActionEvent event) throws IOException {
         //enables deleting of an employee
         employeeDelete = true;
-        
+
         //displays the employee id to be deleted inside the delete area
         empDeleteDisplay.getChildren().add(new TextField(empDeleteID.getText()));
         empDeleteDisplay.getChildren().add(new TextField(empDeleteName.getText()));
     }
-    
+
     @FXML //DIsplays the shifts from the server
-    public void refreshShiftsButtonPressed(ActionEvent event){
-        shiftList.getChildren().clear();
-        
+    public void refreshShiftsButtonPressed(ActionEvent event) {
+        tv_shift.getItems().clear();
         //get the data of employees from the server
-        List<String> temp = new ArrayList<>();
-        temp.add("get_shift_specific");
-        String input = sendData(temp);
-        
-        //parse the data into an object
-        List<Shift> shifts = parseShiftData(input);
-        
-        //display the headings for the employee display
-        HBox heading = new HBox();
-        Label sID = new Label("Shift ID");
-        Label sTime = new Label("Shift Time");
-        Label sEmp = new Label("Shift Employee");
-        Label sFac = new Label("Shift House");
-        
-        heading.getChildren().add(sID);
-        heading.getChildren().add(sTime);
-        heading.getChildren().add(sEmp);
-        heading.getChildren().add(sFac);
-        
-        shiftList.getChildren().add(heading);
-        
-        //loop through all available employees and display to screen
-        for( Shift s : shifts){
-            HBox tempLine = new HBox();
-           
-            TextField sIDText = new TextField(s.getShiftID());
-            TextField sTimeText = new TextField(s.getShiftTime());
-            TextField sEmpText = new TextField(s.getEmpID());
-            TextField sFacText = new TextField(s.getHouseID());
-            
-            tempLine.getChildren().add(sIDText);
-            tempLine.getChildren().add(sTimeText);
-            tempLine.getChildren().add(sEmpText);
-            tempLine.getChildren().add(sFacText);
-            
-            shiftList.getChildren().add(tempLine);
-        }
+        DataPOJO result = gson.fromJson(WebAppTest.postToServer(Type.SHIFTY, Action.GETALLDATA, ""), DataPOJO.class);
+        refreshAllTables(result);
     }
-    
-    // Used internally for parsing the data from the server
-    public List<Shift> parseShiftData(String input){
-        List<Shift> shifts = new ArrayList<>();
-        System.out.println(input);
-        
-        //Loops through the string from the server
-        ArrayList<String> rows = new ArrayList<>(Arrays.asList(input.split("\\|")));
-        //This loops through each employee record
-        for (String row : rows){
-            Shift temp = new Shift();
-            ArrayList<String> cols = new ArrayList<>(Arrays.asList(row.split("\\&")));
-            //The loops through each field of the employee record.
-            for (String col : cols){
-                col = col.replaceAll("\"", "");
-                ArrayList<String> entry = new ArrayList<>(Arrays.asList(col.split("=")));
-                //Adds the found field to the temporary employee object
-                switch(entry.get(0)){
-                    case "shift_id": temp.setShiftID(entry.get(1));
-                        break;
-                    case "shift_time": temp.setShiftTime(entry.get(1));
-                        break;
-                    case "location": temp.setHouseID(entry.get(1));
-                        break;
-                    case "employee1": temp.setEmpID(entry.get(1));
-                        break;
-                    default:
-                        System.out.println(entry.get(0));
-                }
-            }  
-            //We have looped through each field of the current facility.
-            //Now we add this facility to our structure of facilities
-            shifts.add(temp);
-        }
-        return shifts;
-    }
-    
+
     @FXML //Adds the fields from the window as a shift to the database
-    public void addShiftButtonPressed(ActionEvent event){
-        List<String> temp = new ArrayList<>();
+    public void addShiftButtonPressed(ActionEvent event) {
         String sTime = shiftTime.getText();
-        String empID = shiftEmpID.getText();
-        String fID = shiftFacilityID.getText();
-        temp.add("new_shift");
-        temp.add("\"" + sTime + "\"");
-        temp.add(empID);
-        temp.add(fID);
-        
-        String debug = sendData(temp);
-        System.out.println(debug);
+        String empIDInner = shiftEmpID.getText();
+        String fID = shiftHouseID.getText();
+        String shiftname = tf_shift_name.getText();
+        DataPOJO addShift = new DataPOJO();
+        List<House> houseList = new ArrayList<>();
+        List<Shift> shiftListInner = new ArrayList<>();
+        House house = new House();
+        Shift shift = new Shift();
+        house.setHouseID(Integer.valueOf(fID));
+        shift.setHouseID(Integer.valueOf(fID));
+        shift.setEmployeeID(Integer.valueOf(empIDInner));
+        shift.setName(shiftname);
+        shift.setTime(sTime);
+        shiftListInner.add(shift);
+        house.setShiftList(shiftListInner);
+        houseList.add(house);
+        addShift.setHouseList(houseList);
+
+        String response = WebAppTest.postToServer(Type.SHIFTY, Action.ADDSHIFT, gson.toJson(addShift, DataPOJO.class));
+        System.out.println(response);
     }
-    
+
     @FXML //Displays the list of facilities
-    public void refreshFacility(ActionEvent event){
-        facilityList.getChildren().clear();
-        
-        //get the data of employees from the server
-        List<String> temp = new ArrayList<>();
-        temp.add("get_all_houses");
-        String input = sendData(temp);
-        
-        //parse the data into an object
-        List<Facility> facs = parseFacilityData(input);
-        
-        //display the headings for the employee display
-        HBox heading = new HBox();
-        Label id = new Label("House ID");
-        Label neighborhood = new Label("House Neighborhood");
-        
-        heading.getChildren().add(id);
-        heading.getChildren().add(neighborhood);
-        
-        facilityList.getChildren().add(heading);
-        
-        //loop through all available employees and display to screen
-        for( Facility fac : facs){
-            HBox tempLine = new HBox();
-            
-            TextField hid = new TextField( fac.getHouseID());
-            TextField hneighborhood = new TextField(fac.getHouseNeighborhood());
-            
-            tempLine.getChildren().add(hid);
-            tempLine.getChildren().add(hneighborhood);
-            
-            
-            facilityList.getChildren().add(tempLine);
-        }
+    public void refreshHouse(ActionEvent event) {
+        tv_house.getItems().clear();
+        DataPOJO result = gson.fromJson(WebAppTest.postToServer(Type.SHIFTY, Action.GETALLDATA, ""), DataPOJO.class);
+        refreshAllTables(result);
     }
-    
-    //Used internally to parse the list of facilities from the server
-    public List<Facility> parseFacilityData(String input){
-        List<Facility> facs = new ArrayList<>();
-        System.out.println(input);
-        
-        //Loops through the string from the server
-        ArrayList<String> rows = new ArrayList<>(Arrays.asList(input.split("\\|")));
-        //This loops through each employee record
-        for (String row : rows){
-            Facility temp = new Facility();
-            ArrayList<String> cols = new ArrayList<>(Arrays.asList(row.split("\\&")));
-            //The loops through each field of the employee record.
-            for (String col : cols){
-                col = col.replaceAll("\"", "");
-                ArrayList<String> entry = new ArrayList<>(Arrays.asList(col.split("=")));
-                //Adds the found field to the temporary employee object
-                switch(entry.get(0)){
-                    case "house_id": temp.setHouseID(entry.get(1));
-                        break;
-                    case "house_neighborhood": temp.setHouseNeighborhood(entry.get(1));
-                        break;
-                    default:
-                        System.out.println(entry.get(0));
-                }
-            }  
-            //We have looped through each field of the current facility.
-            //Now we add this facility to our structure of facilities
-            facs.add(temp);
-        }
-        return facs;
-    }
-    
+
     @FXML //Displays the employees in the database
-    public void refreshButtonPressed(ActionEvent event){
-        employeeList.getChildren().clear();
-        
+    public void refreshButtonPressed(ActionEvent event) {
+        tv_employee.getItems().clear();
         //get the data of employees from the server
-        List<String> temp = new ArrayList<>();
-        temp.add("employee_info");
-        String input = sendData(temp);
-        
-        //parse the data into an object
-        List<Employee> emps = parseEmpData(input);
-        
-        //display the headings for the employee display
-        HBox heading = new HBox();
-        Label id = new Label("Employee ID");
-        Label name = new Label("Employee Name");
-        Label phone = new Label("Employee Phone Number");
-        Label user = new Label("Employee User Name");
-        Label manager = new Label("Is Manager?");
-        Label backup = new Label("Is Backup?");
-        
-        heading.getChildren().add(id);
-        heading.getChildren().add(name);
-        heading.getChildren().add(phone);
-        heading.getChildren().add(user);
-        heading.getChildren().add(manager);
-        heading.getChildren().add(backup);
-        
-        employeeList.getChildren().add(heading);
-        
-        //loop through all available employees and display to screen
-        for( Employee emp : emps){
-            HBox tempLine = new HBox();
-            
-            String managerString;
-            if( emp.getManager() == true){
-                managerString = "true";
-            }else{
-                managerString = "false";
-            }
-            String backupString;
-            if( emp.getBackup() == true){
-                backupString = "true";
-            }else{
-                backupString = "false";
-            }
-            
-            
-            TextField tfid = new TextField( Integer.toString( emp.getID() ));
-            TextField tfname = new TextField(emp.getName());
-            TextField tfphone = new TextField(emp.getPhone());
-            TextField tfuser = new TextField(emp.getUserName());
-            TextField tfmanager = new TextField(managerString);
-            TextField tfbackup = new TextField(backupString);
-            
-            tempLine.getChildren().add(tfid);
-            tempLine.getChildren().add(tfname);
-            tempLine.getChildren().add(tfphone);
-            tempLine.getChildren().add(tfuser);
-            tempLine.getChildren().add(tfmanager);
-            tempLine.getChildren().add(tfbackup);
-            
-            
-            employeeList.getChildren().add(tempLine);
-        }
+        DataPOJO result = gson.fromJson(WebAppTest.postToServer(Type.SHIFTY, Action.GETALLDATA, ""), DataPOJO.class);
+        refreshAllTables(result);
     }
-    
-    //Used internally to help parse the list of employees recieved from the database
-    public List<Employee> parseEmpData(String input){
-        List<Employee> emps = new ArrayList<>();
-        System.out.println(input);
-        
-        //Loops through the string from the server
-        ArrayList<String> rows = new ArrayList<>(Arrays.asList(input.split("\\|")));
-        //This loops through each employee record
-        for (String row : rows){
-            Employee temp = new Employee();
-            ArrayList<String> cols = new ArrayList<>(Arrays.asList(row.split("\\&")));
-            //The loops through each field of the employee record.
-            for (String col : cols){
-                col = col.replaceAll("\"", "");
-                ArrayList<String> entry = new ArrayList<>(Arrays.asList(col.split("=")));
-                //Adds the found field to the temporary employee object
-                switch(entry.get(0)){
-                    case "employee_name": temp.setName(entry.get(1));
-                        break;
-                    case "employee_id": temp.setID(Integer.parseInt(entry.get(1)));
-                        break;
-                    case "is_manager": temp.setManager(entry.get(1).equals("1"));
-                        break;
-                    case "phone_number": temp.setPhone(entry.get(1));
-                        break;
-                    case "is_backup": temp.setBackup(entry.get(1).equals("1"));
-                        break;
-                    case "username": temp.setUserName(entry.get(1));
-                        break;
-                    default:
-                        System.out.println(entry.get(0));
-                }
-            }  
-            //We have looped through each field of the current employee.
-            //Now we add this employee to our structure of employees
-            emps.add(temp);
-        }
-        return emps;
-    }
-    
+
     @FXML //Provides the code that will add a new facility
-    public void addFacilityButton(ActionEvent event){
-        List<String> temp = new ArrayList<>();
-        String fID = facilityID.getText();
-        String neighborhood = facilityNeighborhood.getText();
-        temp.add("new_house");
-        temp.add(fID);
-        temp.add("\"" + neighborhood + "\"");
-        
-        String facilityDebug = sendData(temp);
-        System.out.println(facilityDebug);
+    public void addHouseButton(ActionEvent event) {
+        DataPOJO addHouse = new DataPOJO();
+        List<House> houseList = new ArrayList<>();
+        House house = new House();
+        house.setHouseID(Integer.valueOf(facilityID.getText()));
+        house.setHouseLocation(facDeleteNeighborhood.getText());
+        houseList.add(house);
+        addHouse.setHouseList(houseList);
+
+        String response = WebAppTest.postToServer(Type.SHIFTY, Action.ADDHOUSE, gson.toJson(addHouse, DataPOJO.class));
+        System.out.println(response);
     }
-    
+
     @FXML //Provides the code that will add a new employee
-    public void employeeButtonPressed(ActionEvent event){
+    public void employeeButtonPressed(ActionEvent event) {
+        DataPOJO addEmp = new DataPOJO();
         String password = "";
-        List<String> temp = new ArrayList<>();
-        temp.add("new_user");
-        temp.add("\"" + empID.getText() + "\"");
-        temp.add("\"" + empName.getText() + "\"");
-        if(managerCheck.isSelected() )
-        {
-            temp.add("1");
-        }
-        else
-        {
-            temp.add("0");
-        }
-        temp.add("\"" + empUserName.getText() + "\"");
-        try{
+        try {
             MessageDigest md = MessageDigest.getInstance("MD5");
             password = (Hex.encodeHexString(md.digest(empPassword.getText().getBytes())));
-        }catch(NoSuchAlgorithmException e){
+        } catch (NoSuchAlgorithmException e) {
             e.printStackTrace(System.err);
         }
-        temp.add("\"" + password + "\"");
-        temp.add("\"" + empPhone.getText() + "\"");
-        sendData(temp);
+        Employee emp = new Employee();
+        emp.setName(empName.getText());
+        //t(empName.getText());
+        emp.setIsManager(managerCheck.isSelected());
+        emp.setUsername(empUserName.getText());
+        emp.setPassword(password);
+        emp.setIsAdmin(cb_employee_admin.isSelected());
+        emp.setIsBackup(cb_employee_backup.isSelected());
+        List<Employee> empList = new ArrayList<>();
+        empList.add(emp);
+        addEmp.setAllEmployees(empList);
+
+        //addEmp.set(Long.valueOf(empPhone.getText()));
+        String response = WebAppTest.postToServer(Type.SHIFTY, Action.ADDEMPLOYEE, gson.toJson(addEmp, DataPOJO.class));
+        System.out.println("This is the result of adding the employee: " + response);
     }
-    
+
+    private void refreshAllTables(DataPOJO inputPOJO) {
+        List<Shift> shiftListInner = new ArrayList<>();
+        for (House house : inputPOJO.getHouseList()) {
+            for (Shift shift : house.getShiftList()) {
+                shift.setNameProp(shift.getName());
+                shift.setTimeProp(shift.getTime());
+                shift.setEmployeeIDProp(shift.getEmployeeID());
+                shift.setHouseIDProp(shift.getHouseID());
+                shift.setShiftIDProp(shift.getShiftID());
+                shiftListInner.add(shift);
+            }
+        }
+        ObservableList<Shift> ol2 = FXCollections.observableArrayList();
+        ol2.addAll(shiftListInner);
+        tv_shift.setItems(ol2);
+
+        ObservableList<Employee> ol = FXCollections.observableArrayList();
+        List<Employee> empList = inputPOJO.getAllEmployees();
+        for (Employee emp : empList) {
+            emp.getName();
+            emp.setEmployeeIDProp(emp.getEmployeeID());
+            emp.setNameProp(emp.getName());
+            emp.setUsernameProp(emp.getUsername());
+            emp.setPhoneNumberProp(((Long) emp.getPhoneNumber()).intValue());
+            emp.setIsAdminProp(emp.isIsAdmin());
+            emp.setIsBackupProp(emp.isIsBackup());
+            emp.setIsManagerProp(emp.isIsManager());
+        }
+        ol.addAll(empList);
+        tv_employee.setItems(ol);
+
+        List<House> houseList = inputPOJO.getHouseList();
+        for (House house : houseList) {
+            house.setHouseIDProp(house.getHouseID());
+            house.setHouseLocationProp(house.getHouseLocation());
+            house.setHouseNameProp(house.getHouseName());
+            house.setIsActiveProp(house.isIsActive());
+        }
+        ObservableList<House> ol3 = FXCollections.observableArrayList();
+        ol3.addAll(houseList);
+        tv_house.setItems(ol3);
+
+        List<Group> groupListInner = inputPOJO.getGroupList();
+        for (Group group : groupListInner) {
+            group.setGroupIDProp(group.getGroupID());
+            group.setGroupNameProp(group.getGroupName());
+            group.setManagerIDProp(group.getManagerID());
+        }
+        ObservableList<Group> ol4 = FXCollections.observableArrayList();
+        ol4.addAll(groupListInner);
+        tv_group.setItems(ol4);
+
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         employeeDelete = false;
         facilityDelete = false;
         shiftDelete = false;
-    }       
+
+        initializeEmployeeTableColumns();
+        initializeShiftTableColumns();
+        initializeHouseColumns();
+        initializeGroupColumns();
+        refreshAllTables(LogInScreenController.completeInfo);
+    }
 }
-    

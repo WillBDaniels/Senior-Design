@@ -2,9 +2,9 @@ package edu.csci.standalone_server.jsonhandler;
 
 import com.google.gson.Gson;
 import com.sun.net.httpserver.HttpExchange;
-import edu.csci.standalone_server.DataPOJO;
-import edu.csci.standalone_server.House;
-import edu.csci.standalone_server.Shift;
+import edu.csci.standalone_server.Structures.DataPOJO;
+import edu.csci.standalone_server.Structures.House;
+import edu.csci.standalone_server.Structures.Shift;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
@@ -31,9 +31,9 @@ public class HandleDeleteShift extends JSONHandler {
                 try {
                     String deleteStatement = "DELETE FROM Shift WHERE shift_id=?";
                     PreparedStatement pstmt = dbm.getConnection().prepareStatement(deleteStatement);
-                    pstmt.setInt(0, shift.getShiftID());
+                    pstmt.setInt(1, shift.getShiftID());
                     pstmt.executeUpdate();
-                    house.getShiftList().remove(shift);
+                    //house.getShiftList().remove(shift);
                 } catch (SQLException ex) {
                     ex.printStackTrace(System.err);
                 }

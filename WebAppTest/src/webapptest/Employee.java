@@ -1,100 +1,235 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package webapptest;
 
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleBooleanProperty;
+import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 
 /**
+ * This is our 'employee' object we are using.
  *
- * @author fritz
+ * @author William
  */
 public class Employee {
-    public String empName;
-    public String empPhone;
-    public String mainFacility;
-    public int empID;
-    public String userName;
-    public Boolean manager;
-    public Boolean backup;
-    
-    public Employee(){
-        empName = "";
-        empPhone = "";
-        mainFacility = "";
-        empID = 0;
-        userName = "";
-        manager = false;
-        backup = false;
-    }
-    
-    public Employee(String n, String p, String f, int i, String u, Boolean m, Boolean b) {
-        empName = n;
-        empPhone = p;
-        mainFacility = f;
-        empID = i;
-        userName = u;
-        manager = m;
-        backup = b;
+
+    private String name = "";
+    private StringProperty nameProp;
+
+    public void setNameProp(String value) {
+        namePropProperty().set(value);
     }
 
-    //Setters
-    public void setName(String n){
-        empName = n;
+    public String getNameProp() {
+        if (namePropProperty().get().isEmpty()) {
+            setNameProp(getName());
+        }
+        return namePropProperty().get();
     }
-    
-    public void setPhone(String p){
-        empPhone = p;
+
+    public StringProperty namePropProperty() {
+        if (nameProp == null) {
+            nameProp = new SimpleStringProperty(this, "nameProp");
+        }
+        return nameProp;
     }
-    
-    public void setFacility(String f){
-        mainFacility = f;
+
+    private String username = "";
+
+    private StringProperty usernameProp;
+
+    public void setUsernameProp(String value) {
+        usernamePropProperty().set(value);
     }
-    
-    public void setID(int i){
-        empID = i;
+
+    public String getUsernameProp() {
+        if (usernamePropProperty().get().isEmpty()) {
+            setUsernameProp(getUsername());
+        }
+        return usernamePropProperty().get();
     }
-    
-    public void setUserName(String u){
-        userName = u;
+
+    public StringProperty usernamePropProperty() {
+        if (usernameProp == null) {
+            usernameProp = new SimpleStringProperty(this, "usernameProp");
+        }
+        return usernameProp;
     }
-    
-    public void setManager(Boolean m){
-        manager = m;
+
+    private String password = "";
+    private StringProperty passwordProp;
+
+    public void setPasswordProp(String value) {
+        passwordPropProperty().set(value);
     }
-    
-    public void setBackup(Boolean b){
-        backup = b;
+
+    public String getPasswordProp() {
+        return passwordPropProperty().get();
     }
-    
-    //getters
-    public String getName(){
-        return empName;
+
+    public StringProperty passwordPropProperty() {
+        if (passwordProp == null) {
+            passwordProp = new SimpleStringProperty(this, "passwordProp");
+        }
+        return passwordProp;
     }
-    
-    public String getPhone(){
-        return empPhone;
+    private int employeeID = 0;
+    private IntegerProperty employeeIDProp;
+
+    public void setEmployeeIDProp(Integer value) {
+        employeeIDPropProperty().set(value);
     }
-    
-    public String getFacility(){
-        return mainFacility;
+
+    public Integer getEmployeeIDProp() {
+        if (employeeIDPropProperty().get() == 0) {
+            setEmployeeIDProp(getEmployeeID());
+        }
+        return employeeIDPropProperty().get();
     }
-    
-    public int getID(){
-        return empID;
+
+    public IntegerProperty employeeIDPropProperty() {
+        if (employeeIDProp == null) {
+            employeeIDProp = new SimpleIntegerProperty(this, "employeeIDProp");
+        }
+        return employeeIDProp;
     }
-    
-    public String getUserName(){
-        return userName;
+
+    private long phoneNumber = 0;
+    private IntegerProperty phoneNumberProp;
+
+    public void setPhoneNumberProp(Integer value) {
+        phoneNumberPropProperty().set(value);
     }
-    
-    public Boolean getManager(){
-        return manager;
+
+    public Integer getPhoneNumberProp() {
+        if (phoneNumberPropProperty().get() == 0) {
+            setPhoneNumberProp(((Long) (getPhoneNumber())).intValue());
+        }
+        return phoneNumberPropProperty().get();
     }
-    
-    public Boolean getBackup(){
-        return backup;
+
+    public IntegerProperty phoneNumberPropProperty() {
+        if (phoneNumberProp == null) {
+            phoneNumberProp = new SimpleIntegerProperty(this, "phoneNumberProp");
+        }
+        return phoneNumberProp;
     }
+    private boolean isBackup = false;
+    private BooleanProperty isBackupProp;
+
+    public void setIsBackupProp(Boolean value) {
+        isBackupPropProperty().set(value);
+    }
+
+    public Boolean getIsBackupProp() {
+        return isBackupPropProperty().get();
+    }
+
+    public BooleanProperty isBackupPropProperty() {
+        if (isBackupProp == null) {
+            isBackupProp = new SimpleBooleanProperty(this, "isBackupProp");
+        }
+        return isBackupProp;
+    }
+
+    private boolean isManager = false;
+    private BooleanProperty isManagerProp;
+
+    public void setIsManagerProp(Boolean value) {
+        isManagerPropProperty().set(value);
+    }
+
+    public Boolean getIsManagerProp() {
+        return isManagerPropProperty().get();
+    }
+
+    public BooleanProperty isManagerPropProperty() {
+        if (isManagerProp == null) {
+            isManagerProp = new SimpleBooleanProperty(this, "isManagerProp");
+        }
+        return isManagerProp;
+    }
+    private boolean isAdmin = false;
+    private BooleanProperty isAdminProp;
+
+    public void setIsAdminProp(Boolean value) {
+        isAdminPropProperty().set(value);
+    }
+
+    public Boolean getIsAdminProp() {
+        return isAdminPropProperty().get();
+    }
+
+    public BooleanProperty isAdminPropProperty() {
+        if (isAdminProp == null) {
+            isAdminProp = new SimpleBooleanProperty(this, "isAdminProp");
+        }
+        return isAdminProp;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public boolean isIsAdmin() {
+        return isAdmin;
+    }
+
+    public void setIsAdmin(boolean isAdmin) {
+        this.isAdmin = isAdmin;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public boolean isIsManager() {
+        return isManager;
+    }
+
+    public void setIsManager(boolean isManager) {
+        this.isManager = isManager;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getEmployeeID() {
+        return employeeID;
+    }
+
+    public void setEmployeeID(int employeeID) {
+        this.employeeID = employeeID;
+    }
+
+    public long getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(long phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public boolean isIsBackup() {
+        return isBackup;
+    }
+
+    public void setIsBackup(boolean isBackup) {
+        this.isBackup = isBackup;
+    }
+
 }

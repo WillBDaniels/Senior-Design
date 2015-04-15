@@ -2,8 +2,8 @@ package edu.csci.standalone_server.jsonhandler;
 
 import com.google.gson.Gson;
 import com.sun.net.httpserver.HttpExchange;
-import edu.csci.standalone_server.DataPOJO;
-import edu.csci.standalone_server.Employee;
+import edu.csci.standalone_server.Structures.DataPOJO;
+import edu.csci.standalone_server.Structures.Employee;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
@@ -27,11 +27,11 @@ public class HandleDeleteEmployee extends JSONHandler {
         Gson gson = new Gson();
         for (Employee emp : data.getAllEmployees()) {
             try {
-                String deleteStatement = "DELETE FROM Employee WHERE employee_id=?";
+                String deleteStatement = "DELETE FROM employee WHERE employee_id=?";
                 PreparedStatement pstmt = dbm.getConnection().prepareStatement(deleteStatement);
-                pstmt.setInt(0, emp.getEmployeeID());
+                pstmt.setInt(1, emp.getEmployeeID());
                 pstmt.executeUpdate();
-                data.getAllEmployees().remove(emp);
+                // data.getAllEmployees().remove(emp);
             } catch (SQLException ex) {
                 ex.printStackTrace(System.err);
             }

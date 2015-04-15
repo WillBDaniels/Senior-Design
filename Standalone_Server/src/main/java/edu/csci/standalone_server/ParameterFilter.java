@@ -3,6 +3,7 @@ package edu.csci.standalone_server;
 //import com.magvar.mvencryption.MVCipher;
 import com.sun.net.httpserver.Filter;
 import com.sun.net.httpserver.HttpExchange;
+import edu.csci.shiftyencryption.ShiftyCipher;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -77,7 +78,7 @@ public class ParameterFilter extends Filter {
     @SuppressWarnings("unchecked")
     private void parseQuery(String query, Map<String, Object> parameters)
             throws UnsupportedEncodingException {
-        //MVCipher dc = new MVCipher();
+        ShiftyCipher dc = new ShiftyCipher();
 
         if (query != null) {
             String pairs[] = query.split("[&]");
@@ -90,13 +91,13 @@ public class ParameterFilter extends Filter {
                 if (param.length > 0) {
                     key = URLDecoder.decode(param[0],
                             System.getProperty("file.encoding"));
-                    //key = dc.decrypt(key);
+                    key = dc.decrypt(key);
                 }
 
                 if (param.length > 1) {
                     value = URLDecoder.decode(param[1],
                             System.getProperty("file.encoding"));
-                    //value = dc.decrypt(value);
+                    value = dc.decrypt(value);
                 }
 
                 if (parameters.containsKey(key)) {

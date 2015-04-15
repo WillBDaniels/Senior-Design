@@ -1,77 +1,95 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package webapptest;
 
-import java.util.ArrayList;
-import java.util.List;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 
 /**
  *
  * @author fritz
  */
 public class Member {
-    public String groupID;
-    public String groupManagerID;
-    public String groupName;
-    public String empID;
-    public String ID;
-    
-    public Member(){
-        ID = "";
-        groupID = "";
-        groupManagerID = "";
-        groupName = "";
-        empID = "";
-    }
-    
-    public Member(String I, String i, String m, String n, String e){
-        ID = I;
-        groupID = i;
-        groupManagerID = m;
-        groupName = n;
-        empID = e;
-    }
-            
-    
+
+    public StringProperty groupID;
+    public StringProperty groupManagerID;
+    public StringProperty groupName;
+    public StringProperty empID;
+    public StringProperty ID;
+
     //Setters
-    void setGroupID(String i){
-        groupID = i;
+    void setGroupID(String value) {
+        groupIDProperty().set(value);
     }
-    
-    void setID(String i){
-        ID = i;
+
+    void setID(String value) {
+        idProperty().set(value);
     }
-    
-    void setManager(String m){
-        groupManagerID = m;
+
+    void setManager(String value) {
+        groupManagerIDProperty().set(value);
     }
-    
-    void setName(String n){
-        groupName = n;
+
+    void setName(String value) {
+        groupNameProperty().set(value);
     }
-    
-    void addEmp( String i){
-        empID = i;
+
+    void addEmp(String value) {
+        empIDProperty().set(value);
     }
-    
-    //Getters
-    String getGroupID(){
-        return groupID;
+
+    public StringProperty empIDProperty() {
+        if (empID == null) {
+            empID = new SimpleStringProperty(this, "empID");
+        }
+        return empID;
     }
-    
-    String getID(){
-        return ID;
-    }
-    String getManager(){
-        return groupManagerID;
-    }
-    String getName(){
+
+    //String property setters
+    public StringProperty groupNameProperty() {
+        if (groupName == null) {
+            groupName = new SimpleStringProperty(this, "groupName");
+        }
         return groupName;
     }
-    String getEmps(){
-        return empID;
+
+    public StringProperty idProperty() {
+        if (ID == null) {
+            ID = new SimpleStringProperty(this, "ID");
+        }
+        return ID;
+    }
+
+    public StringProperty groupManagerIDProperty() {
+        if (groupManagerID == null) {
+            groupManagerID = new SimpleStringProperty(this, "groupManagerID");
+        }
+        return groupManagerID;
+    }
+
+    public StringProperty groupIDProperty() {
+        if (groupID == null) {
+            groupID = new SimpleStringProperty(this, "groupIDProperty");
+        }
+        return groupID;
+    }
+
+    //Getters
+    String getGroupID() {
+        return groupIDProperty().get();
+    }
+
+    String getID() {
+        return idProperty().get();
+    }
+
+    String getManager() {
+        return groupManagerIDProperty().get();
+    }
+
+    String getName() {
+        return groupNameProperty().get();
+    }
+
+    String getEmps() {
+        return empIDProperty().get();
     }
 }

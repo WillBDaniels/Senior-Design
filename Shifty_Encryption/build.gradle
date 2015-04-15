@@ -1,0 +1,33 @@
+apply plugin: 'java'
+
+String mavenGroupId = 'ShiftyEncryption'
+String mavenVersion = '2.0'
+
+sourceCompatibility = '1.8'
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+
+
+task wrapper(type: Wrapper, description: 'Creates and deploys the Gradle wrapper to the current directory.') {
+    gradleVersion = '2.1'
+}
+
+repositories{
+    mavenCentral();
+}
+
+dependencies{
+    compile 'log4j:log4j:1.2.17'
+    compile 'com.ibm.icu:icu4j:53.1'
+    compile 'javax.mail:javax.mail-api:1.5.2'
+    compile 'javax.mail:mail:1.5.0-b01'
+    testCompile 'junit:junit:4.11'
+}
+
+group = mavenGroupId
+version = mavenVersion
+
+
+artifacts {
+    archives jar
+}

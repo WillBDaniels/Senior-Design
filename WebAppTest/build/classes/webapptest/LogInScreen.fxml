@@ -1,21 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="webapptest.LogInScreenController">
-   <children>
-      <VBox prefHeight="400.0" prefWidth="145.0" />
-      <VBox prefHeight="400.0" prefWidth="307.0">
-         <children>
-            <Label prefHeight="69.0" prefWidth="71.0" text="User Login" />
-            <Label text="Name:" />
-            <TextField fx:id="loginName" />
-            <Label text="Password:" />
-            <PasswordField fx:id="loginPassword" />
-            <Button fx:id="LogInButton" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#logInPressed" text="Login" />
-         </children>
-      </VBox>
-   </children>
+<HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="primaryContainer" stylesheets="@primaryCSS.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="webapptest.LogInScreenController">
+    <children>
+        <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="647.0" styleClass="primaryContainer" HBox.hgrow="ALWAYS">
+            <center>
+                <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="361.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <VBox prefHeight="400.0" prefWidth="601.0" spacing="10.0">
+                            <children>
+                                <Label prefHeight="31.0" prefWidth="343.0" styleClass="normalLabel" text="Please Enter Credentials To Access Application" />
+                                <Label styleClass="normalLabel" text="Username:" />
+                                <HBox prefHeight="0.0" prefWidth="350.0" spacing="10.0">
+                                    <children>
+                                        <TextField fx:id="loginName" prefHeight="25.0" prefWidth="209.0" />
+                                        <ImageView fx:id="iv_username" fitHeight="20.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                                    </children>
+                                </HBox>
+                                <Label styleClass="normalLabel" text="Password:" />
+                                <HBox prefHeight="3.0" prefWidth="350.0" spacing="10.0">
+                                    <children>
+                                        <PasswordField fx:id="loginPassword" prefHeight="25.0" prefWidth="208.0" />
+                                        <ImageView fx:id="iv_password" fitHeight="20.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="hb_button_container" prefHeight="55.0" prefWidth="350.0" spacing="10.0">
+                                    <children>
+                                        <Button fx:id="LogInButton" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="5.0" layoutY="-12.0" mnemonicParsing="false" onAction="#logInPressed" text="Login" />
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets top="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                            </children>
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="50.0" right="10.0" top="10.0" />
+                            </HBox.margin>
+                        </VBox>
+                        <Label prefHeight="17.0" prefWidth="442.0" />
+                    </children>
+                </HBox>
+            </center>
+            <top>
+                <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="72.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="titleLabel" text="Shifty Web Application" textAlignment="CENTER">
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                        </Label>
+                    </children>
+                </VBox>
+            </top>
+        </BorderPane>
+    </children>
 </HBox>
