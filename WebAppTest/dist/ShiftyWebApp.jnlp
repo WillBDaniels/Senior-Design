@@ -8,25 +8,25 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="ShiftyWebApp.jar" size="65344" download="eager" />
-    <jar href="lib/ShiftyEncryption-2.0.jar" size="3744" download="eager" />
-    <jar href="lib/commons-codec-1.9.jar" size="285649" download="eager" />
-    <jar href="lib/commons-logging-1.2.jar" size="66435" download="eager" />
-    <jar href="lib/controlsfx-8.20.8.jar" size="1030455" download="eager" />
-    <jar href="lib/controlsfx-samples-8.20.8.jar" size="666701" download="eager" />
-    <jar href="lib/fluent-hc-4.4.jar" size="34202" download="eager" />
-    <jar href="lib/fxsampler-1.0.8.jar" size="32814" download="eager" />
-    <jar href="lib/gson-2.3.1.jar" size="226202" download="eager" />
-    <jar href="lib/httpclient-4.4.jar" size="769803" download="eager" />
-    <jar href="lib/httpclient-cache-4.4.jar" size="169491" download="eager" />
-    <jar href="lib/httpclient-win-4.4.jar" size="19927" download="eager" />
-    <jar href="lib/httpcore-4.4.jar" size="349943" download="eager" />
-    <jar href="lib/httpmime-4.4.jar" size="45021" download="eager" />
-    <jar href="lib/jna-4.1.0.jar" size="927929" download="eager" />
-    <jar href="lib/jna-platform-4.1.0.jar" size="1523341" download="eager" />
-    <jar href="lib/mail-1.4.7.jar" size="553335" download="eager" />
-    <jar href="lib/openjfx-dialogs-1.0.2.jar" size="155555" download="eager" />
-    <jar href="lib/proxy-vole_20131209.jar" size="205077" download="eager" />
+    <jar href="ShiftyWebApp.jar" size="65162" download="eager" />
+    <jar href="lib/ShiftyEncryption-2.0.jar" size="3745" download="eager" />
+    <jar href="lib/commons-codec-1.9.jar" size="285651" download="eager" />
+    <jar href="lib/commons-logging-1.2.jar" size="66439" download="eager" />
+    <jar href="lib/controlsfx-8.20.8.jar" size="1030457" download="eager" />
+    <jar href="lib/controlsfx-samples-8.20.8.jar" size="666702" download="eager" />
+    <jar href="lib/fluent-hc-4.4.jar" size="34205" download="eager" />
+    <jar href="lib/fxsampler-1.0.8.jar" size="32815" download="eager" />
+    <jar href="lib/gson-2.3.1.jar" size="226205" download="eager" />
+    <jar href="lib/httpclient-4.4.jar" size="769805" download="eager" />
+    <jar href="lib/httpclient-cache-4.4.jar" size="169492" download="eager" />
+    <jar href="lib/httpclient-win-4.4.jar" size="19932" download="eager" />
+    <jar href="lib/httpcore-4.4.jar" size="349944" download="eager" />
+    <jar href="lib/httpmime-4.4.jar" size="45023" download="eager" />
+    <jar href="lib/jna-4.1.0.jar" size="927932" download="eager" />
+    <jar href="lib/jna-platform-4.1.0.jar" size="1523345" download="eager" />
+    <jar href="lib/mail-1.4.7.jar" size="553337" download="eager" />
+    <jar href="lib/openjfx-dialogs-1.0.2.jar" size="155556" download="eager" />
+    <jar href="lib/proxy-vole_20131209.jar" size="205079" download="eager" />
   </resources>
 <security>
   <all-permissions/>

@@ -11,10 +11,14 @@ public class Employee {
     private String username = "";
     private String password = "";
     private int employeeID = 0;
-    private long phoneNumber = 0;
+    private String phoneNumber = "";
     private boolean isBackup = false;
     private boolean isManager = false;
     private boolean isAdmin = false;
+
+    public String getPassword() {
+        return password;
+    }
 
     public boolean isSelected() {
         return isSelected;
@@ -24,11 +28,7 @@ public class Employee {
         this.isSelected = isSelected;
     }
 
-    private boolean isSelected = false;
-
-    public String getPassword() {
-        return password;
-    }
+    public boolean isSelected = false;
 
     public void setPassword(String password) {
         this.password = password;
@@ -74,11 +74,11 @@ public class Employee {
         this.employeeID = employeeID;
     }
 
-    public long getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(long phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 

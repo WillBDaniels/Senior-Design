@@ -222,10 +222,10 @@ public class FXMLDocumentController implements Initializable {
 
         phoneNumberCol = new TableColumn<>("Phone #");
         phoneNumberCol.setCellValueFactory(new PropertyValueFactory<>("phoneNumberProp"));
-        phoneNumberCol.setCellFactory(numberCallback());
-        phoneNumberCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Employee, Integer>>() {
+        phoneNumberCol.setCellFactory(TextFieldTableCell.forTableColumn());
+        phoneNumberCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Employee, String>>() {
             @Override
-            public void handle(TableColumn.CellEditEvent<Employee, Integer> t) {
+            public void handle(TableColumn.CellEditEvent<Employee, String> t) {
                 btn_update_employees.setDisable(false);
                 ((Employee) t.getTableView().getItems().get(t.getTablePosition().getRow())).setPhoneNumber(t.getNewValue());
 
@@ -828,7 +828,7 @@ public class FXMLDocumentController implements Initializable {
         }
         Employee emp = new Employee();
         emp.setName(empName.getText());
-        emp.setPhoneNumber(Long.valueOf(empPhone.getText()));
+        emp.setPhoneNumber(empPhone.getText());
         emp.setIsManager(managerCheck.isSelected());
         emp.setUsername(empUserName.getText());
         emp.setPassword(password);
@@ -866,7 +866,7 @@ public class FXMLDocumentController implements Initializable {
             emp.setEmployeeIDProp(emp.getEmployeeID());
             emp.setNameProp(emp.getName());
             emp.setUsernameProp(emp.getUsername());
-            emp.setPhoneNumberProp(((Long) emp.getPhoneNumber()).intValue());
+            emp.setPhoneNumberProp((emp.getPhoneNumber()));
             emp.setIsAdminProp(emp.isIsAdmin());
             emp.setIsBackupProp(emp.isIsBackup());
             emp.setIsManagerProp(emp.isIsManager());

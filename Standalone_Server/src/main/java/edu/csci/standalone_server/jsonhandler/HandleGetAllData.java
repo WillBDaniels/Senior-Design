@@ -87,7 +87,7 @@ public class HandleGetAllData extends JSONHandler {
                         emp.setIsBackup(rsInner3.getBoolean("is_backup"));
                         emp.setName(rsInner3.getString("employee_name"));
                         emp.setUsername(rsInner3.getString("username"));
-                        emp.setPhoneNumber(rsInner3.getLong("phone_number"));
+                        emp.setPhoneNumber(rsInner3.getString("phone_number"));
                         empList.add(emp);
                     }
                 }
@@ -129,7 +129,7 @@ public class HandleGetAllData extends JSONHandler {
                         asignee.setEmployeeID(rsInner2.getInt("employee_id"));
                         asignee.setIsBackup(rsInner2.getBoolean("is_backup"));
                         asignee.setName(rsInner2.getString("employee_name"));
-                        asignee.setPhoneNumber(rsInner2.getLong("phone_number"));
+                        asignee.setPhoneNumber(rsInner2.getString("phone_number"));
                         empList.add(asignee);
                     }
                     tempInner.setAsigneeList(empList);
@@ -155,7 +155,7 @@ public class HandleGetAllData extends JSONHandler {
                 temp.setUsername(rs.getString("username"));
                 temp.setIsManager(rs.getBoolean("is_manager"));
                 temp.setIsAdmin(rs.getBoolean("is_admin"));
-                temp.setPhoneNumber(rs.getLong("phone_number"));
+                temp.setPhoneNumber(rs.getString("phone_number"));
                 employeeList.add(temp);
             }
             inputPOJO.setAllEmployees(employeeList);

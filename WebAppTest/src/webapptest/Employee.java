@@ -111,10 +111,10 @@ public class Employee {
         return employeeIDProp;
     }
 
-    private long phoneNumber = 0;
-    private IntegerProperty phoneNumberProp;
+    private String phoneNumber = "";
+    private StringProperty phoneNumberProp;
 
-    public void setPhoneNumberProp(Integer value) {
+    public void setPhoneNumberProp(String value) {
         if (value == null) {
             phoneNumberProp = null;
             return;
@@ -122,16 +122,16 @@ public class Employee {
         phoneNumberPropProperty().set(value);
     }
 
-    public Integer getPhoneNumberProp() {
-        if (phoneNumberPropProperty().get() == 0) {
-            setPhoneNumberProp(((Long) (getPhoneNumber())).intValue());
+    public String getPhoneNumberProp() {
+        if (phoneNumberPropProperty().get().isEmpty()) {
+            setPhoneNumberProp((getPhoneNumber()));
         }
         return phoneNumberPropProperty().get();
     }
 
-    public IntegerProperty phoneNumberPropProperty() {
+    public StringProperty phoneNumberPropProperty() {
         if (phoneNumberProp == null) {
-            phoneNumberProp = new SimpleIntegerProperty(this, "phoneNumberProp");
+            phoneNumberProp = new SimpleStringProperty(this, "phoneNumberProp");
         }
         return phoneNumberProp;
     }
@@ -248,11 +248,11 @@ public class Employee {
         this.employeeID = employeeID;
     }
 
-    public long getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(long phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 

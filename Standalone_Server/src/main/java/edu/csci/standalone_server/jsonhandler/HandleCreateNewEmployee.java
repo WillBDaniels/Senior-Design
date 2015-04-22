@@ -36,7 +36,7 @@ public class HandleCreateNewEmployee extends JSONHandler {
                         + "(?,?,?,?, ? , ? ,?);";
                 pstmt = con.prepareStatement(query);
                 pstmt.setString(1, emp.getName());
-                pstmt.setLong(2, emp.getPhoneNumber());
+                pstmt.setString(2, emp.getPhoneNumber());
                 pstmt.setBoolean(3, emp.isIsManager());
                 pstmt.setBoolean(4, emp.isIsBackup());
                 pstmt.setString(5, emp.getUsername());

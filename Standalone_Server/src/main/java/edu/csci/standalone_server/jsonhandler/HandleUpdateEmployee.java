@@ -31,7 +31,7 @@ public class HandleUpdateEmployee extends JSONHandler {
                 PreparedStatement pstmt = dbm.getConnection().prepareStatement(updateStatement);
                 pstmt.setString(1, emp.getName());
                 pstmt.setString(2, emp.getUsername());
-                pstmt.setLong(3, emp.getPhoneNumber());
+                pstmt.setString(3, emp.getPhoneNumber());
                 pstmt.setInt(4, emp.getEmployeeID());
                 pstmt.executeUpdate();
 
