@@ -146,7 +146,7 @@ public class FXMLDocumentController implements Initializable {
     /**
      * Table columns for groups
      */
-    private TableColumn groupIDCol, groupNameCol, groupManagerIDCol;
+    private TableColumn groupIDCol, groupNameCol, groupManagerIDCol, groupEmployeeNameCol, groupEmployeeIDCol;
 
     //Booleans to check if it is ok to delete
     private Boolean employeeDelete;
@@ -406,7 +406,28 @@ public class FXMLDocumentController implements Initializable {
 
             }
         });
-        tv_group.getColumns().addAll(groupIDCol, groupNameCol, groupManagerIDCol);
+        groupEmployeeNameCol = new TableColumn<>("Employee Name");
+        groupEmployeeNameCol.setCellValueFactory(new PropertyValueFactory<>("groupEmployeeNameProp"));
+        groupEmployeeNameCol.setCellFactory(TextFieldTableCell.forTableColumn());
+        groupEmployeeNameCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Group, String>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<Group, String> t) {
+                ((Group) t.getTableView().getItems().get(t.getTablePosition().getRow())).setGroupEmployeeName(t.getNewValue());
+
+            }
+        });
+
+        groupEmployeeIDCol = new TableColumn<>("Employee ID");
+        groupEmployeeIDCol.setCellValueFactory(new PropertyValueFactory<>("groupEmployeeIDProp"));
+        groupEmployeeIDCol.setCellFactory(numberCallback());
+        groupEmployeeIDCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Group, Integer>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<Group, Integer> t) {
+                ((Group) t.getTableView().getItems().get(t.getTablePosition().getRow())).setGroupEmployeeID(t.getNewValue());
+
+            }
+        });
+        tv_group.getColumns().addAll(groupIDCol, groupNameCol, groupManagerIDCol, groupEmployeeNameCol, groupEmployeeIDCol);
     }
 
     private void initializeHouseColumns() {
@@ -865,10 +886,19 @@ public class FXMLDocumentController implements Initializable {
         tv_house.setItems(ol3);
 
         List<Group> groupListInner = inputPOJO.getGroupList();
+        int i = 0;
+        int currentGroupID = 0;
         for (Group group : groupListInner) {
+            if (currentGroupID == 0 || currentGroupID != group.getGroupID()) {
+                i = 0;
+                currentGroupID = group.getGroupID();
+            }
+            group.setGroupEmployeeNameProp(group.getEmpList().get(i).getName());
+            group.setGroupEmployeeIDProp(group.getEmpList().get(i).getEmployeeID());
             group.setGroupIDProp(group.getGroupID());
             group.setGroupNameProp(group.getGroupName());
             group.setManagerIDProp(group.getManagerID());
+            i++;
         }
         ObservableList<Group> ol4 = FXCollections.observableArrayList();
         ol4.addAll(groupListInner);

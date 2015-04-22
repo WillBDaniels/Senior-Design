@@ -66,6 +66,59 @@ public class Group {
         }
         return groupNameProp;
     }
+
+    private String groupEmployeeName = "";
+
+    public String getGroupEmployeeName() {
+        return groupEmployeeName;
+    }
+
+    public void setGroupEmployeeName(String groupEmployeeName) {
+        this.groupEmployeeName = groupEmployeeName;
+    }
+    private StringProperty groupEmployeeNameProp;
+
+    public void setGroupEmployeeNameProp(String value) {
+        groupEmployeeNamePropProperty().set(value);
+    }
+
+    public String getGroupEmployeeNameProp() {
+        return groupEmployeeNamePropProperty().get();
+    }
+
+    public StringProperty groupEmployeeNamePropProperty() {
+        if (groupEmployeeNameProp == null) {
+            groupEmployeeNameProp = new SimpleStringProperty(this, "groupEmployeeNameProp");
+        }
+        return groupEmployeeNameProp;
+    }
+
+    private int groupEmployeeID = 0;
+    private IntegerProperty groupEmployeeIDProp;
+
+    public int getGroupEmployeeID() {
+        return groupEmployeeID;
+    }
+
+    public void setGroupEmployeeID(int groupEmployeeID) {
+        this.groupEmployeeID = groupEmployeeID;
+    }
+
+    public void setGroupEmployeeIDProp(int value) {
+        groupEmployeeIDPropProperty().set(value);
+    }
+
+    public int getGroupEmployeeIDProp() {
+        return groupEmployeeIDPropProperty().get();
+    }
+
+    public IntegerProperty groupEmployeeIDPropProperty() {
+        if (groupEmployeeIDProp == null) {
+            groupEmployeeIDProp = new SimpleIntegerProperty(this, "groupEmployeeIDProp");
+        }
+        return groupEmployeeIDProp;
+    }
+
     private List<Employee> empList = new ArrayList<>();
 
     public List<Employee> getEmpList() {
