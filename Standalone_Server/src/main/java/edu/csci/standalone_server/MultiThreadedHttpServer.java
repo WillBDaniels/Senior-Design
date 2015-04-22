@@ -17,7 +17,7 @@ import java.util.concurrent.Executors;
  */
 public class MultiThreadedHttpServer {
 
-    protected static int serverPort = 8085;
+    protected static int serverPort = 80;
     protected HttpServer serverSocket = null;
     protected boolean isStopped = false;
     protected Thread runningThread = null;

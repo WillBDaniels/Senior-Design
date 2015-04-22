@@ -14,7 +14,7 @@ test {
 }
 
 dependencies {
-    compile fileTree(dir: 'lib', includes: ['*.jar'])
+    compile fileTree(dir: 'libs', includes: ['*.jar'])
     testCompile 'junit:junit:4.11'
     compile 'org.slf4j:jcl104-over-slf4j:1.5.11'
     compile 'com.sun.mail:javax.mail:1.5.2'

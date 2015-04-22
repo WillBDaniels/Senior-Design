@@ -1,7 +1,7 @@
 package edu.csci.standalone_server.jsonhandler;
 
 import com.sun.net.httpserver.HttpExchange;
-import edu.csci.standalone_server.DataPOJO;
+import edu.csci.standalone_server.Structures.DataPOJO;
 import edu.csci.standalone_server.DatabaseManager;
 import java.sql.Connection;
 

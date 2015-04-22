@@ -1,6 +1,16 @@
 package edu.csci.standalone_server.enums;
 
 import edu.csci.standalone_server.jsonhandler.HandleCheckLogin;
+import edu.csci.standalone_server.jsonhandler.HandleCreateNewEmployee;
+import edu.csci.standalone_server.jsonhandler.HandleCreateNewGroup;
+import edu.csci.standalone_server.jsonhandler.HandleCreateNewHouse;
+import edu.csci.standalone_server.jsonhandler.HandleCreateNewShift;
+import edu.csci.standalone_server.jsonhandler.HandleDeleteEmployee;
+import edu.csci.standalone_server.jsonhandler.HandleDeleteGroup;
+import edu.csci.standalone_server.jsonhandler.HandleDeleteHouse;
+import edu.csci.standalone_server.jsonhandler.HandleDeleteShift;
+import edu.csci.standalone_server.jsonhandler.HandleGetAllData;
+import edu.csci.standalone_server.jsonhandler.HandleUpdateEmployee;
 import edu.csci.standalone_server.jsonhandler.JSONHandler;
 
 /**
@@ -21,7 +31,17 @@ public enum State {
      *
      * @{
      */
-    GETMOBILEINFO(HandleCheckLogin.class, "handleAndroidLogin");
+    GETMOBILEINFO(HandleCheckLogin.class, "checkLogin"),
+    DELETESHIFT(HandleDeleteShift.class, "deleteShift"),
+    DELETEHOUSE(HandleDeleteHouse.class, "deleteHouse"),
+    DELETEGROUP(HandleDeleteGroup.class, "deleteGroup"),
+    DELETEEMPLOYEE(HandleDeleteEmployee.class, "deleteEmployee"),
+    ADDEMPLOYEE(HandleCreateNewEmployee.class, "addEmployee"),
+    ADDHOUSE(HandleCreateNewHouse.class, "addHouse"),
+    ADDSHIFT(HandleCreateNewShift.class, "addShift"),
+    ADDGROUP(HandleCreateNewGroup.class, "addGroup"),
+    UPDATEMPLOYEE(HandleUpdateEmployee.class, "updateEmployee"),
+    GETALLDATA(HandleGetAllData.class, "getData");
     /**
      * @}
      */

@@ -1,7 +1,7 @@
 package edu.csci.standalone_server.jsonhandler;
 
 import com.google.gson.Gson;
-import edu.csci.standalone_server.DataPOJO;
+import edu.csci.standalone_server.Structures.DataPOJO;
 
 /**
  * This class uses the GSON library to deserialize a POJO into an operable JSON

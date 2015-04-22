@@ -51,9 +51,9 @@ public class DatabaseManager {
      */
     private Connection createInitialCon() {
         try {
-            return DriverManager.getConnection("jdbc:mysql://localhost:3306/shifty_db",
+            return DriverManager.getConnection("jdbc:mysql://localhost:3306/shitydb",
                     "root",
-                    "Senior_Design");
+                    "obsidian");
         } catch (SQLException e) {
             e.printStackTrace(System.err);
         }

@@ -1,0 +1,28 @@
+/*
+    Created on : Mar 11, 2015, 11:27:42 PM
+    Author     : William
+*/
+
+.titleLabel{
+    -fx-font: 2.5em "Serif";
+}
+.primaryContainer{
+    -fx-background-color:  linear-gradient(#E0E0E0  80%,#6D1D1C 100%)
+}
+
+.normalLabel{
+    -fx-font: 1.2em "Serif";
+}
+
+.button{
+    -fx-font: 1em "Serif";
+}
+
+.good {
+    -fx-background-color: green,linear-gradient(to bottom, derive(green,60%) 5%,derive(green,90%) 40%);
+}
+
+
+.bad {
+    -fx-background-color: red,linear-gradient(to bottom, derive(red,60%) 5%,derive(red,90%) 40%);
+}
