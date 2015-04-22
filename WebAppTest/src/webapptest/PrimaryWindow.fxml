@@ -5,12 +5,12 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox styleClass="primaryContainer" stylesheets="@primaryCSS.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="webapptest.FXMLDocumentController">
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="primaryContainer" stylesheets="@primaryCSS.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="webapptest.FXMLDocumentController">
     <children>
         <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="64.0" prefWidth="1200.0" styleClass="titleLabel" text="Database Application Manager" textAlignment="CENTER" />
-        <Accordion maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" styleClass="primaryContainer" stylesheets="@primaryCSS.css">
+        <Accordion maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="primaryContainer" stylesheets="@primaryCSS.css">
             <panes>
-                <TitledPane animated="false" text="Add/Remove Shifts">
+                <TitledPane animated="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Add/Remove Shifts">
                     <content>
                         <HBox prefHeight="100.0" prefWidth="200.0">
                             <children>
@@ -71,7 +71,7 @@
                         </HBox>
                     </content>
                 </TitledPane>
-                <TitledPane animated="false" text="Add/Remove House">
+                <TitledPane animated="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Add/Remove House">
                     <content>
                         <HBox prefHeight="100.0" prefWidth="200.0">
                             <children>
@@ -132,7 +132,7 @@
                         </HBox>
                     </content>
                 </TitledPane>
-                <TitledPane animated="false" text="Add/Remove Employees">
+                <TitledPane animated="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Add/Remove Employees">
                     <content>
                         <HBox prefHeight="100.0" prefWidth="200.0">
                             <children>
@@ -169,12 +169,10 @@
                                                 <TextField fx:id="empDeleteName" prefHeight="31.0" prefWidth="200.0" />
                                             </children>
                                         </HBox>
+                              <Button fx:id="btn_update_employees" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" onAction="#UpdateEmployeeButtonPressed" prefHeight="14.0" prefWidth="160.0" text="Update Employees" />
                                         <VBox fx:id="deleteEmpBox" prefHeight="223.0" prefWidth="554.0">
                                             <children>
-                                                <Pane prefHeight="62.0" prefWidth="554.0">
-                                       <children>
-                                          <Button fx:id="btn_update_employees" alignment="CENTER" contentDisplay="CENTER" disable="true" layoutX="-8.0" layoutY="4.0" mnemonicParsing="false" onAction="#UpdateEmployeeButtonPressed" prefHeight="14.0" prefWidth="160.0" text="Update Employees" />
-                                       </children></Pane>
+                                                <Pane prefHeight="62.0" prefWidth="554.0" />
                                                 <Label text="Employee Delete Confirmation:" />
                                                 <VBox fx:id="empDeleteDisplay" prefHeight="37.0" prefWidth="554.0" />
                                                 <HBox prefHeight="100.0" prefWidth="200.0">
@@ -202,13 +200,13 @@
                         </HBox>
                     </content>
                 </TitledPane>
-                <TitledPane prefHeight="200.0" prefWidth="200.0" text="Add/Remove Lists">
+                <TitledPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Add/Remove Lists">
                     <content>
-                        <HBox prefHeight="100.0" prefWidth="200.0">
+                        <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
                             <children>
-                                <HBox prefHeight="651.0" prefWidth="1193.0">
+                                <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
                                     <children>
-                                        <VBox prefHeight="682.0" prefWidth="564.0" spacing="7.0">
+                                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="7.0">
                                             <children>
                                                 <Label text="Group Name:" />
                                                 <TextField fx:id="groupName" />

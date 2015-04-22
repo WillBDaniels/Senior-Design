@@ -6,7 +6,7 @@ apply plugin: 'maven'
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 mainClassName = "edu.csci.standalone_server.MultiThreadedHttpServer"
 def mainAppName = "license_server"
-version = "1.1"
+version = "2.0"
 
 test {
     useJUnit()

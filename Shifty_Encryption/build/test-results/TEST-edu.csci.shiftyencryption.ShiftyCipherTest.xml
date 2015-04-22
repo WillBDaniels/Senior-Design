@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.csci.shiftyencryption.ShiftyCipherTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-04-02T03:46:43" hostname="MagVAR-Laptop5" time="0.269">
+<testsuite name="edu.csci.shiftyencryption.ShiftyCipherTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-04-22T20:15:43" hostname="MagVAR-Laptop5" time="0.266">
   <properties/>
-  <testcase name="testEncryptDecryptString" classname="edu.csci.shiftyencryption.ShiftyCipherTest" time="0.269"/>
+  <testcase name="testEncryptDecryptString" classname="edu.csci.shiftyencryption.ShiftyCipherTest" time="0.266"/>
   <system-out><![CDATA[encrypting/decrypt test initialized.
 This is the decrypted string: This is a fancy Test)(*#)(*#$@##$(*#&$&*#$&*^#$&*^#$///////8383838388hnadlf   sdlfkjsdlkfjs df  
 This is the second decrypted string: This is a test to make sure that the class can handle multiple iterations...   

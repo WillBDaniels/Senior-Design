@@ -44,7 +44,6 @@ public class ParameterFilter extends Filter {
     @Override
     public void doFilter(HttpExchange exchange, Chain chain)
             throws IOException {
-
         parseGetParameters(exchange);
         parsePostParameters(exchange);
         chain.doFilter(exchange);
@@ -78,43 +77,47 @@ public class ParameterFilter extends Filter {
     @SuppressWarnings("unchecked")
     private void parseQuery(String query, Map<String, Object> parameters)
             throws UnsupportedEncodingException {
-        ShiftyCipher dc = new ShiftyCipher();
+        try {
+            ShiftyCipher dc = new ShiftyCipher();
+            if (query != null) {
+                System.out.println("About to decrypt the query: " + query);
+                query = dc.decrypt(query);
+                System.out.println("Just decrypted the query: " + query);
+                String pairs[] = query.split("[&]");
 
-        if (query != null) {
-            String pairs[] = query.split("[&]");
+                for (String pair : pairs) {
+                    String param[] = pair.split("[=]");
 
-            for (String pair : pairs) {
-                String param[] = pair.split("[=]");
-
-                String key = null;
-                String value = null;
-                if (param.length > 0) {
-                    key = URLDecoder.decode(param[0],
-                            System.getProperty("file.encoding"));
-                    key = dc.decrypt(key);
-                }
-
-                if (param.length > 1) {
-                    value = URLDecoder.decode(param[1],
-                            System.getProperty("file.encoding"));
-                    value = dc.decrypt(value);
-                }
-
-                if (parameters.containsKey(key)) {
-                    Object obj = parameters.get(key);
-                    if (obj instanceof List<?>) {
-                        List<String> values = (List<String>) obj;
-                        values.add(value);
-                    } else if (obj instanceof String) {
-                        List<String> values = new ArrayList<>();
-                        values.add((String) obj);
-                        values.add(value);
-                        parameters.put(key, values);
+                    String key = null;
+                    String value = null;
+                    if (param.length > 0) {
+                        key = URLDecoder.decode(param[0],
+                                System.getProperty("file.encoding"));
                     }
-                } else {
-                    parameters.put(key, value);
+
+                    if (param.length > 1) {
+                        value = URLDecoder.decode(param[1],
+                                System.getProperty("file.encoding"));
+                    }
+
+                    if (parameters.containsKey(key)) {
+                        Object obj = parameters.get(key);
+                        if (obj instanceof List<?>) {
+                            List<String> values = (List<String>) obj;
+                            values.add(value);
+                        } else if (obj instanceof String) {
+                            List<String> values = new ArrayList<>();
+                            values.add((String) obj);
+                            values.add(value);
+                            parameters.put(key, values);
+                        }
+                    } else {
+                        parameters.put(key, value);
+                    }
                 }
             }
+        } catch (Throwable t) {
+            t.printStackTrace(System.err);
         }
     }
 }

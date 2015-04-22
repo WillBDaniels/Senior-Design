@@ -2,35 +2,23 @@ package webapptest;
 
 import edu.csci.shiftyencryption.ShiftyCipher;
 import java.io.BufferedReader;
+import java.io.DataOutputStream;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.nio.charset.Charset;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.apache.http.HttpHost;
-import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.config.RequestConfig;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.impl.client.LaxRedirectStrategy;
-import org.apache.http.message.BasicNameValuePair;
 
 /**
  *
  * @author fritz
  */
 public class WebAppTest extends Application {
-
-    private static String proxyAddr = "";
-    private static int proxyPort = 0;
 
     @Override
     public void start(Stage stage) throws Exception {
@@ -49,87 +37,48 @@ public class WebAppTest extends Application {
     }
 
     public static String postToServer(Type type, Action action, String json) {
-        ShiftyCipher ciph = new ShiftyCipher();
-        String lineHolder;
-        int code = 0;
-        HttpClient httpclient = HttpClientBuilder.create().setRedirectStrategy(new LaxRedirectStrategy()).build();
-        HttpPost httppost;
-        String url = "http://localhost:80";
-        //String url = "http://www.google.com";
-        httppost = new HttpPost(url);
-        ProxyHandler ph = new ProxyHandler();
-        Map<String, Integer> proxySettings = ph.getProxySettings();
-        HttpHost proxyHost = null;
-        if (!proxySettings.isEmpty()) {
-            System.out.println("Found some proxy settings..?");
-            for (String proxy : proxySettings.keySet()) {
-                System.out.println("Found a proxy at: " + proxy);
-            }
-            proxyAddr = proxySettings.keySet().iterator().next();
-            proxyPort = proxySettings.get(proxyAddr);
-            proxyHost = new HttpHost(proxyAddr, proxyPort);
-            System.out.println("proxyAddr: " + proxyAddr + " proxy port: " + proxyPort);
+        String line = "";
 
-        } else {
-            System.out.println("No proxy detected");
-        }
         try {
-            RequestConfig requestConfig;
-            if (proxyHost != null) {
-                requestConfig = RequestConfig.custom()
-                        .setSocketTimeout(120000)
-                        .setConnectTimeout(120000)
-                        .setConnectionRequestTimeout(120000)
-                        .setRedirectsEnabled(true)
-                        .setProxy(proxyHost)
-                        .setRelativeRedirectsAllowed(true)
-                        .setCircularRedirectsAllowed(true)
-                        .setAuthenticationEnabled(true)
-                        .build();
-            } else {
-                requestConfig = RequestConfig.custom()
-                        .setSocketTimeout(120000)
-                        .setConnectTimeout(120000)
-                        .setConnectionRequestTimeout(120000)
-                        .setRedirectsEnabled(true)
-                        .setCircularRedirectsAllowed(true)
-                        .setRelativeRedirectsAllowed(true)
-                        .setAuthenticationEnabled(true)
-                        .build();
+            ShiftyCipher ciph = new ShiftyCipher();
+            String urlParameters = Com.SECRETKEY.getProtocol() + "=" + Com.CONNECTIONSECRET.getProtocol();
+            urlParameters += "&" + Com.CHOOSEACTION.getProtocol() + "=" + type.getActions().get(action);
+            urlParameters += "&" + Com.JSONDATA.getProtocol() + "=" + json;
+            urlParameters = ciph.encrypt(urlParameters);
+            //urlParameters = "";
+            byte[] postData = urlParameters.getBytes(Charset.forName("UTF-8"));
+            int postDataLength = postData.length;
+            String request = "http://timeslip.ddrcweb.com/licenseServer";
+            URL url = new URL(request);
+            HttpURLConnection cox = (HttpURLConnection) url.openConnection();
+            cox.setDoOutput(true);
+            cox.setDoInput(true);
+            cox.setInstanceFollowRedirects(false);
+            cox.setRequestMethod("POST");
+            cox.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+            cox.setRequestProperty("charset", "utf-8");
+            cox.setRequestProperty("Content-Length", Integer.toString(postDataLength));
+            cox.setUseCaches(false);
+            try (DataOutputStream wr = new DataOutputStream(cox.getOutputStream())) {
+                wr.write(postData);
             }
-            httppost.setConfig(requestConfig);
+            try (BufferedReader reader = new BufferedReader(new InputStreamReader(cox.getInputStream()))) {
+                String tempLine;
+                while ((tempLine = reader.readLine()) != null) {
+                    line += tempLine;
+                }
 
-            httppost.setHeader("Host", url);
-            httppost.setHeader("Cache-Control", "no-cache");
-            //httppost.setHeader("Content-Type", "application/x-www-form-urlencoded");
-            List<NameValuePair> params = new ArrayList<>();
-
-            params.add(new BasicNameValuePair(ciph.encrypt(Com.SECRETKEY.getProtocol()), ciph.encrypt(Com.CONNECTIONSECRET.getProtocol())));
-            params.add(new BasicNameValuePair(ciph.encrypt(Com.CHOOSEACTION.getProtocol()), ciph.encrypt(type.getActions().get(action))));
-            params.add(new BasicNameValuePair(ciph.encrypt(Com.JSONDATA.getProtocol()), ciph.encrypt(json)));
-
-            httppost.setEntity(new UrlEncodedFormEntity(params, "UTF-8"));
-            //Execute and get the response.
-            HttpResponse response = httpclient.execute(httppost);
-            code = response.getStatusLine().getStatusCode();
-            BufferedReader rd = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
-            String line = "";
-            while ((lineHolder = rd.readLine()) != null) {
-                line += lineHolder;
-            }
-            //line = rd.readLine();
-            System.out.println("THis was the line: " + ciph.decrypt(line));
-
-            if (code < 400) {
                 line = ciph.decrypt(line);
-            } else {
-                return "unable to connect, error code: " + code;
+            } catch (Throwable t) {
+                t.printStackTrace(System.err);
+                return "unable to connect";
             }
-            return line;
         } catch (Throwable t) {
+
             t.printStackTrace(System.err);
             return "unable to connect";
         }
+        return line;
     }
 
     public static String MD5(String md5) {

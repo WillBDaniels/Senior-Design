@@ -36,7 +36,7 @@ public class HandleCreateNewHouse extends JSONHandler {
                 pstmt = con.prepareStatement(query);
                 pstmt.setInt(1, g.getHouseID());
                 pstmt.setString(2, g.getHouseLocation());
-                pstmt.setString(3, g.getHouseLocation());
+                pstmt.setString(3, g.getHouseName());
                 pstmt.setBoolean(4, g.isIsActive());
                 returnCode = pstmt.executeUpdate();
 

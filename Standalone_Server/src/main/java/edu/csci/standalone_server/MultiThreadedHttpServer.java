@@ -17,7 +17,7 @@ import java.util.concurrent.Executors;
  */
 public class MultiThreadedHttpServer {
 
-    protected static int serverPort = 80;
+    protected static int serverPort = 5555;
     protected HttpServer serverSocket = null;
     protected boolean isStopped = false;
     protected Thread runningThread = null;
@@ -51,6 +51,7 @@ public class MultiThreadedHttpServer {
 
         @Override
         public void handle(HttpExchange he) throws IOException {
+            System.out.println("Got a connection..." + he.getRequestMethod() + " and the headers: " + he.getRequestHeaders());
             (new Thread((new WorkerRunnable(he)))).start();
         }
 

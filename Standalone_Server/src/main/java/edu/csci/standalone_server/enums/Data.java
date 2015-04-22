@@ -7,7 +7,7 @@ package edu.csci.standalone_server.enums;
 public enum Data {
 
     DBPASSWORD("Senior_Design"),
-    CONNECTIONSECRET("%%%%##555_hskfusd&2ksfkjdf;;;___---118431@8459438754hdkdsf-98134ihfadfafdf");
+    CONNECTIONSECRET("555hskfusd2ksfkjdf118431@8459438754hdkdsf-98134ihfadfafdf");
 
     private final String data;
 

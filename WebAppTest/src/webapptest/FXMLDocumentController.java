@@ -757,7 +757,7 @@ public class FXMLDocumentController implements Initializable {
         DataPOJO addHouse = new DataPOJO();
         List<House> houseList = new ArrayList<>();
         House house = new House();
-        house.setHouseID(Integer.valueOf(tf_house_name.getText()));
+        house.setHouseName(tf_house_name.getText());
         house.setHouseLocation(tf_house_neighborhood.getText());
         houseList.add(house);
         addHouse.setHouseList(houseList);

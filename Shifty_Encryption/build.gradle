@@ -3,7 +3,7 @@ apply plugin: 'java'
 String mavenGroupId = 'ShiftyEncryption'
 String mavenVersion = '2.0'
 
-sourceCompatibility = '1.8'
+sourceCompatibility = '1.7'
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
 

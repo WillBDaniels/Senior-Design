@@ -35,12 +35,15 @@ public class WorkerRunnable implements Runnable {
     public void run() {
         boolean foundMatch = false;
         Map<String, Object> params = (Map<String, Object>) clientSocket.getAttribute("parameters");
+        System.out.println("I'm here, getting params..");
         if (params == null) {
+            System.out.println("Params was null, returning");
             showUnknownMessage();
             clientSocket.close();
             return;
         }
         if ((String) params.get("secretkey") != null && ((String) params.get("secretkey")).equals(Data.CONNECTIONSECRET.getData())) {
+            System.out.println("Got the secretKey correctly");
             String json = (String) params.get("data");
             for (State item : State.values()) {
                 if (item.getCheckString().equals(params.get("action"))) {
