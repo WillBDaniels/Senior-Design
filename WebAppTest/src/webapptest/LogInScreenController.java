@@ -11,6 +11,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Hyperlink;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
@@ -30,11 +31,15 @@ public class LogInScreenController {
     private TextField loginPassword;
 
     @FXML
+    private Label lbl_login_error;
+
+    @FXML
     private HBox hb_button_container;
 
     public static DataPOJO completeInfo = null;
 
     public void initialize() {
+
         double columnWidth = 100;
         hb_button_container.getChildren().add(new TextFlow(
                 new Text("Forgot Password? "), new Hyperlink("Click here")));
@@ -43,7 +48,20 @@ public class LogInScreenController {
     //Runs the login process
     @FXML
     public void logInPressed(ActionEvent event) throws IOException {
-
+        if (loginName.getText().isEmpty()) {
+            lbl_login_error.setText("Login name required!");
+            WebAppTest.setCSS(true, loginName);
+            return;
+        } else {
+            WebAppTest.setCSS(false, loginName);
+        }
+        if (loginPassword.getText().isEmpty()) {
+            lbl_login_error.setText("Password required!");
+            WebAppTest.setCSS(true, loginPassword);
+            return;
+        } else {
+            WebAppTest.setCSS(false, loginPassword);
+        }
         DataPOJO responsePojo = new DataPOJO();
         Gson gson = new Gson();
         //Test passsword should be: ShiftyTestPassword
@@ -60,8 +78,7 @@ public class LogInScreenController {
             stageTheLabelBelongs.setScene(scene);
             stageTheLabelBelongs.show();
         } else {
-            //TODO Display Some errors
-            System.out.println("It didn't work.. here's the message: " + responsePojo.getReturnMessage());
+            lbl_login_error.setText("Invalid Login Credentials");
         }
     }
 

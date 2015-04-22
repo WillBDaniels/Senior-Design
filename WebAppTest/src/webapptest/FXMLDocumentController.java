@@ -15,7 +15,9 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -38,11 +40,15 @@ public class FXMLDocumentController implements Initializable {
     private CheckBox managerCheck;
     @FXML
     private TextField empName;
+    @FXML
+    private Label lbl_employee_error;
 
     @FXML
     private CheckBox cb_house_is_active;
     @FXML
     private TextField empUserName;
+    @FXML
+    private TextField empPhone;
     @FXML
     private TextField empPassword;
     @FXML
@@ -52,9 +58,15 @@ public class FXMLDocumentController implements Initializable {
 
     //Fields for the facility addition
     @FXML
-    private TextField facilityID;
+    private TextField tf_house_name;
+    @FXML
+    private TextField tf_house_neighborhood;
 
+    @FXML
+    private Label lbl_house_error;
     //Fields for the shift addition
+    @FXML
+    private Label lbl_shift_error;
     @FXML
     private TextField shiftTime;
     @FXML
@@ -65,6 +77,8 @@ public class FXMLDocumentController implements Initializable {
     private TextField tf_shift_name;
 
     //Fields for the group addition
+    @FXML
+    private Label lbl_group_error;
     @FXML
     private TextField groupName;
     @FXML
@@ -111,6 +125,9 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private TableView tv_group, tv_employee, tv_house, tv_shift;
 
+    @FXML
+    private Button btn_update_employees;
+
     /**
      * Table columns for employee
      */
@@ -140,6 +157,35 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     public void groupCreateButtonPressed() {
+        if (groupName.getText().isEmpty()) {
+            lbl_group_error.setText("Group name required!");
+            WebAppTest.setCSS(true, groupName);
+            return;
+        } else {
+            WebAppTest.setCSS(false, groupName);
+        }
+        if (groupManagerID.getText().isEmpty()) {
+            lbl_group_error.setText("Manager ID required!");
+            WebAppTest.setCSS(true, groupManagerID);
+            return;
+        } else {
+            WebAppTest.setCSS(false, groupManagerID);
+        }
+        if (groupID.getText().isEmpty()) {
+            lbl_group_error.setText("Group ID required!");
+            WebAppTest.setCSS(true, groupID);
+            return;
+        } else {
+            WebAppTest.setCSS(false, groupID);
+        }
+        if (groupEmpIDs.getText().isEmpty()) {
+            lbl_group_error.setText("Employee ID's required!");
+            WebAppTest.setCSS(true, groupEmpIDs);
+            return;
+        } else {
+            WebAppTest.setCSS(false, groupEmpIDs);
+        }
+        lbl_group_error.setText("");
         DataPOJO groupCreate = new DataPOJO();
         List<Group> groupListInner = new ArrayList<>();
         Group group = new Group();
@@ -168,6 +214,7 @@ public class FXMLDocumentController implements Initializable {
         nameCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Employee, String>>() {
             @Override
             public void handle(TableColumn.CellEditEvent<Employee, String> t) {
+                btn_update_employees.setDisable(false);
                 ((Employee) t.getTableView().getItems().get(t.getTablePosition().getRow())).setNameProp(t.getNewValue());
 
             }
@@ -179,6 +226,7 @@ public class FXMLDocumentController implements Initializable {
         phoneNumberCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Employee, Integer>>() {
             @Override
             public void handle(TableColumn.CellEditEvent<Employee, Integer> t) {
+                btn_update_employees.setDisable(false);
                 ((Employee) t.getTableView().getItems().get(t.getTablePosition().getRow())).setPhoneNumber(t.getNewValue());
 
             }
@@ -190,6 +238,7 @@ public class FXMLDocumentController implements Initializable {
         userNameCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Employee, String>>() {
             @Override
             public void handle(TableColumn.CellEditEvent<Employee, String> t) {
+                btn_update_employees.setDisable(false);
                 ((Employee) t.getTableView().getItems().get(t.getTablePosition().getRow())).setUsername(t.getNewValue());
 
             }
@@ -202,6 +251,7 @@ public class FXMLDocumentController implements Initializable {
         idCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Employee, Integer>>() {
             @Override
             public void handle(TableColumn.CellEditEvent<Employee, Integer> t) {
+                btn_update_employees.setDisable(false);
                 ((Employee) t.getTableView().getItems().get(t.getTablePosition().getRow())).setEmployeeIDProp(Integer.valueOf(t.getNewValue()));
 
             }
@@ -212,6 +262,7 @@ public class FXMLDocumentController implements Initializable {
         managerCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Employee, Boolean>>() {
             @Override
             public void handle(TableColumn.CellEditEvent<Employee, Boolean> t) {
+                btn_update_employees.setDisable(false);
                 ((Employee) t.getTableView().getItems().get(t.getTablePosition().getRow())).setIsManager(t.getNewValue());
 
             }
@@ -223,6 +274,7 @@ public class FXMLDocumentController implements Initializable {
         adminCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Employee, Boolean>>() {
             @Override
             public void handle(TableColumn.CellEditEvent<Employee, Boolean> t) {
+                btn_update_employees.setDisable(false);
                 ((Employee) t.getTableView().getItems().get(t.getTablePosition().getRow())).setIsAdmin(t.getNewValue());
 
             }
@@ -235,8 +287,8 @@ public class FXMLDocumentController implements Initializable {
         backupCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Employee, Boolean>>() {
             @Override
             public void handle(TableColumn.CellEditEvent<Employee, Boolean> t) {
+                btn_update_employees.setDisable(false);
                 ((Employee) t.getTableView().getItems().get(t.getTablePosition().getRow())).setIsBackup(t.getNewValue());
-
             }
         });
         tv_employee.setEditable(true);
@@ -403,6 +455,27 @@ public class FXMLDocumentController implements Initializable {
             }
         });
         tv_house.getColumns().addAll(neighborhoodCol, facilityIDCol, houseNameCol, houseIsActiveCol);
+    }
+
+    @FXML
+    public void UpdateEmployeeButtonPressed() {
+        DataPOJO addEmp = new DataPOJO();
+        ObservableList<Employee> empList = tv_employee.getItems();
+        ArrayList<Employee> strippedEmpList = new ArrayList<>();
+        for (Employee emp : empList) {
+            emp.setEmployeeIDProp(null);
+            emp.setIsAdminProp(null);
+            emp.setIsBackupProp(null);
+            emp.setIsManagerProp(null);
+            emp.setNameProp(null);
+            emp.setPasswordProp(null);
+            emp.setPhoneNumberProp(null);
+            emp.setUsernameProp(null);
+            strippedEmpList.add(emp);
+        }
+        addEmp.setAllEmployees(strippedEmpList);
+        String response = WebAppTest.postToServer(Type.SHIFTY, Action.UPDATEEMEPLOYEE, gson.toJson(addEmp));
+        System.out.println("Response: " + response);
     }
 
     @FXML
@@ -597,6 +670,35 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML //Adds the fields from the window as a shift to the database
     public void addShiftButtonPressed(ActionEvent event) {
+        if (shiftTime.getText().isEmpty()) {
+            lbl_shift_error.setText("Shift time required!");
+            WebAppTest.setCSS(true, shiftTime);
+            return;
+        } else {
+            WebAppTest.setCSS(false, shiftTime);
+        }
+        if (tf_shift_name.getText().isEmpty()) {
+            lbl_shift_error.setText("Shift name required!");
+            WebAppTest.setCSS(true, tf_shift_name);
+            return;
+        } else {
+            WebAppTest.setCSS(false, tf_shift_name);
+        }
+        if (shiftEmpID.getText().isEmpty()) {
+            lbl_shift_error.setText("Employee ID required!");
+            WebAppTest.setCSS(true, shiftEmpID);
+            return;
+        } else {
+            WebAppTest.setCSS(false, shiftEmpID);
+        }
+        if (shiftHouseID.getText().isEmpty()) {
+            lbl_shift_error.setText("Shift House ID required!");
+            WebAppTest.setCSS(true, shiftHouseID);
+            return;
+        } else {
+            WebAppTest.setCSS(false, shiftHouseID);
+        }
+        lbl_shift_error.setText("");
         String sTime = shiftTime.getText();
         String empIDInner = shiftEmpID.getText();
         String fID = shiftHouseID.getText();
@@ -637,11 +739,26 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML //Provides the code that will add a new facility
     public void addHouseButton(ActionEvent event) {
+        if (tf_house_name.getText().isEmpty()) {
+            lbl_house_error.setText("House name required!");
+            WebAppTest.setCSS(true, tf_house_name);
+            return;
+        } else {
+            WebAppTest.setCSS(false, tf_house_name);
+        }
+        if (tf_house_neighborhood.getText().isEmpty()) {
+            lbl_house_error.setText("House neighborhood required!");
+            WebAppTest.setCSS(true, tf_house_neighborhood);
+            return;
+        } else {
+            WebAppTest.setCSS(false, tf_house_neighborhood);
+        }
+        lbl_house_error.setText("");
         DataPOJO addHouse = new DataPOJO();
         List<House> houseList = new ArrayList<>();
         House house = new House();
-        house.setHouseID(Integer.valueOf(facilityID.getText()));
-        house.setHouseLocation(facDeleteNeighborhood.getText());
+        house.setHouseID(Integer.valueOf(tf_house_name.getText()));
+        house.setHouseLocation(tf_house_neighborhood.getText());
         houseList.add(house);
         addHouse.setHouseList(houseList);
 
@@ -651,6 +768,35 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML //Provides the code that will add a new employee
     public void employeeButtonPressed(ActionEvent event) {
+        if (empName.getText().isEmpty()) {
+            lbl_employee_error.setText("Employee name required!");
+            WebAppTest.setCSS(true, empName);
+            return;
+        } else {
+            WebAppTest.setCSS(false, empName);
+        }
+        if (empPhone.getText().isEmpty()) {
+            lbl_employee_error.setText("Employee phone number required!");
+            WebAppTest.setCSS(true, empPhone);
+            return;
+        } else {
+            WebAppTest.setCSS(false, empPhone);
+        }
+        if (empUserName.getText().isEmpty()) {
+            lbl_employee_error.setText("Employee username required!");
+            WebAppTest.setCSS(true, empUserName);
+            return;
+        } else {
+            WebAppTest.setCSS(false, empUserName);
+        }
+        if (empPassword.getText().isEmpty()) {
+            lbl_employee_error.setText("Employee password required!");
+            WebAppTest.setCSS(true, empPassword);
+            return;
+        } else {
+            WebAppTest.setCSS(false, empPassword);
+        }
+        lbl_employee_error.setText("");
         DataPOJO addEmp = new DataPOJO();
         String password = "";
         try {
@@ -661,7 +807,7 @@ public class FXMLDocumentController implements Initializable {
         }
         Employee emp = new Employee();
         emp.setName(empName.getText());
-        //t(empName.getText());
+        emp.setPhoneNumber(Long.valueOf(empPhone.getText()));
         emp.setIsManager(managerCheck.isSelected());
         emp.setUsername(empUserName.getText());
         emp.setPassword(password);

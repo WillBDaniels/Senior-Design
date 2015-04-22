@@ -18,6 +18,10 @@ public class Employee {
     private StringProperty nameProp;
 
     public void setNameProp(String value) {
+        if (value == null) {
+            nameProp = null;
+            return;
+        }
         namePropProperty().set(value);
     }
 
@@ -40,6 +44,10 @@ public class Employee {
     private StringProperty usernameProp;
 
     public void setUsernameProp(String value) {
+        if (value == null) {
+            usernameProp = null;
+            return;
+        }
         usernamePropProperty().set(value);
     }
 
@@ -61,6 +69,10 @@ public class Employee {
     private StringProperty passwordProp;
 
     public void setPasswordProp(String value) {
+        if (value == null) {
+            passwordProp = null;
+            return;
+        }
         passwordPropProperty().set(value);
     }
 
@@ -78,6 +90,10 @@ public class Employee {
     private IntegerProperty employeeIDProp;
 
     public void setEmployeeIDProp(Integer value) {
+        if (value == null) {
+            employeeIDProp = null;
+            return;
+        }
         employeeIDPropProperty().set(value);
     }
 
@@ -99,6 +115,10 @@ public class Employee {
     private IntegerProperty phoneNumberProp;
 
     public void setPhoneNumberProp(Integer value) {
+        if (value == null) {
+            phoneNumberProp = null;
+            return;
+        }
         phoneNumberPropProperty().set(value);
     }
 
@@ -119,6 +139,10 @@ public class Employee {
     private BooleanProperty isBackupProp;
 
     public void setIsBackupProp(Boolean value) {
+        if (value == null) {
+            isBackupProp = null;
+            return;
+        }
         isBackupPropProperty().set(value);
     }
 
@@ -137,6 +161,10 @@ public class Employee {
     private BooleanProperty isManagerProp;
 
     public void setIsManagerProp(Boolean value) {
+        if (value == null) {
+            isManagerProp = null;
+            return;
+        }
         isManagerPropProperty().set(value);
     }
 
@@ -154,6 +182,10 @@ public class Employee {
     private BooleanProperty isAdminProp;
 
     public void setIsAdminProp(Boolean value) {
+        if (value == null) {
+            isAdminProp = null;
+            return;
+        }
         isAdminPropProperty().set(value);
     }
 

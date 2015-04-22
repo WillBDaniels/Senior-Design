@@ -15,11 +15,12 @@ public enum Type {
 
     SHIFTY(Com.GETMOBILEINFO.getProtocol(), Com.DELETESHIFT.getProtocol(), Com.DELETEHOUSE.getProtocol(),
             Com.DELETEGROUP.getProtocol(), Com.DELETEEMPLOYEE.getProtocol(), Com.ADDEMPLOYEE.getProtocol(),
-            Com.ADDHOUSE.getProtocol(), Com.ADDSHIFT.getProtocol(), Com.ADDGROUP.getProtocol(), Com.GETALLDATA.getProtocol());
+            Com.ADDHOUSE.getProtocol(), Com.ADDSHIFT.getProtocol(), Com.ADDGROUP.getProtocol(), Com.GETALLDATA.getProtocol(), Com.UPDATEEMPLOYEE.getProtocol());
     private final Map<Action, String> actionMap = new HashMap<>();
 
     Type(String getMobileInfo, String deleteShift, String deleteHouse, String deleteGroup,
-            String deleteEmployee, String addEmployee, String addHouse, String addShift, String addGroup, String getAllData) {
+            String deleteEmployee, String addEmployee, String addHouse, String addShift, String addGroup, String getAllData,
+            String updateEmployee) {
         actionMap.put(Action.GETMOBILEINFO, getMobileInfo);
         actionMap.put(Action.DELETESHIFT, deleteShift);
         actionMap.put(Action.DELETEHOUSE, deleteHouse);
@@ -30,6 +31,7 @@ public enum Type {
         actionMap.put(Action.ADDSHIFT, addShift);
         actionMap.put(Action.ADDGROUP, addGroup);
         actionMap.put(Action.GETALLDATA, getAllData);
+        actionMap.put(Action.UPDATEEMEPLOYEE, updateEmployee);
 
     }
 

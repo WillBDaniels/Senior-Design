@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -34,7 +35,6 @@ public class WebAppTest extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("LogInScreen.fxml"));
-
         Scene scene = new Scene(root);
 
         stage.setScene(scene);
@@ -50,7 +50,7 @@ public class WebAppTest extends Application {
 
     public static String postToServer(Type type, Action action, String json) {
         ShiftyCipher ciph = new ShiftyCipher();
-        String lineHolder = null;
+        String lineHolder;
         int code = 0;
         HttpClient httpclient = HttpClientBuilder.create().setRedirectStrategy(new LaxRedirectStrategy()).build();
         HttpPost httppost;
@@ -136,7 +136,7 @@ public class WebAppTest extends Application {
         try {
             java.security.MessageDigest md = java.security.MessageDigest.getInstance("MD5");
             byte[] array = md.digest(md5.getBytes());
-            StringBuffer sb = new StringBuffer();
+            StringBuilder sb = new StringBuilder();
             for (int i = 0; i < array.length; ++i) {
                 sb.append(Integer.toHexString((array[i] & 0xFF) | 0x100).substring(1, 3));
             }
@@ -144,6 +144,16 @@ public class WebAppTest extends Application {
         } catch (java.security.NoSuchAlgorithmException e) {
         }
         return null;
+    }
+
+    public static void setCSS(boolean isInvalid, Node item) {
+        if (isInvalid) {
+            item.getStyleClass().removeAll("good", "bad");
+            item.getStyleClass().add("bad");
+        } else {
+            item.getStyleClass().removeAll("good", "bad");
+            item.getStyleClass().add("good");
+        }
     }
 
 }

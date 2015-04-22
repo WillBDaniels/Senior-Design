@@ -44,7 +44,7 @@
                                 <Insets bottom="10.0" left="50.0" right="10.0" top="10.0" />
                             </HBox.margin>
                         </VBox>
-                        <Label prefHeight="17.0" prefWidth="442.0" />
+                        <Label fx:id="lbl_login_error" prefHeight="17.0" prefWidth="551.0" textFill="#ff0404" />
                     </children>
                 </HBox>
             </center>

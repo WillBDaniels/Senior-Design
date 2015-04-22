@@ -38,6 +38,7 @@ public enum Com {
     ADDHOUSE("addHouse"),
     ADDSHIFT("addShift"),
     ADDGROUP("addGroup"),
+    UPDATEEMPLOYEE("updateEmployee"),
     GETALLDATA("getData"),
     CONNECTIONSECRET("%%%%##555_hskfusd&2ksfkjdf;;;___---118431@8459438754hdkdsf-98134ihfadfafdf");
     /**
