@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/William/Downloads/AndroidSkillTest_Animotion/AndroidSkillTest_Animotion/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Users/William/Documents/UCD/Senior-Design/Shifty/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/C:/Users/William/Downloads/AndroidSkillTest_Animotion/AndroidSkillTest_Animotion/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/William/Documents/UCD/Senior-Design/Shifty/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="OK">OK</string>
     <string name="accountName">username:</string>
     <string name="add">add employees</string>
     <string name="addContacts">add</string>
-    <string name="app_name">Shift</string>
+    <string name="app_name">Shifty</string>
     <string name="cancel">Cancel</string>
     <string name="cancel2">back</string>
     <string name="contacts">contacts</string>
@@ -37,7 +37,7 @@
     <string name="settime">Set the time interval</string>
     <string name="text">Text message</string>
     <string name="to">To</string>
-    <!-- From: file:/C:/Users/William/Downloads/AndroidSkillTest_Animotion/AndroidSkillTest_Animotion/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/William/Documents/UCD/Senior-Design/Shifty/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
