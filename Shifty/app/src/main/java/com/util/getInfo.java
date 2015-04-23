@@ -2,6 +2,8 @@ package com.util;
 
 import android.os.StrictMode;
 
+import com.google.gson.Gson;
+
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -15,6 +17,8 @@ import edu.csci.shiftyencryption.ShiftyCipher;
 
 public class getInfo {
     public static DataPOJO currentPojo = new DataPOJO();
+    public static String employeeID;
+    public static String employeeName;
     public static String postToServer(Type type, Action action, String json) {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 
@@ -67,6 +71,13 @@ public class getInfo {
             return "unable to connect";
         }
         return line;
+    }
+
+    public static void refreshData(){
+        //Refreshing the data since we just modified it, we'd expect to see it.
+        Gson gson = new Gson();
+        currentPojo.setEmployeeID(Integer.valueOf(employeeID));
+        getInfo.currentPojo = gson.fromJson(getInfo.postToServer(Type.SHIFTY, Action.GETALLDATA, gson.toJson(currentPojo, DataPOJO.class)), DataPOJO.class);
     }
 
     public static String MD5(String md5) {

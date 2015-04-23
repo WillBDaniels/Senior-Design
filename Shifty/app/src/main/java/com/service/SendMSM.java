@@ -3,7 +3,7 @@ package com.service;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.haven.skilltest.demo.R;
+import edu.csci.teamshifty.R;
 import com.util.Employee;
 import com.util.getInfo;
 import com.util.userInfo;
@@ -23,6 +23,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -40,6 +41,7 @@ public class SendMSM extends Activity {
 	private List<String> tempList;
 	private String username;
 	private String returnOut;
+	private EditText extr;
 	private ArrayList<String> lay = new ArrayList<String>();
 	private ArrayList<String> numbers = new ArrayList<String>();
 	private ArrayList<String> names = new ArrayList<String>();
@@ -50,7 +52,7 @@ public class SendMSM extends Activity {
 		cancelButton = (Button) findViewById(R.id.addcancel);
 		Bundle bundle = this.getIntent().getExtras();
 		massage = bundle.getString("massage");
-		
+		extr = (EditText) findViewById(R.id.extrcontent);
 
 		cancelButton.setOnClickListener(new Button.OnClickListener() {
 
@@ -61,6 +63,16 @@ public class SendMSM extends Activity {
 			}
 
 		});
+		// Button goto2 = (Button)findViewById(R.id.goTo2);
+		// goto2.setOnClickListener(new Button.OnClickListener(){
+
+		// @Override
+		// public void onClick(View arg0) {
+		// // TODO Auto-generated method stub
+		// jumpToLayout2();
+		// }
+		//
+		// });
 
 		displayListView();
 
@@ -68,25 +80,17 @@ public class SendMSM extends Activity {
 
 	}
 
-	private void displayListView() {
-		List<Employee> EmployeeList;
-		EmployeeList = getInfo.currentPojo.getAllEmployees();
-//		
-
-		// create an ArrayAdaptar from the String Array
-		dataAdapter = new MyCustomAdapter(this, R.layout.employee_info,
-				EmployeeList);
-		ListView listView = (ListView) findViewById(R.id.listView1);
-		// Assign adapter to ListView
-		listView.setAdapter(dataAdapter);
-
-		listView.setOnItemClickListener(new OnItemClickListener() {
-			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
-				// When clicked, show a toast with the TextView text
-			}
-		});
-	}
+    private void displayListView() {
+        getInfo.refreshData();
+        List<Employee> EmployeeList;
+        EmployeeList = getInfo.currentPojo.getAllEmployees();
+        // create an ArrayAdaptar from the String Array
+        dataAdapter = new MyCustomAdapter(this, R.layout.employee_info,
+                EmployeeList);
+        ListView listView = (ListView) findViewById(R.id.listView1);
+        // Assign adapter to ListView
+        listView.setAdapter(dataAdapter);
+    }
 
 	private class MyCustomAdapter extends ArrayAdapter<Employee> {
 
@@ -95,7 +99,7 @@ public class SendMSM extends Activity {
 		public MyCustomAdapter(Context context, int textViewResourceId,
 				List<Employee> EmployeeList) {
 			super(context, textViewResourceId, EmployeeList);
-			this.EmployeeList = new ArrayList<>();
+			this.EmployeeList = new ArrayList<Employee>();
 			this.EmployeeList.addAll(EmployeeList);
 		}
 
@@ -106,7 +110,7 @@ public class SendMSM extends Activity {
 
 		public View getView(int position, View convertView, ViewGroup parent) {
 
-			ViewHolder holder;
+			ViewHolder holder = null;
 			Log.v("ConvertView", String.valueOf(position));
 
 			if (convertView == null) {
@@ -175,14 +179,14 @@ public class SendMSM extends Activity {
 					Employee Employee = EmployeeList.get(i);
 					if (Employee.isSelected()) {
 //						responseText.append("\n" + Employee.getName());
-						numbers.add(String.valueOf(Employee.getPhoneNumber()));
+						numbers.add(Employee.getPhoneNumber());
 						names.add(Employee.getName());
 					}
 				}
 //				
 //				Toast.makeText(getApplicationContext(), numbers.toString(),
 //					Toast.LENGTH_LONG).show();
-				massage = "There is a new shift. "+massage+". from "+username;
+				massage = "There is a new shift. "+massage+". "+extr.getText().toString()+". from "+username;
 				if ((numbers.size() > 0)){
 					massage = massage.trim();
 					SmsManager smsManager = SmsManager.getDefault();

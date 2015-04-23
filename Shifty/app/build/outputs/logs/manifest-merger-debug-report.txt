@@ -15,6 +15,12 @@ ADDED from AndroidManifest.xml:2:1
 		INJECTED from AndroidManifest.xml:0:0
 uses-sdk
 ADDED from AndroidManifest.xml:7:5
+MERGED from com.crashlytics.sdk.android:crashlytics:2.2.3:7:5
+MERGED from com.crashlytics.sdk.android:answers:1.1.2:7:5
+MERGED from io.fabric.sdk.android:fabric:1.3.0:7:5
+MERGED from io.fabric.sdk.android:fabric:1.3.0:7:5
+MERGED from com.crashlytics.sdk.android:beta:1.1.2:7:5
+MERGED from io.fabric.sdk.android:fabric:1.3.0:7:5
 	android:targetSdkVersion
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
@@ -24,6 +30,12 @@ ADDED from AndroidManifest.xml:7:5
 		INJECTED from AndroidManifest.xml:0:0
 application
 ADDED from AndroidManifest.xml:9:5
+MERGED from com.crashlytics.sdk.android:crashlytics:2.2.3:11:5
+MERGED from com.crashlytics.sdk.android:answers:1.1.2:9:5
+MERGED from io.fabric.sdk.android:fabric:1.3.0:9:5
+MERGED from io.fabric.sdk.android:fabric:1.3.0:9:5
+MERGED from com.crashlytics.sdk.android:beta:1.1.2:9:5
+MERGED from io.fabric.sdk.android:fabric:1.3.0:9:5
 	android:label
 		ADDED from AndroidManifest.xml:12:9
 	android:icon
@@ -76,11 +88,11 @@ activity#com.service.SendMSM
 ADDED from AndroidManifest.xml:38:9
 	android:name
 		ADDED from AndroidManifest.xml:38:19
-activity#com.util.HouseActivity
+activity#com.service.CreateList
 ADDED from AndroidManifest.xml:40:9
 	android:name
 		ADDED from AndroidManifest.xml:40:19
-activity#com.service.RecoverPass
+activity#com.util.HouseActivity
 ADDED from AndroidManifest.xml:42:9
 	android:name
 		ADDED from AndroidManifest.xml:42:19
@@ -88,11 +100,22 @@ activity#com.service.QuestionRest
 ADDED from AndroidManifest.xml:44:9
 	android:name
 		ADDED from AndroidManifest.xml:44:19
+activity#com.service.RecoverPass
+ADDED from AndroidManifest.xml:46:9
+	android:name
+		ADDED from AndroidManifest.xml:46:19
+meta-data#io.fabric.ApiKey
+ADDED from AndroidManifest.xml:48:9
+	android:name
+		ADDED from AndroidManifest.xml:49:13
+	android:value
+		ADDED from AndroidManifest.xml:50:13
 uses-permission#android.permission.INTERNET
-ADDED from AndroidManifest.xml:48:5
+ADDED from AndroidManifest.xml:53:5
+MERGED from com.crashlytics.sdk.android:crashlytics:2.2.3:9:5
 	android:name
-		ADDED from AndroidManifest.xml:48:22
+		ADDED from AndroidManifest.xml:53:22
 uses-permission#android.permission.SEND_SMS
-ADDED from AndroidManifest.xml:49:5
+ADDED from AndroidManifest.xml:54:5
 	android:name
-		ADDED from AndroidManifest.xml:49:22
+		ADDED from AndroidManifest.xml:54:22

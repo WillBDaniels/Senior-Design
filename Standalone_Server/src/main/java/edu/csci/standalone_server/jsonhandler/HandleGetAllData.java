@@ -62,7 +62,13 @@ public class HandleGetAllData extends JSONHandler {
             //if it's not.. well, it'll pick the first one. Something to remember at least.
             PreparedStatement pstmt;
             query = "SELECT * FROM `groups`;";
+            if (inputPOJO.getEmployeeID() == 0) {
+                query = "SELECT * FROM `groups` WHERE manager_id = ? ;";
+            }
             pstmt = con.prepareStatement(query);
+            if (inputPOJO.getEmployeeID() == 0) {
+                pstmt.setInt(1, inputPOJO.getEmployeeID());
+            }
             //System.out.println("This is the query: " + query);
             rs = pstmt.executeQuery();
             List<Group> groupList = new ArrayList<>();

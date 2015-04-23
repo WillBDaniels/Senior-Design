@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.google.gson.Gson;
-import com.haven.skilltest.demo.R;
+import edu.csci.teamshifty.R;
 import com.start.MainActivity;
 import com.util.Action;
 import com.util.DataPOJO;
@@ -42,7 +42,7 @@ public class MSMpage extends Activity {
 	private Button addContacts;
 	private Button back;
 	private Button sendMsm;
-	private String[] day = { "Monday", "Tuesday", "Wednesday", "Thursday",
+	private String[] day = { "Monday", "Tuesday", "Wednesday", "Thurday",
 			"Friday", "Saturday", "Sunday" };
 	private String[] house = { "" };
 	private Spinner daySpin;
@@ -59,7 +59,6 @@ public class MSMpage extends Activity {
 	private String selectedDay;
 	private String selectedLocation;
 	private String massage;
-	private int houseNumber;
 	private LinearLayout relative;
 	private ArrayList<String> numbers = new ArrayList<>();
 	private ArrayList<String> names = new ArrayList<>();
@@ -71,6 +70,9 @@ public class MSMpage extends Activity {
 		case RESULT_OK:
 			numbers = data.getExtras().getStringArrayList("numbers");
 			names = data.getExtras().getStringArrayList("names");
+//			Toast.makeText(MSMpage.this,
+//					 numbers.toString(), Toast.LENGTH_LONG)
+//					 .show();
 			if(names.size()==0){
 				selected.setText("");
 			}else{
@@ -84,6 +86,7 @@ public class MSMpage extends Activity {
 	}
 
 	protected void onCreate(Bundle savedInstanceState) {
+       //getInfo.refreshData();
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.msmpage);
 		sendMsm = (Button) findViewById(R.id.sendMsm);
@@ -98,7 +101,6 @@ public class MSMpage extends Activity {
 		back = (Button) findViewById(R.id.cancle);
 		userinfo = (userInfo) getApplication();
 		employeeId = userinfo.getEmployeeId();
-		houseNumber = userinfo.getHouseNumber();
 		relative = (LinearLayout)findViewById(R.id.background);
 		
 		relative.setOnTouchListener(new LinearLayout.OnTouchListener() {
@@ -119,11 +121,9 @@ public class MSMpage extends Activity {
                     return false;
             }
     });
-
         for(House tmp : getInfo.currentPojo.getHouseList()){
             house = insert(house, "House" + tmp.getHouseName());
         }
-
 		back.setOnClickListener(new Button.OnClickListener() {
 
 			@Override
@@ -175,8 +175,6 @@ public class MSMpage extends Activity {
 								null, null);
 					}
 					String[] house_id = lay.get(locationIdposition-1).split("~~");
-
-                    //new code
                     String sTime = (from.getText().toString() + " to "
                             + toend.getText().toString());
                     DataPOJO addShift = new DataPOJO();
@@ -197,7 +195,6 @@ public class MSMpage extends Activity {
 
                     String response = getInfo.postToServer(Type.SHIFTY, Action.ADDSHIFT, gson.toJson(addShift, DataPOJO.class));
                     System.out.println(response);
-
 						Toast.makeText(getApplicationContext(),"Success",
 								Toast.LENGTH_LONG).show();
 						finish();

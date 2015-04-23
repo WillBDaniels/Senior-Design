@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.haven.skilltest.demo.R;
+import edu.csci.teamshifty.R;
 
 
 

@@ -3,7 +3,8 @@ package com.start;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.haven.skilltest.demo.R;
+import edu.csci.teamshifty.R;
+import com.service.CreateList;
 import com.service.MSMpage;
 import com.service.ShiftHistory;
 import com.util.House;
@@ -26,67 +27,61 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
-	
-
 	/**
 	 * used to show or hide layout
 	 */
 	private SlidingLayout slidingLayout;
 
-	
 	private Button menuButton;
 
-	
 	private ListView contentListView;
-	
+
 	private ListView menuContentListView;
 
-	
 	private ArrayAdapter<String> contentListAdapter;
-	
+
 	private ArrayAdapter<String> menuContentListAdapter;
 
-	
-	private String[] contentItems = { "Create Shift","Shift History"};
-	private String[] menuContentItems = {"shift history","user center","setting"};
+	private String[] contentItems = { "Create Shift", "Shift History",
+			"Create contacts list" };
+	private String[] menuContentItems = { "shift history", "user center",
+			"setting" };
+	ArrayList<String> lay = new ArrayList<String>();
 	String returnOut = "";
 	String newOne = "";
 	private int houseNumber;
 	private userInfo userinfo;
 	private String houseId;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
-		houseNumber = 0;
 
-		for(House tmp : getInfo.currentPojo.getHouseList()){
-			newOne = "House";
-			newOne = newOne + tmp.getHouseName();
-			contentItems = insert(contentItems,newOne);
-			houseNumber++;
-		}
-		
+		houseNumber = 0;
+        for(House tmp : getInfo.currentPojo.getHouseList()){
+            newOne = "House";
+            newOne = newOne + tmp.getHouseName();
+            contentItems = insert(contentItems,newOne);
+            houseNumber++;
+        }
+
 		userinfo = (userInfo) getApplication();
 		userinfo.setHouseNumber(houseNumber);
 		setContentView(R.layout.activity_main);
-		
+
 		slidingLayout = (SlidingLayout) findViewById(R.id.slidingLayout);
 		menuButton = (Button) findViewById(R.id.menuButton);
 		contentListView = (ListView) findViewById(R.id.contentList);
-		
+
 		menuContentListView = (ListView) findViewById(R.id.menucontentlist);
-		menuContentListAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
-				menuContentItems);
+		menuContentListAdapter = new ArrayAdapter<String>(this,
+				android.R.layout.simple_list_item_1, menuContentItems);
 		menuContentListView.setAdapter(menuContentListAdapter);
-		
-		contentListAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
-				contentItems);
+
+		contentListAdapter = new ArrayAdapter<String>(this,
+				android.R.layout.simple_list_item_1, contentItems);
 		contentListView.setAdapter(contentListAdapter);
-		
-		
-		
+
 		slidingLayout.setScrollEvent(contentListView);
 		menuButton.setOnClickListener(new OnClickListener() {
 			@Override
@@ -100,25 +95,31 @@ public class MainActivity extends Activity {
 		});
 		contentListView.setOnItemClickListener(new OnItemClickListener() {
 			@Override
-			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
 				String text = contentItems[position];
-//				Toast.makeText(MainActivity.this, text, Toast.LENGTH_SHORT).show();	
-				if(position == 0){
+				// Toast.makeText(MainActivity.this, text,
+				// Toast.LENGTH_SHORT).show();
+				if (position == 0) {
 					Intent intent2 = new Intent();
 					intent2.setClass(MainActivity.this, MSMpage.class);
 					startActivity(intent2);
-					
-				}else if(position == 1){
+
+				} else if (position == 1) {
 					Intent intent = new Intent();
 					intent.setClass(MainActivity.this, ShiftHistory.class);
-//					Bundle bundle = new Bundle();
-//					bundle.putInt("position", position);
-//					intent.putExtras(bundle);
+					// Bundle bundle = new Bundle();
+					// bundle.putInt("position", position);
+					// intent.putExtras(bundle);
 					startActivity(intent);
-					
-				}else{
-					House house = getInfo.currentPojo.getHouseList().get(position-2);
-					houseId = String.valueOf(house.getHouseID());
+
+				} else if (position == 2) {
+					Intent intent3 = new Intent();
+					intent3.setClass(MainActivity.this, CreateList.class);
+					startActivity(intent3);
+				} else {
+                    House house = getInfo.currentPojo.getHouseList().get(position-2);
+                    houseId = String.valueOf(house.getHouseID());
 					Intent intent = new Intent();
 					intent.setClass(MainActivity.this, HouseActivity.class);
 					Bundle bundle = new Bundle();
@@ -126,32 +127,32 @@ public class MainActivity extends Activity {
 					intent.putExtras(bundle);
 					startActivity(intent);
 				}
-				
+
 			}
 		});
-		
+
 		menuContentListView.setOnItemClickListener(new OnItemClickListener() {
 			@Override
-			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
 				String text = menuContentItems[position];
-//				Toast.makeText(MainActivity.this, text, Toast.LENGTH_SHORT).show();		
+				// Toast.makeText(MainActivity.this, text,
+				// Toast.LENGTH_SHORT).show();
 			}
 		});
-		
-		
+
 	}
-	
-	private static String[] insert(String[] arr, String str)
-    {
-        int size = arr.length;
-        
-        String[] tmp = new String[size + 1];
-        
-        System.arraycopy(arr, 0, tmp, 0, size);
-        
-        tmp[size] = str;
-        
-        return tmp;
-    }
+
+	private static String[] insert(String[] arr, String str) {
+		int size = arr.length;
+
+		String[] tmp = new String[size + 1];
+
+		System.arraycopy(arr, 0, tmp, 0, size);
+
+		tmp[size] = str;
+
+		return tmp;
+	}
 
 }

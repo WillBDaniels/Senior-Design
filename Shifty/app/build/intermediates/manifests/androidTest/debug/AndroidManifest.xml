@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.haven.skilltest.demo.test">
+    package="edu.csci.teamshifty.test">
 
-    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="21" />
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="21" />
 
     <application>
         <uses-library android:name="android.test.runner" />
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.haven.skilltest.demo"
+                     android:targetPackage="edu.csci.teamshifty"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for com.haven.skilltest.demo"/>
+                     android:label="Tests for edu.csci.teamshifty"/>
 </manifest>

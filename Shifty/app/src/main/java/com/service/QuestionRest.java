@@ -10,7 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.start.login;
-import com.haven.skilltest.demo.R;
+import edu.csci.teamshifty.R;
 
 /**
  * Created by Administrator on 4/15/2015.

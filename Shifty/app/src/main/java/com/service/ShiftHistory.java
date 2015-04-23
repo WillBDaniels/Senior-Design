@@ -3,7 +3,7 @@ package com.service;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.haven.skilltest.demo.R;
+import edu.csci.teamshifty.R;
 import com.util.House;
 import com.util.Shift;
 import com.util.getInfo;
@@ -22,29 +22,26 @@ import android.widget.AdapterView.OnItemClickListener;
 public class ShiftHistory extends Activity {
 
 	private String[] shift = { "time --- location"};
-	private ArrayList<String> lay = new ArrayList<String>();
+	private ArrayList<String> lay = new ArrayList<>();
 	private ListView showHistory;
 	private ArrayAdapter<String> history;
 	private userInfo userinfo;
 
-	
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.shifthistory);
-		
-		userinfo = (userInfo) getApplication();
-		List<String> temp = new ArrayList<>();
-		getInfo data = new getInfo();	
-		temp.add("get_shift_specific");
+
+    protected void onCreate(Bundle savedInstanceState) {
+        //getInfo.refreshData();
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.shifthistory);
+
+        userinfo = (userInfo) getApplication();
 //		Toast.makeText(ShiftHistory.this, "employee1=\""+userinfo.getEmployeeId()+"\"", Toast.LENGTH_LONG).show();
-		for (House house: getInfo.currentPojo.getHouseList()){
+        for (House house: getInfo.currentPojo.getHouseList()){
             for (Shift shiftInner : house.getShiftList()){
                 if (shiftInner.getEmployeeID() == Integer.valueOf(userinfo.getEmployeeId())){
                     shift = insert(shift, shiftInner.getTime() + " --- House" + house.getHouseName());
                 }
             }
         }
-
 		
 		showHistory = (ListView) findViewById(R.id.showhistory);
 		history = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,

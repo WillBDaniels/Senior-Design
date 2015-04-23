@@ -1,25 +1,20 @@
 package com.util;
 
-import java.util.ArrayList;
-import java.util.List;
-
-
-import com.haven.skilltest.demo.R;
-import com.service.CreateShift;
-import com.service.SendMSM;
-import com.service.ShiftHistory;
-import com.start.MainActivity;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.AdapterView.OnItemClickListener;
+
+import edu.csci.teamshifty.R;
+import com.service.SendMSM;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class HouseActivity extends Activity {
     private getInfo getinfo;
@@ -50,7 +45,7 @@ public class HouseActivity extends Activity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String info = shift[position];
                 Intent intent = new Intent();
-                intent.setClass(HouseActivity.this, SendMSM.class);
+                intent.setClass(com.util.HouseActivity.this, SendMSM.class);
                 Bundle bundle = new Bundle();
                 bundle.putString("massage", info);
                 intent.putExtras(bundle);

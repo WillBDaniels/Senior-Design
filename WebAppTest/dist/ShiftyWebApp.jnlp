@@ -2,38 +2,38 @@
 <jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ShiftyWebApp.jnlp">
   <information>
     <title>ShiftyWebApp</title>
-    <vendor>fritz</vendor>
+    <vendor>UCDenver</vendor>
     <description>null</description>
     <offline-allowed/>
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="ShiftyWebApp.jar" size="65162" download="eager" />
-    <jar href="lib/ShiftyEncryption-2.0.jar" size="3745" download="eager" />
-    <jar href="lib/commons-codec-1.9.jar" size="285651" download="eager" />
-    <jar href="lib/commons-logging-1.2.jar" size="66439" download="eager" />
-    <jar href="lib/controlsfx-8.20.8.jar" size="1030457" download="eager" />
-    <jar href="lib/controlsfx-samples-8.20.8.jar" size="666702" download="eager" />
-    <jar href="lib/fluent-hc-4.4.jar" size="34205" download="eager" />
-    <jar href="lib/fxsampler-1.0.8.jar" size="32815" download="eager" />
-    <jar href="lib/gson-2.3.1.jar" size="226205" download="eager" />
-    <jar href="lib/httpclient-4.4.jar" size="769805" download="eager" />
-    <jar href="lib/httpclient-cache-4.4.jar" size="169492" download="eager" />
-    <jar href="lib/httpclient-win-4.4.jar" size="19932" download="eager" />
-    <jar href="lib/httpcore-4.4.jar" size="349944" download="eager" />
-    <jar href="lib/httpmime-4.4.jar" size="45023" download="eager" />
-    <jar href="lib/jna-4.1.0.jar" size="927932" download="eager" />
-    <jar href="lib/jna-platform-4.1.0.jar" size="1523345" download="eager" />
-    <jar href="lib/mail-1.4.7.jar" size="553337" download="eager" />
-    <jar href="lib/openjfx-dialogs-1.0.2.jar" size="155556" download="eager" />
-    <jar href="lib/proxy-vole_20131209.jar" size="205079" download="eager" />
+    <jar href="ShiftyWebApp.jar" size="65182" download="eager" />
+    <jar href="lib/ShiftyEncryption-2.0.jar" size="3752" download="eager" />
+    <jar href="lib/commons-codec-1.9.jar" size="285656" download="eager" />
+    <jar href="lib/commons-logging-1.2.jar" size="66442" download="eager" />
+    <jar href="lib/controlsfx-8.20.8.jar" size="1030462" download="eager" />
+    <jar href="lib/controlsfx-samples-8.20.8.jar" size="666708" download="eager" />
+    <jar href="lib/fluent-hc-4.4.jar" size="34209" download="eager" />
+    <jar href="lib/fxsampler-1.0.8.jar" size="32821" download="eager" />
+    <jar href="lib/gson-2.3.1.jar" size="226213" download="eager" />
+    <jar href="lib/httpclient-4.4.jar" size="769810" download="eager" />
+    <jar href="lib/httpclient-cache-4.4.jar" size="169499" download="eager" />
+    <jar href="lib/httpclient-win-4.4.jar" size="19938" download="eager" />
+    <jar href="lib/httpcore-4.4.jar" size="349950" download="eager" />
+    <jar href="lib/httpmime-4.4.jar" size="45028" download="eager" />
+    <jar href="lib/jna-4.1.0.jar" size="927941" download="eager" />
+    <jar href="lib/jna-platform-4.1.0.jar" size="1523349" download="eager" />
+    <jar href="lib/mail-1.4.7.jar" size="553342" download="eager" />
+    <jar href="lib/openjfx-dialogs-1.0.2.jar" size="155565" download="eager" />
+    <jar href="lib/proxy-vole_20131209.jar" size="205085" download="eager" />
   </resources>
 <security>
   <all-permissions/>
 </security>
-  <applet-desc  width="1600" height="1100" main-class="com.javafx.main.NoJavaFXFallback"  name="ShiftyWebApp" >
+  <applet-desc  width="2000" height="1100" main-class="com.javafx.main.NoJavaFXFallback"  name="ShiftyWebApp" >
     <param name="requiredFXVersion" value="2.2+"/>
   </applet-desc>
-  <jfx:javafx-desc  width="1600" height="1100" main-class="webapptest.WebAppTest"  name="ShiftyWebApp" />
+  <jfx:javafx-desc  width="2000" height="1100" main-class="webapptest.WebAppTest"  name="ShiftyWebApp" />
   <update check="always"/>
 </jnlp>

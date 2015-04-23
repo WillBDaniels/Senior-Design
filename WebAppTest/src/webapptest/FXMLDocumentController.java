@@ -916,6 +916,7 @@ public class FXMLDocumentController implements Initializable {
         initializeShiftTableColumns();
         initializeHouseColumns();
         initializeGroupColumns();
+        LogInScreenController.completeInfo = gson.fromJson(WebAppTest.postToServer(Type.SHIFTY, Action.GETALLDATA, ""), DataPOJO.class);
         refreshAllTables(LogInScreenController.completeInfo);
     }
 }

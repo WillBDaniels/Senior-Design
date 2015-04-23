@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.haven.skilltest.demo"
+    package="edu.csci.teamshifty"
     android:versionCode="2"
     android:versionName="2.0" >
 
@@ -8,7 +8,7 @@
 
     <application
         android:name="com.util.userInfo"
-        android:icon="@drawable/icon"
+        android:icon="@drawable/shift"
         android:label="@string/app_name" >
         <activity
             android:name="com.start.Main"
@@ -37,12 +37,17 @@
         </activity>
         <activity android:name="com.service.SendMSM" >
         </activity>
-        <activity android:name="com.util.HouseActivity" >
+        <activity android:name="com.service.CreateList" >
         </activity>
-        <activity android:name="com.service.RecoverPass" >
+        <activity android:name="com.util.HouseActivity" >
         </activity>
         <activity android:name="com.service.QuestionRest" >
         </activity>
+        <activity android:name="com.service.RecoverPass" >
+        </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="970e3c6e7f453e1420b1b37d79eec26a92531f27" />
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
