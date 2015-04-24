@@ -118,7 +118,7 @@ public class MainActivity extends Activity {
 					intent3.setClass(MainActivity.this, CreateList.class);
 					startActivity(intent3);
 				} else {
-                    House house = getInfo.currentPojo.getHouseList().get(position-2);
+                    House house = getInfo.currentPojo.getHouseList().get(position-3);
                     houseId = String.valueOf(house.getHouseID());
 					Intent intent = new Intent();
 					intent.setClass(MainActivity.this, HouseActivity.class);
