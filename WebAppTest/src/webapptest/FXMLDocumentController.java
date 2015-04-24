@@ -127,6 +127,12 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private Button btn_update_employees;
+    @FXML
+    private Button btn_update_houses;
+    @FXML
+    private Button btn_update_groups;
+    @FXML
+    private Button btn_update_shifts;
 
     /**
      * Table columns for employee
@@ -328,6 +334,7 @@ public class FXMLDocumentController implements Initializable {
         shiftIDCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Shift, Integer>>() {
             @Override
             public void handle(TableColumn.CellEditEvent<Shift, Integer> t) {
+                btn_update_shifts.setDisable(false);
                 ((Shift) t.getTableView().getItems().get(t.getTablePosition().getRow())).setShiftID(t.getNewValue());
 
             }
@@ -338,6 +345,7 @@ public class FXMLDocumentController implements Initializable {
         timeCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Shift, String>>() {
             @Override
             public void handle(TableColumn.CellEditEvent<Shift, String> t) {
+                btn_update_shifts.setDisable(false);
                 ((Shift) t.getTableView().getItems().get(t.getTablePosition().getRow())).setTime(t.getNewValue());
 
             }
@@ -348,6 +356,7 @@ public class FXMLDocumentController implements Initializable {
         empIDCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Shift, Integer>>() {
             @Override
             public void handle(TableColumn.CellEditEvent<Shift, Integer> t) {
+                btn_update_shifts.setDisable(false);
                 ((Shift) t.getTableView().getItems().get(t.getTablePosition().getRow())).setEmployeeID(t.getNewValue());
 
             }
@@ -358,6 +367,7 @@ public class FXMLDocumentController implements Initializable {
         houseIDCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Shift, Integer>>() {
             @Override
             public void handle(TableColumn.CellEditEvent<Shift, Integer> t) {
+                btn_update_shifts.setDisable(false);
                 ((Shift) t.getTableView().getItems().get(t.getTablePosition().getRow())).setHouseID(t.getNewValue());
 
             }
@@ -368,6 +378,7 @@ public class FXMLDocumentController implements Initializable {
         shiftNameCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Shift, String>>() {
             @Override
             public void handle(TableColumn.CellEditEvent<Shift, String> t) {
+                btn_update_shifts.setDisable(false);
                 ((Shift) t.getTableView().getItems().get(t.getTablePosition().getRow())).setNameProp(t.getNewValue());
 
             }
@@ -382,6 +393,7 @@ public class FXMLDocumentController implements Initializable {
         groupIDCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Group, Integer>>() {
             @Override
             public void handle(TableColumn.CellEditEvent<Group, Integer> t) {
+                btn_update_groups.setDisable(false);
                 ((Group) t.getTableView().getItems().get(t.getTablePosition().getRow())).setGroupID(t.getNewValue());
 
             }
@@ -392,6 +404,7 @@ public class FXMLDocumentController implements Initializable {
         groupNameCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Group, String>>() {
             @Override
             public void handle(TableColumn.CellEditEvent<Group, String> t) {
+                btn_update_groups.setDisable(false);
                 ((Group) t.getTableView().getItems().get(t.getTablePosition().getRow())).setGroupName(t.getNewValue());
 
             }
@@ -402,6 +415,7 @@ public class FXMLDocumentController implements Initializable {
         groupManagerIDCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Group, Integer>>() {
             @Override
             public void handle(TableColumn.CellEditEvent<Group, Integer> t) {
+                btn_update_groups.setDisable(false);
                 ((Group) t.getTableView().getItems().get(t.getTablePosition().getRow())).setManagerID(t.getNewValue());
 
             }
@@ -412,6 +426,7 @@ public class FXMLDocumentController implements Initializable {
         groupEmployeeNameCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Group, String>>() {
             @Override
             public void handle(TableColumn.CellEditEvent<Group, String> t) {
+                btn_update_groups.setDisable(false);
                 ((Group) t.getTableView().getItems().get(t.getTablePosition().getRow())).setGroupEmployeeName(t.getNewValue());
 
             }
@@ -423,6 +438,7 @@ public class FXMLDocumentController implements Initializable {
         groupEmployeeIDCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Group, Integer>>() {
             @Override
             public void handle(TableColumn.CellEditEvent<Group, Integer> t) {
+                btn_update_groups.setDisable(false);
                 ((Group) t.getTableView().getItems().get(t.getTablePosition().getRow())).setGroupEmployeeID(t.getNewValue());
 
             }
@@ -438,6 +454,7 @@ public class FXMLDocumentController implements Initializable {
         facilityIDCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<House, Integer>>() {
             @Override
             public void handle(TableColumn.CellEditEvent<House, Integer> t) {
+                btn_update_houses.setDisable(false);
                 ((House) t.getTableView().getItems().get(t.getTablePosition().getRow())).setHouseID(t.getNewValue());
 
             }
@@ -449,6 +466,7 @@ public class FXMLDocumentController implements Initializable {
         neighborhoodCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<House, String>>() {
             @Override
             public void handle(TableColumn.CellEditEvent<House, String> t) {
+                btn_update_houses.setDisable(false);
                 ((House) t.getTableView().getItems().get(t.getTablePosition().getRow())).setHouseLocation(t.getNewValue());
 
             }
@@ -460,6 +478,7 @@ public class FXMLDocumentController implements Initializable {
         houseNameCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<House, String>>() {
             @Override
             public void handle(TableColumn.CellEditEvent<House, String> t) {
+                btn_update_houses.setDisable(false);
                 ((House) t.getTableView().getItems().get(t.getTablePosition().getRow())).setHouseName(t.getNewValue());
 
             }
@@ -471,6 +490,7 @@ public class FXMLDocumentController implements Initializable {
         houseIsActiveCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<House, Boolean>>() {
             @Override
             public void handle(TableColumn.CellEditEvent<House, Boolean> t) {
+                btn_update_houses.setDisable(false);
                 ((House) t.getTableView().getItems().get(t.getTablePosition().getRow())).setIsActiveProp(t.getNewValue());
 
             }
@@ -497,6 +517,21 @@ public class FXMLDocumentController implements Initializable {
         addEmp.setAllEmployees(strippedEmpList);
         String response = WebAppTest.postToServer(Type.SHIFTY, Action.UPDATEEMEPLOYEE, gson.toJson(addEmp));
         System.out.println("Response: " + response);
+    }
+    
+    @FXML
+    public void UpdateShiftButtonPressed() {
+        
+    }
+    
+    @FXML
+    public void UpdateGroupButtonPressed() {
+        
+    }
+    
+    @FXML
+    public void UpdateHouseButtonPressed() {
+        
     }
 
     @FXML

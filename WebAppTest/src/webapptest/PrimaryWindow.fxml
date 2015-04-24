@@ -58,6 +58,11 @@
                                                         </HBox>
                                                     </children>
                                                 </VBox>
+                                    <HBox prefHeight="30.0" prefWidth="554.0">
+                                       <children>
+                                          <Button fx:id="btn_update_shifts" mnemonicParsing="false" onAction="#UpdateShiftButtonPressed" prefHeight="31.0" prefWidth="135.0" text="Update Shifts" />
+                                       </children>
+                                    </HBox>
                                             </children>
                                         </VBox>
                               <Label fx:id="lbl_shift_error" prefHeight="17.0" prefWidth="596.0" textFill="RED" />
@@ -122,6 +127,12 @@
                                             </children>
                                         </VBox>
                               <Label fx:id="lbl_house_error" prefHeight="17.0" prefWidth="639.0" textFill="RED" />
+                              <HBox>
+                                 <children>
+                                    <Pane prefHeight="31.0" prefWidth="440.0" />
+                                    <Button fx:id="btn_update_houses" mnemonicParsing="false" onAction="#UpdateHouseButtonPressed" text="Update Houses" />
+                                 </children>
+                              </HBox>
                                     </children>
                                     <padding>
                                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -252,6 +263,12 @@
                                                     </children>
                                                 </VBox>
                                     <Label fx:id="lbl_group_error" prefHeight="17.0" prefWidth="574.0" textFill="#dd0000" />
+                                    <HBox prefHeight="28.0" prefWidth="554.0" spacing="10.0">
+                                       <children>
+                                          <Pane prefHeight="31.0" prefWidth="310.0" />
+                                          <Button fx:id="btn_update_groups" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#UpdateGroupButtonPressed" prefHeight="31.0" prefWidth="150.0" text="Update Groups" />
+                                       </children>
+                                    </HBox>
                                             </children>
                                             <padding>
                                                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
