@@ -29,6 +29,6 @@
     <string name="newpass">New password</string>
     <string name="reset">Reset password</string>
     <string name="error">Answer is not correct</string>
-    <string name="recover">Rcover password</string>
+    <string name="recover">Recover password</string>
     <string name="invalid">Invalid username</string>
 </resources>
