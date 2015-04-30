@@ -16,7 +16,8 @@
             android:id="@+id/menucontentlist"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:cacheColorHint="#00000000" >
+            android:cacheColorHint="#00000000"
+             android:background="#4a6530">
         </ListView>
         
     </RelativeLayout>
@@ -26,7 +27,7 @@
         android:layout_width="320dip"
         android:layout_height="fill_parent"
         android:layout_alignParentRight="true"
-        android:background="#5f9f9f"
+        android:background="#306565"
         android:orientation="vertical"
         android:visibility="visible" >
 
@@ -44,7 +45,8 @@
             android:id="@+id/contentList"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:cacheColorHint="#00000000" >
+            android:cacheColorHint="#00000000"
+            android:background="#306565">
         </ListView>
     </LinearLayout>
 
