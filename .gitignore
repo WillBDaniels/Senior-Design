@@ -9,7 +9,6 @@ Standalone_Server/.gradle/
 /Shifty/app/build/*
 build/
 .gradle/
-.idea/
 dist/
 nbproject/
 

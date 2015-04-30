@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d0e92db5-1fd4-4056-9683-a8ab004d29aa" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/RecoverPass.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/RecoverPass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Employee.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Employee.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/anim/myanim.xml" afterPath="$PROJECT_DIR$/app/src/main/res/anim/myanim.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Com.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Com.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/resources.ap_" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/resources.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Data.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Data.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$dimen.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$dimen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/start/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/start/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/openjfx-dialogs-1.0.2.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/openjfx-dialogs-1.0.2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-cache-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-cache-4.4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/ParameterFilter.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/ParameterFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/ShiftHistory.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/ShiftHistory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/ShiftyEncryption-2.0.jar" afterPath="$PROJECT_DIR$/app/lib/ShiftyEncryption-2.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewEmployee.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewEmployee.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$menu.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewGroup.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app-release.apk" afterPath="$PROJECT_DIR$/app/app-release.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleGetAllData.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleGetAllData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$style.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/libs/ShiftyEncryption-2.0.jar" afterPath="$PROJECT_DIR$/../HttpExampleActivity/libs/ShiftyEncryption-2.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/JSONDeserializer.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/JSONDeserializer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$color.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/i.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/i.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/enums/State.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/enums/State.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$dimen.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$dimen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/DataPOJO.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/DataPOJO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/shifthistory.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/shifthistory.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Type.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Type.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/o.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/o.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/start/Main.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/start/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/splashScreen.png" afterPath="$PROJECT_DIR$/assets/splashScreen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/MSMpage.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/MSMpage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Shifty_Encryption/src/test/java/edu/csci/shiftyencryption/ShiftyCipherTest.java" afterPath="$PROJECT_DIR$/../Shifty_Encryption/src/test/java/edu/csci/shiftyencryption/ShiftyCipherTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/test/webapptest/WebAppTestTest.java" afterPath="$PROJECT_DIR$/../WebAppTest/test/webapptest/WebAppTestTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/gen/com/example/httpexampleactivity/R.java" afterPath="$PROJECT_DIR$/../HttpExampleActivity/gen/com/example/httpexampleactivity/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/house.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/house.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/controlsfx-8.20.8.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/controlsfx-8.20.8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Employee.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Employee.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Shift.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Shift.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew" afterPath="$PROJECT_DIR$/gradlew" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/jna-platform-4.1.0.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/jna-platform-4.1.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewHouse.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewHouse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpmime-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpmime-4.4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/a.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$anim.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$anim.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-win-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-win-4.4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/fluent-hc-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/fluent-hc-4.4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/commons-codec-1.9.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/commons-codec-1.9.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/DatabaseManager.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/DatabaseManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$anim.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$anim.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCheckLogin.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCheckLogin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="$PROJECT_DIR$/gradlew.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Group.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Group.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/commons-logging-1.2.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/commons-logging-1.2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/android-support-v4-2eab63073c92076a5a0b9fe64e5206ae.jar" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/android-support-v4-2eab63073c92076a5a0b9fe64e5206ae.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/login.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$attr.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$attr.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/shift.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteHouse.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteHouse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fabric.properties" afterPath="$PROJECT_DIR$/app/fabric.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/addemployee2.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/addemployee2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/DisplayMessageActivity.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/DisplayMessageActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/shift.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/shift.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/enums/Data.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/enums/Data.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/HouseActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/HouseActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/highres.webp" afterPath="$PROJECT_DIR$/assets/highres.webp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Shifty_Encryption/build.gradle" afterPath="$PROJECT_DIR$/../Shifty_Encryption/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/SendMSM.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/SendMSM.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/splashScreen.svg" afterPath="$PROJECT_DIR$/assets/splashScreen.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-4.4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/JSONHandler.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/JSONHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleResetPassword.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleResetPassword.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/HttpExampleActivity.apk" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/HttpExampleActivity.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/HttpExampleActivity.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/HttpExampleActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Employee.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Employee.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/getInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/getInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Action.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Action.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/proxy-vole_20131209.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/proxy-vole_20131209.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/ProxyHandler.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/ProxyHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$style.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteEmployee.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteEmployee.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/gen/com/example/httpexampleactivity/BuildConfig.java" afterPath="$PROJECT_DIR$/../HttpExampleActivity/gen/com/example/httpexampleactivity/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/btn_select.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_select.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/libs/ShiftyEncryption-2.0.jar" afterPath="$PROJECT_DIR$/../Standalone_Server/libs/ShiftyEncryption-2.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/shift.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shift.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$id.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteShift.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteShift.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$integer.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/mail-1.4.7.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/mail-1.4.7.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/gen/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/../HttpExampleActivity/gen/android/support/v7/appcompat/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/start/login.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/start/login.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/gson-2.3.1.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/gson-2.3.1.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/CreateList.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/CreateList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$drawable.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/d.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/d.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$string.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/CreateShift.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/CreateShift.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$attr.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$attr.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/shift.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/images.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/images.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/recover_pass.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/recover_pass.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/license.txt" afterPath="$PROJECT_DIR$/../WebAppTest/lib/license.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/appcompat_v7-b7bb074fe9f2356a7d13e5eba70c6afa.jar" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/appcompat_v7-b7bb074fe9f2356a7d13e5eba70c6afa.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleGetQA.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleGetQA.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/n.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/n.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Shift.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Shift.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/HttpExampleActivity$DownloadWebpageTask.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/HttpExampleActivity$DownloadWebpageTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/.nb-gradle-properties" afterPath="$PROJECT_DIR$/../Standalone_Server/.nb-gradle-properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpcore-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpcore-4.4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/l.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/g.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/g.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/MultiThreadedHttpServer.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/MultiThreadedHttpServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/highres.png" afterPath="$PROJECT_DIR$/assets/highres.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$string.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$styleable.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$color.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/android-support-v7-appcompat-dd6066ef8c392d644c5e695df7b233a4.jar" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/android-support-v7-appcompat-dd6066ef8c392d644c5e695df7b233a4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/userInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/userInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/controlsfx-samples-8.20.8.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/controlsfx-samples-8.20.8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/House.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/House.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Type.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Type.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/fxsampler-1.0.8.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/fxsampler-1.0.8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/jna-4.1.0.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/jna-4.1.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/ShiftyEncryption-2.0.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/ShiftyEncryption-2.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/expandablelistview2_groups.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/expandablelistview2_groups.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/House.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/House.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/expandablelistview2_child.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/expandablelistview2_child.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleUpdateEmployee.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleUpdateEmployee.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Action.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Action.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shifty.iml" afterPath="$PROJECT_DIR$/Shifty.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/DataPOJO.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/DataPOJO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteGroup.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/start/SlidingLayout.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/start/SlidingLayout.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Group.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Group.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/btn_half.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_half.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/que_reset.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/que_reset.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Shifty_Encryption/src/main/java/edu/csci/shiftyencryption/ShiftyCipher.java" afterPath="$PROJECT_DIR$/../Shifty_Encryption/src/main/java/edu/csci/shiftyencryption/ShiftyCipher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shangjiantou.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shangjiantou.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/WorkerRunnable.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/WorkerRunnable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/msmpage.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/msmpage.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Data.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Data.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$integer.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/loginScreen.png" afterPath="$PROJECT_DIR$/assets/loginScreen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$bool.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$bool.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Shifty_Encryption/settings.gradle" afterPath="$PROJECT_DIR$/../Shifty_Encryption/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/btn_unselect.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_unselect.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$styleable.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Group.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Group.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/mainPage.png" afterPath="$PROJECT_DIR$/assets/mainPage.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$layout.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$bool.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$bool.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/House.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/House.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewShift.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewShift.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Com.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Com.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Shift.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Shift.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/sendmsm.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sendmsm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/BuildConfig.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/BuildConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/background.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/QuestionRest.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/QuestionRest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/employee_info.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/employee_info.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/DataPOJO.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/DataPOJO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/primaryCSS.css" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/primaryCSS.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/xiajiantou.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/xiajiantou.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/shift.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/createlist.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/createlist.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/addemployee.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/addemployee.xml" />
+    </list>
+    <ignored path="gradle.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="gradle" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1874" />
+    <option name="height" value="1096" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="AndroidView" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shifty" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/sdk" />
+    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.proportion" value="0.15" />
+    <property name="options.lastSelected" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="0" />
+    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0e92db5-1fd4-4056-9683-a8ab004d29aa" name="Default" comment="" />
+      <created>1430403443644</created>
+      <updated>1430403443644</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13781698" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+</project>
+
