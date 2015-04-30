@@ -1,17 +1,5 @@
 package com.start;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import edu.csci.teamshifty.R;
-import com.service.CreateList;
-import com.service.MSMpage;
-import com.service.ShiftHistory;
-import com.util.House;
-import com.util.HouseActivity;
-import com.util.getInfo;
-import com.util.userInfo;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,8 +10,18 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
+
+import com.service.CreateList;
+import com.service.MSMpage;
+import com.service.ShiftHistory;
+import com.util.House;
+import com.util.HouseActivity;
+import com.util.getInfo;
+import com.util.userInfo;
+
+import java.util.ArrayList;
+
+import edu.csci.teamshifty.R;
 
 public class MainActivity extends Activity {
 
@@ -112,7 +110,6 @@ public class MainActivity extends Activity {
 					// bundle.putInt("position", position);
 					// intent.putExtras(bundle);
 					startActivity(intent);
-
 				} else if (position == 2) {
 					Intent intent3 = new Intent();
 					intent3.setClass(MainActivity.this, CreateList.class);
@@ -127,7 +124,6 @@ public class MainActivity extends Activity {
 					intent.putExtras(bundle);
 					startActivity(intent);
 				}
-
 			}
 		});
 

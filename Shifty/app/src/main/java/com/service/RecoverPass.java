@@ -44,7 +44,6 @@ public class RecoverPass extends Activity {
                 intent.putExtras(bundle);
                 startActivity(intent);
             }
-
         }
     }
 }

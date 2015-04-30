@@ -40,6 +40,8 @@ public enum Com {
     ADDGROUP("addGroup"),
     UPDATEEMPLOYEE("updateEmployee"),
     GETALLDATA("getData"),
+    GETQA("getQA"),
+    RESETPASSWORD("resetPassword"),
     CONNECTIONSECRET("555hskfusd2ksfkjdf118431@8459438754hdkdsf-98134ihfadfafdf");
     /**
      * @}

@@ -9,7 +9,17 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
 import com.start.login;
+import com.util.Action;
+import com.util.DataPOJO;
+import com.util.Employee;
+import com.util.Type;
+import com.util.getInfo;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 import edu.csci.teamshifty.R;
 
 /**
@@ -39,12 +49,24 @@ public class QuestionRest extends Activity {
         question = (TextView) findViewById(R.id.question);
         answer = (EditText) findViewById(R.id.answer);
         newpass = (EditText) findViewById(R.id.newpass);
-        question.setText(name);//get question and answer from database
-        correctAnswer = "ok";
+        DataPOJO dataFirst;
+        Gson gson = new Gson();
+        dataFirst = gson.fromJson(getInfo.postToServer(Type.SHIFTY, Action.GETALLDATA, ""), DataPOJO.class);
+        int employeeID = 0;
+        for (Employee emp : dataFirst.getAllEmployees()){
+            if (emp.getUsername().equals(name)){
+                employeeID = emp.getEmployeeID();
+            }
+        }
+        getInfo.employeeID = String.valueOf(employeeID);
+        DataPOJO data = new DataPOJO();
+        data.setEmployeeID(employeeID);
+        data = gson.fromJson(getInfo.postToServer(Type.SHIFTY, Action.GETQA, gson.toJson(data, DataPOJO.class)), DataPOJO.class);
+        question.setText(data.getSecretQuestion());//get question and answer from database
+        correctAnswer = data.getSecretAnswer();
         reset.setOnClickListener(new submit());
 
     }
-
     private class submit implements Button.OnClickListener {
 
         @Override
@@ -57,14 +79,36 @@ public class QuestionRest extends Activity {
                     showerror.setText("Invalid password ");
                     showerror.setVisibility(View.VISIBLE);
                 }else{
-                    Toast.makeText(QuestionRest.this,"reset password successfully",Toast.LENGTH_LONG).show();
+                    DataPOJO data = new DataPOJO();
+                    try {
+                        MessageDigest md = MessageDigest.getInstance("MD5");
+                        byte[] bytes = md.digest(newpass.getText().toString()
+                                .getBytes());
+                        StringBuilder ret = new StringBuilder(bytes.length << 1);
+                        for (int i = 0; i < bytes.length; i++) {
+                            ret.append(Character
+                                    .forDigit((bytes[i] >> 4) & 0xf, 16));
+                            ret.append(Character.forDigit(bytes[i] & 0xf, 16));
+                        }
+                        pass = ret.toString();
+                    } catch (NoSuchAlgorithmException e) {
+                        e.printStackTrace(System.err);
+                    }
+                    data.setPasswordHash(pass);
+                    data.setEmployeeID(Integer.valueOf(getInfo.employeeID));
+                    Gson gson = new Gson();
+                    data = gson.fromJson(getInfo.postToServer(Type.SHIFTY, Action.RESETPASSWORD, gson.toJson(data, DataPOJO.class)), DataPOJO.class);
+                    if (data.getReturnMessage().toLowerCase().contains("success")) {
+                        Toast.makeText(QuestionRest.this, "reset password successfully", Toast.LENGTH_LONG).show();
+                    }else{
+                        Toast.makeText(QuestionRest.this, "reset password unsuccessful, please contact admin for assistance", Toast.LENGTH_LONG).show();
+                    }
                     Intent intent = new Intent();
                     intent.setClass(QuestionRest.this, login.class);
                     Bundle bundle = new Bundle();
                     startActivity(intent);
                     finish();
                 }
-
             }else{
                 showerror.setText("Answer is not correct ");
                 showerror.setVisibility(View.VISIBLE);
