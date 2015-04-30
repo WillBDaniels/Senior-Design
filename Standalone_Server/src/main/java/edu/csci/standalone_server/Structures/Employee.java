@@ -10,11 +10,31 @@ public class Employee {
     private String name = "";
     private String username = "";
     private String password = "";
+    private String secretQuestion = "";
+    private String secretAnswer = "";
     private int employeeID = 0;
     private String phoneNumber = "";
     private boolean isBackup = false;
     private boolean isManager = false;
     private boolean isAdmin = false;
+
+     public String getSecretQuestion() {
+        return secretQuestion;
+    }
+
+    public void setSecretQuestion(String secretQuestion) {
+        this.secretQuestion = secretQuestion;
+    }
+
+    public String getSecretAnswer() {
+        return secretAnswer;
+    }
+
+    public void setSecretAnswer(String secretAnswer) {
+        this.secretAnswer = secretAnswer;
+    }
+
+
 
     public String getPassword() {
         return password;

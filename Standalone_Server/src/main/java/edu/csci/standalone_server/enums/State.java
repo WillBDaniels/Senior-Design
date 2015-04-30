@@ -10,6 +10,8 @@ import edu.csci.standalone_server.jsonhandler.HandleDeleteGroup;
 import edu.csci.standalone_server.jsonhandler.HandleDeleteHouse;
 import edu.csci.standalone_server.jsonhandler.HandleDeleteShift;
 import edu.csci.standalone_server.jsonhandler.HandleGetAllData;
+import edu.csci.standalone_server.jsonhandler.HandleGetQA;
+import edu.csci.standalone_server.jsonhandler.HandleResetPassword;
 import edu.csci.standalone_server.jsonhandler.HandleUpdateEmployee;
 import edu.csci.standalone_server.jsonhandler.JSONHandler;
 
@@ -41,6 +43,8 @@ public enum State {
     ADDSHIFT(HandleCreateNewShift.class, "addShift"),
     ADDGROUP(HandleCreateNewGroup.class, "addGroup"),
     UPDATEMPLOYEE(HandleUpdateEmployee.class, "updateEmployee"),
+    GETQA(HandleGetQA.class, "getQA"),
+    RESETPASSWORD(HandleResetPassword.class, "resetPassword"),
     GETALLDATA(HandleGetAllData.class, "getData");
     /**
      * @}

@@ -15,6 +15,8 @@ public class DataPOJO {
     private String wholeName = "";
     private String passwordHash = "";
     private String returnMessage = "";
+    private String secretQuestion = "";
+    private String secretAnswer = "";
     private int employeeID = 0;
     private boolean lastActionSuccess = false;
     private boolean isAdmin = false;
@@ -22,6 +24,23 @@ public class DataPOJO {
     private List<Group> groupList = new ArrayList<>();
     private List<House> houseList = new ArrayList<>();
     private List<Employee> allEmployees = new ArrayList<>();
+
+    public String getSecretQuestion() {
+        return secretQuestion;
+    }
+
+    public void setSecretQuestion(String secretQuestion) {
+        this.secretQuestion = secretQuestion;
+    }
+
+    public String getSecretAnswer() {
+        return secretAnswer;
+    }
+
+    public void setSecretAnswer(String secretAnswer) {
+        this.secretAnswer = secretAnswer;
+    }
+
 
     public String getUsername() {
         return username;

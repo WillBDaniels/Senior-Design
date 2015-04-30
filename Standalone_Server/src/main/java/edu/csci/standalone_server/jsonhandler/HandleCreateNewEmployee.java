@@ -32,8 +32,8 @@ public class HandleCreateNewEmployee extends JSONHandler {
         for (Employee emp : jsonData.getAllEmployees()) {
             try {
 
-                query = "INSERT INTO employee ( `employee_name`, `phone_number`, `is_manager`, `is_backup`, `username`,`password`, `is_admin`) VALUES "
-                        + "(?,?,?,?, ? , ? ,?);";
+                query = "INSERT INTO employee ( `employee_name`, `phone_number`, `is_manager`, `is_backup`, `username`,`password`, `is_admin`, `secret_question`, `secret_answer`) VALUES "
+                        + "(?,?,?,?, ? , ? ,?, ?, ?);";
                 pstmt = con.prepareStatement(query);
                 pstmt.setString(1, emp.getName());
                 pstmt.setString(2, emp.getPhoneNumber());
@@ -42,6 +42,8 @@ public class HandleCreateNewEmployee extends JSONHandler {
                 pstmt.setString(5, emp.getUsername());
                 pstmt.setString(6, emp.getPassword());
                 pstmt.setBoolean(7, emp.isIsAdmin());
+                pstmt.setString(8, emp.getSecretQuestion());
+                pstmt.setString(9, emp.getSecretAnswer());
                 returnCode = pstmt.executeUpdate();
 
             } catch (SQLException ex) {
