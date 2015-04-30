@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/William/Documents/UCD/Senior-Design/Shifty/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/C:/Users/William/Documents/UCD/Senior-Design/Shifty/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="OK">OK</string>
+    <string name="accountName">username:</string>
+    <string name="add">add employees</string>
+    <string name="addContacts">add</string>
+    <string name="app_name">Shifty</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancel2">back</string>
+    <string name="contacts">contacts</string>
+    <string name="create">Create Shift</string>
+    <string name="end">end time</string>
+    <string name="error">Answer is not correct</string>
+    <string name="from">start time</string>
+    <string name="group">group</string>
+    <string name="hello">Welcome</string>
+    <string name="invalid">Invalid username</string>
+    <string name="listname">List name</string>
+    <string name="login">Sign in</string>
+    <string name="loginerror">login failed</string>
+    <string name="newpass">New password</string>
+    <string name="next">next</string>
+    <string name="numberAndOk">OK</string>
+    <string name="password">password:</string>
+    <string name="recover">Recover password</string>
+    <string name="reset">Reset password</string>
+    <string name="select">Select items</string>
+    <string name="send">send</string>
+    <string name="setdate">Set day, time, and location</string>
+    <string name="setlocation">Set location</string>
+    <string name="settime">Set the time interval</string>
+    <string name="text">Text message</string>
+    <string name="to">To</string>
+    <!-- From: file:/C:/Users/William/Documents/UCD/Senior-Design/Shifty/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

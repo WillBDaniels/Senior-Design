@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/invalid"
+        android:id="@+id/error"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffff2619"
+        android:textSize="26dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/accountName"
+        android:id="@+id/user"
+        android:layout_weight="0.09" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username" />
+
+    <Button
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:id="@+id/gonext"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05" />
+
+</LinearLayout><!-- From: file:/C:/Users/William/Documents/UCD/Senior-Design/Shifty/app/src/main/res/layout/recover_pass.xml -->
