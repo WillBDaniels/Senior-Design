@@ -52,6 +52,11 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private TextField empPassword;
     @FXML
+    private TextField tf_emp_secret_answer;
+
+    @FXML
+    private TextField tf_emp_secret_question;
+    @FXML
     private CheckBox cb_employee_admin;
     @FXML
     private CheckBox cb_employee_backup;
@@ -817,6 +822,21 @@ public class FXMLDocumentController implements Initializable {
         } else {
             WebAppTest.setCSS(false, empPassword);
         }
+        if (tf_emp_secret_question.getText().isEmpty()){
+            lbl_employee_error.setText("Employee secret question required!");
+            WebAppTest.setCSS(true, tf_emp_secret_question);
+            return;
+        }else{
+            WebAppTest.setCSS(false, tf_emp_secret_question);
+        }
+        if (tf_emp_secret_answer.getText().isEmpty()){
+            lbl_employee_error.setText("Employee secret answer required!");
+            WebAppTest.setCSS(true, tf_emp_secret_answer);
+            return;
+        }else{
+            WebAppTest.setCSS(false, tf_emp_secret_answer);
+        }
+
         lbl_employee_error.setText("");
         DataPOJO addEmp = new DataPOJO();
         String password = "";
@@ -834,6 +854,8 @@ public class FXMLDocumentController implements Initializable {
         emp.setPassword(password);
         emp.setIsAdmin(cb_employee_admin.isSelected());
         emp.setIsBackup(cb_employee_backup.isSelected());
+        emp.setSecretQuestion(tf_emp_secret_question.getText());
+        emp.setSecretAnswer(tf_emp_secret_answer.getText());
         List<Employee> empList = new ArrayList<>();
         empList.add(emp);
         addEmp.setAllEmployees(empList);

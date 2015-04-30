@@ -146,6 +146,10 @@
                                         <TextField fx:id="empUserName" />
                                         <Label text="Password:" />
                                         <PasswordField fx:id="empPassword" />
+                              <Label text="Secret Question:" />
+                              <PasswordField fx:id="tf_emp_secret_question" />
+                              <Label text="Secret Answer:" />
+                              <PasswordField fx:id="tf_emp_secret_answer" />
                                         <Button fx:id="EmployeeButton" mnemonicParsing="false" onAction="#employeeButtonPressed" text="Add Employee" />
                                         <CheckBox fx:id="managerCheck" mnemonicParsing="false" text="Is this employee a manager?" />
                               <CheckBox fx:id="cb_employee_backup" mnemonicParsing="false" text="Is this employee a registered backup?" />
