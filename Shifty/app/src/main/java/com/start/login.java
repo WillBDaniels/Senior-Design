@@ -102,6 +102,11 @@ public class login extends Activity {
         @Override
         protected String doInBackground(HolderClass... params) {
             String returnValue = getInfo.postToServer(params[0].getType(), params[0].getAction(), params[0].getJson());
+            Gson gson = new Gson();
+            DataPOJO resultData = gson.fromJson(returnValue, DataPOJO.class);
+            getInfo.employeeID = String.valueOf(resultData.getEmployeeID());
+            getInfo.refreshData();
+
             return returnValue;
         }
 
@@ -121,6 +126,7 @@ public class login extends Activity {
                 getInfo.currentPojo = resultData;
                 Intent intent = new Intent();
                 intent.setClass(login.this, MainActivity.class);
+
                 startActivity(intent);
                 finish();
             }

@@ -81,7 +81,6 @@ public class SendMSM extends Activity {
 	}
 
     private void displayListView() {
-        getInfo.refreshData();
         List<Employee> EmployeeList;
         EmployeeList = getInfo.currentPojo.getAllEmployees();
         // create an ArrayAdaptar from the String Array
