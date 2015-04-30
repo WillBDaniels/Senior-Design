@@ -10,3 +10,5 @@ Standalone_Server/.gradle/
 build/
 .gradle/
 .idea/
+dist/
+nbproject/
