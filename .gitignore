@@ -7,3 +7,6 @@ Standalone_Server/.gradle/
 /WebAppTest/app/build/*
 /Shifty/build/*
 /Shifty/app/build/*
+build/
+.gradle/
+.idea/
