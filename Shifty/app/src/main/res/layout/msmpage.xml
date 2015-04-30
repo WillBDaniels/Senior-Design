@@ -83,6 +83,16 @@
             android:id="@+id/location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="269dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar3"
+            android:layout_gravity="center_horizontal"
+            android:indeterminate="true"
+            android:visibility="invisible" />
+
     </LinearLayout>
 
     <LinearLayout

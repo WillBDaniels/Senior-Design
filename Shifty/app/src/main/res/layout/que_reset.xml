@@ -58,4 +58,19 @@
         android:id="@+id/reset"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.07" />
+
+    <FrameLayout
+        android:layout_width="367dp"
+        android:layout_height="200dp">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar5"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="invisible" />
+    </FrameLayout>
+
 </LinearLayout>

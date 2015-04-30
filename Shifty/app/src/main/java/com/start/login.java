@@ -1,27 +1,29 @@
 package com.start;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
-import java.util.List;
-
 import android.app.Activity;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.gson.Gson;
-import edu.csci.teamshifty.R;
 import com.service.RecoverPass;
 import com.util.Action;
 import com.util.DataPOJO;
+import com.util.HolderClass;
 import com.util.Type;
 import com.util.getInfo;
 import com.util.userInfo;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.List;
+
+import edu.csci.teamshifty.R;
 
 public class login extends Activity {
 
@@ -86,32 +88,52 @@ public class login extends Activity {
                 loginData.setUsername(name);
                 loginData.setPasswordHash(pass);
                 Gson gson = new Gson();
-                loginCheck = loginInfo.postToServer(Type.SHIFTY, Action.GETMOBILEINFO, gson.toJson(loginData, DataPOJO.class));
-                System.out.println("This is loginCheck: " + loginCheck);
-                loginData = gson.fromJson(loginCheck, DataPOJO.class);
-                if (loginData.getReturnMessage().toLowerCase().contains("failure")) {
-                    error.setVisibility(View.VISIBLE);
-                } else {
-
-
-//					Toast.makeText(getApplicationContext(),returnOut,
-//							Toast.LENGTH_LONG).show();
-                    employeeId = String.valueOf(loginData.getEmployeeID());
-                    getInfo.employeeID = employeeId;
-                    employeeName = loginData.getWholeName();
-                    getInfo.employeeName = employeeName;
-                    userinfo.setEmployeeId(employeeId);
-                    userinfo.setEmployeeName(employeeName);
-                    getInfo.currentPojo = loginData;
-                    Intent intent = new Intent();
-                    intent.setClass(login.this, MainActivity.class);
-                    startActivity(intent);
-                    finish();
-                }
-
+                HolderClass hc = new HolderClass();
+                hc.setAction(Action.GETMOBILEINFO);
+                hc.setType(Type.SHIFTY);
+                hc.setJson(gson.toJson(loginData, DataPOJO.class));
+                new loginOperation().execute(hc);
             }
 
         });
+    }
+    private class loginOperation extends AsyncTask<HolderClass, Void, String> {
+
+        @Override
+        protected String doInBackground(HolderClass... params) {
+            String returnValue = getInfo.postToServer(params[0].getType(), params[0].getAction(), params[0].getJson());
+            return returnValue;
+        }
+
+        @Override
+            protected void onPostExecute(String result) {
+            Gson gson = new Gson();
+            DataPOJO resultData = gson.fromJson(result, DataPOJO.class);
+            if (resultData.getReturnMessage().toLowerCase().contains("failure")) {
+                error.setVisibility(View.VISIBLE);
+            } else {
+                employeeId = String.valueOf(resultData.getEmployeeID());
+                getInfo.employeeID = employeeId;
+                employeeName = resultData.getWholeName();
+                getInfo.employeeName = employeeName;
+                userinfo.setEmployeeId(employeeId);
+                userinfo.setEmployeeName(employeeName);
+                getInfo.currentPojo = resultData;
+                Intent intent = new Intent();
+                intent.setClass(login.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+
+        }
+
+        @Override
+        protected void onPreExecute() {
+            ((ProgressBar)findViewById(R.id.progressBar)).setVisibility(View.VISIBLE);
+        }
+
+        @Override
+        protected void onProgressUpdate(Void... values) {}
     }
 
 }

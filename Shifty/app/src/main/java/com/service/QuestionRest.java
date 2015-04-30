@@ -2,10 +2,12 @@ package com.service;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -13,7 +15,7 @@ import com.google.gson.Gson;
 import com.start.login;
 import com.util.Action;
 import com.util.DataPOJO;
-import com.util.Employee;
+import com.util.HolderClass;
 import com.util.Type;
 import com.util.getInfo;
 
@@ -28,7 +30,6 @@ import edu.csci.teamshifty.R;
 public class QuestionRest extends Activity {
 
     private Button reset = null;
-    private String name = null;
     private TextView showerror = null;
     private TextView question = null;
     private EditText answer = null;
@@ -41,7 +42,6 @@ public class QuestionRest extends Activity {
         setContentView(R.layout.que_reset);
 
         Bundle bundle = this.getIntent().getExtras();
-        name = bundle.getString("username");
 
         reset = (Button) findViewById(R.id.reset);
         showerror = (TextView) findViewById(R.id.showerror);
@@ -49,21 +49,10 @@ public class QuestionRest extends Activity {
         question = (TextView) findViewById(R.id.question);
         answer = (EditText) findViewById(R.id.answer);
         newpass = (EditText) findViewById(R.id.newpass);
-        DataPOJO dataFirst;
-        Gson gson = new Gson();
-        dataFirst = gson.fromJson(getInfo.postToServer(Type.SHIFTY, Action.GETALLDATA, ""), DataPOJO.class);
-        int employeeID = 0;
-        for (Employee emp : dataFirst.getAllEmployees()){
-            if (emp.getUsername().equals(name)){
-                employeeID = emp.getEmployeeID();
-            }
-        }
-        getInfo.employeeID = String.valueOf(employeeID);
-        DataPOJO data = new DataPOJO();
-        data.setEmployeeID(employeeID);
-        data = gson.fromJson(getInfo.postToServer(Type.SHIFTY, Action.GETQA, gson.toJson(data, DataPOJO.class)), DataPOJO.class);
-        question.setText(data.getSecretQuestion());//get question and answer from database
-        correctAnswer = data.getSecretAnswer();
+
+
+        question.setText("Secret Question: " + getInfo.secretQuestion);//get question and answer from database
+        correctAnswer = getInfo.secretAnswer;
         reset.setOnClickListener(new submit());
 
     }
@@ -97,23 +86,51 @@ public class QuestionRest extends Activity {
                     data.setPasswordHash(pass);
                     data.setEmployeeID(Integer.valueOf(getInfo.employeeID));
                     Gson gson = new Gson();
-                    data = gson.fromJson(getInfo.postToServer(Type.SHIFTY, Action.RESETPASSWORD, gson.toJson(data, DataPOJO.class)), DataPOJO.class);
-                    if (data.getReturnMessage().toLowerCase().contains("success")) {
-                        Toast.makeText(QuestionRest.this, "reset password successfully", Toast.LENGTH_LONG).show();
-                    }else{
-                        Toast.makeText(QuestionRest.this, "reset password unsuccessful, please contact admin for assistance", Toast.LENGTH_LONG).show();
-                    }
-                    Intent intent = new Intent();
-                    intent.setClass(QuestionRest.this, login.class);
-                    Bundle bundle = new Bundle();
-                    startActivity(intent);
-                    finish();
+                    HolderClass hc = new HolderClass();
+                    hc.setAction(Action.RESETPASSWORD);
+                    hc.setType(Type.SHIFTY);
+                    hc.setJson(gson.toJson(data, DataPOJO.class));
+                    new ResetPasswordOperation().execute(hc);
+
                 }
             }else{
                 showerror.setText("Answer is not correct ");
                 showerror.setVisibility(View.VISIBLE);
             }
         }
+    }
+    private class ResetPasswordOperation extends AsyncTask<HolderClass, Void, String> {
+
+        @Override
+        protected String doInBackground(HolderClass... params) {
+            String returnValue = getInfo.postToServer(params[0].getType(), params[0].getAction(), params[0].getJson());
+            return returnValue;
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            Gson gson = new Gson();
+            DataPOJO data = gson.fromJson(result, DataPOJO.class);
+            if (data.getReturnMessage().toLowerCase().contains("success")) {
+                Toast.makeText(QuestionRest.this, "reset password successfully", Toast.LENGTH_LONG).show();
+            }else{
+                Toast.makeText(QuestionRest.this, "reset password unsuccessful, please contact admin for assistance", Toast.LENGTH_LONG).show();
+            }
+            Intent intent = new Intent();
+            intent.setClass(QuestionRest.this, login.class);
+            Bundle bundle = new Bundle();
+            startActivity(intent);
+            finish();
+
+        }
+
+        @Override
+        protected void onPreExecute() {
+            ((ProgressBar)findViewById(R.id.progressBar5)).setVisibility(View.VISIBLE);
+        }
+
+        @Override
+        protected void onProgressUpdate(Void... values) {}
     }
 
 }

@@ -1,199 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidConfiguredLogFilters">
+    <filters>
+      <filter>
+        <option name="name" value="app: edu.csci.teamshifty" />
+        <option name="packageNamePattern" value="edu.csci.teamshifty" />
+      </filter>
+    </filters>
+  </component>
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: edu.csci.teamshifty" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d0e92db5-1fd4-4056-9683-a8ab004d29aa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/RecoverPass.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/RecoverPass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Employee.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Employee.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/anim/myanim.xml" afterPath="$PROJECT_DIR$/app/src/main/res/anim/myanim.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Com.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Com.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/resources.ap_" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/resources.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Data.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Data.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$dimen.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/start/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/start/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/openjfx-dialogs-1.0.2.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/openjfx-dialogs-1.0.2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-cache-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-cache-4.4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/ParameterFilter.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/ParameterFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/ShiftHistory.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/ShiftHistory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/ShiftyEncryption-2.0.jar" afterPath="$PROJECT_DIR$/app/lib/ShiftyEncryption-2.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewEmployee.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewEmployee.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$menu.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewGroup.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewGroup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app-release.apk" afterPath="$PROJECT_DIR$/app/app-release.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleGetAllData.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleGetAllData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$style.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/libs/ShiftyEncryption-2.0.jar" afterPath="$PROJECT_DIR$/../HttpExampleActivity/libs/ShiftyEncryption-2.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/JSONDeserializer.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/JSONDeserializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$color.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/i.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/i.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/enums/State.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/enums/State.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$dimen.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/DataPOJO.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/DataPOJO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/shifthistory.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/shifthistory.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Type.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Type.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/o.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/o.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/start/Main.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/start/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/splashScreen.png" afterPath="$PROJECT_DIR$/assets/splashScreen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/MSMpage.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/MSMpage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Shifty_Encryption/src/test/java/edu/csci/shiftyencryption/ShiftyCipherTest.java" afterPath="$PROJECT_DIR$/../Shifty_Encryption/src/test/java/edu/csci/shiftyencryption/ShiftyCipherTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/test/webapptest/WebAppTestTest.java" afterPath="$PROJECT_DIR$/../WebAppTest/test/webapptest/WebAppTestTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/gen/com/example/httpexampleactivity/R.java" afterPath="$PROJECT_DIR$/../HttpExampleActivity/gen/com/example/httpexampleactivity/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/house.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/house.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/controlsfx-8.20.8.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/controlsfx-8.20.8.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Employee.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Employee.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Shift.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Shift.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew" afterPath="$PROJECT_DIR$/gradlew" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/jna-platform-4.1.0.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/jna-platform-4.1.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewHouse.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewHouse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpmime-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpmime-4.4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/a.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/a.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$anim.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$anim.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-win-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-win-4.4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/fluent-hc-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/fluent-hc-4.4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/commons-codec-1.9.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/commons-codec-1.9.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/DatabaseManager.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/DatabaseManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$anim.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$anim.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCheckLogin.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCheckLogin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="$PROJECT_DIR$/gradlew.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Group.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Group.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/commons-logging-1.2.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/commons-logging-1.2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/android-support-v4-2eab63073c92076a5a0b9fe64e5206ae.jar" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/android-support-v4-2eab63073c92076a5a0b9fe64e5206ae.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/login.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$attr.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/shift.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteHouse.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteHouse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fabric.properties" afterPath="$PROJECT_DIR$/app/fabric.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/addemployee2.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/addemployee2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/resources.ap_" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/resources.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/DisplayMessageActivity.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/DisplayMessageActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/shift.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/shift.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/enums/Data.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/enums/Data.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/HouseActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/HouseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/highres.webp" afterPath="$PROJECT_DIR$/assets/highres.webp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Shifty_Encryption/build.gradle" afterPath="$PROJECT_DIR$/../Shifty_Encryption/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/SendMSM.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/SendMSM.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/splashScreen.svg" afterPath="$PROJECT_DIR$/assets/splashScreen.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-4.4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/JSONHandler.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/JSONHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleResetPassword.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleResetPassword.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/HttpExampleActivity.apk" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/HttpExampleActivity.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/HttpExampleActivity.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/HttpExampleActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Employee.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Employee.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/getInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/getInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Action.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Action.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/proxy-vole_20131209.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/proxy-vole_20131209.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/ProxyHandler.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/ProxyHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$style.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteEmployee.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteEmployee.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/gen/com/example/httpexampleactivity/BuildConfig.java" afterPath="$PROJECT_DIR$/../HttpExampleActivity/gen/com/example/httpexampleactivity/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/btn_select.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_select.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/libs/ShiftyEncryption-2.0.jar" afterPath="$PROJECT_DIR$/../Standalone_Server/libs/ShiftyEncryption-2.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/shift.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-cache-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-cache-4.4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/msmpage.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/msmpage.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shift.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$id.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteShift.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteShift.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$integer.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/mail-1.4.7.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/mail-1.4.7.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/gen/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/../HttpExampleActivity/gen/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/start/login.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/start/login.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/gson-2.3.1.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/gson-2.3.1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/CreateList.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/CreateList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$drawable.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/d.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/d.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$string.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/CreateShift.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/CreateShift.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$attr.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/shift.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/images.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/images.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/recover_pass.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/recover_pass.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/license.txt" afterPath="$PROJECT_DIR$/../WebAppTest/lib/license.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/appcompat_v7-b7bb074fe9f2356a7d13e5eba70c6afa.jar" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/appcompat_v7-b7bb074fe9f2356a7d13e5eba70c6afa.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleGetQA.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleGetQA.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/n.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/n.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Shift.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Shift.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/HttpExampleActivity$DownloadWebpageTask.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/HttpExampleActivity$DownloadWebpageTask.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/.nb-gradle-properties" afterPath="$PROJECT_DIR$/../Standalone_Server/.nb-gradle-properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpcore-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpcore-4.4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/l.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/g.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/g.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/MultiThreadedHttpServer.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/MultiThreadedHttpServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/highres.png" afterPath="$PROJECT_DIR$/assets/highres.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$string.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$styleable.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$color.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/android-support-v7-appcompat-dd6066ef8c392d644c5e695df7b233a4.jar" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/android-support-v7-appcompat-dd6066ef8c392d644c5e695df7b233a4.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/userInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/userInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/controlsfx-samples-8.20.8.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/controlsfx-samples-8.20.8.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/House.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/House.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Type.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Type.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/fxsampler-1.0.8.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/fxsampler-1.0.8.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/jna-4.1.0.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/jna-4.1.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/ShiftyEncryption-2.0.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/ShiftyEncryption-2.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/expandablelistview2_groups.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/expandablelistview2_groups.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/House.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/House.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/xiajiantou.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/xiajiantou.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/controlsfx-8.20.8.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/controlsfx-8.20.8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$style.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shift.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/addemployee2.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/addemployee2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/expandablelistview2_child.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/expandablelistview2_child.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteEmployee.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteEmployee.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Action.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Action.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/shifthistory.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/shifthistory.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$dimen.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$dimen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpmime-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpmime-4.4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shifty.iml" afterPath="$PROJECT_DIR$/Shifty.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/HttpExampleActivity.apk" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/HttpExampleActivity.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Shifty_Encryption/src/test/java/edu/csci/shiftyencryption/ShiftyCipherTest.java" afterPath="$PROJECT_DIR$/../Shifty_Encryption/src/test/java/edu/csci/shiftyencryption/ShiftyCipherTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/JSONHandler.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/JSONHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/CreateList.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/CreateList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/SendMSM.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/SendMSM.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$anim.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$anim.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/recover_pass.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/recover_pass.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/libs/ShiftyEncryption-2.0.jar" afterPath="$PROJECT_DIR$/../HttpExampleActivity/libs/ShiftyEncryption-2.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Group.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Group.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="$PROJECT_DIR$/gradlew.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/gen/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/../HttpExampleActivity/gen/android/support/v7/appcompat/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/shift.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Shifty_Encryption/src/main/java/edu/csci/shiftyencryption/ShiftyCipher.java" afterPath="$PROJECT_DIR$/../Shifty_Encryption/src/main/java/edu/csci/shiftyencryption/ShiftyCipher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/i.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/i.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Shifty_Encryption/settings.gradle" afterPath="$PROJECT_DIR$/../Shifty_Encryption/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/MSMpage.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/MSMpage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/DataPOJO.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/DataPOJO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$color.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/commons-logging-1.2.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/commons-logging-1.2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/employee_info.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/employee_info.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/highres.png" afterPath="$PROJECT_DIR$/assets/highres.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$integer.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$drawable.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Action.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Action.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$bool.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$bool.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$attr.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$attr.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/splashScreen.png" afterPath="$PROJECT_DIR$/assets/splashScreen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Shift.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Shift.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/start/Main.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/start/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/images.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/images.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/proxy-vole_20131209.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/proxy-vole_20131209.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/shift.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/shift.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewShift.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewShift.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewGroup.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/House.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/House.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/n.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/n.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/house.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/house.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/loginScreen.png" afterPath="$PROJECT_DIR$/assets/loginScreen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-win-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-win-4.4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/jna-4.1.0.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/jna-4.1.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/House.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/House.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$styleable.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Shifty_Encryption/build.gradle" afterPath="$PROJECT_DIR$/../Shifty_Encryption/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/login.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteHouse.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteHouse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/libs/ShiftyEncryption-2.0.jar" afterPath="$PROJECT_DIR$/../Standalone_Server/libs/ShiftyEncryption-2.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/o.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/o.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/RecoverPass.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/RecoverPass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/QuestionRest.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/QuestionRest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$styleable.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/android-support-v4-2eab63073c92076a5a0b9fe64e5206ae.jar" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/android-support-v4-2eab63073c92076a5a0b9fe64e5206ae.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Shift.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Shift.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/JSONDeserializer.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/JSONDeserializer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Data.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Data.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/gson-2.3.1.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/gson-2.3.1.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleUpdateEmployee.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleUpdateEmployee.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Action.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Action.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shifty.iml" afterPath="$PROJECT_DIR$/Shifty.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/DataPOJO.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/DataPOJO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteGroup.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteGroup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/start/SlidingLayout.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/start/SlidingLayout.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Group.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Group.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/btn_half.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_half.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/que_reset.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/que_reset.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Shifty_Encryption/src/main/java/edu/csci/shiftyencryption/ShiftyCipher.java" afterPath="$PROJECT_DIR$/../Shifty_Encryption/src/main/java/edu/csci/shiftyencryption/ShiftyCipher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shangjiantou.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shangjiantou.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/WorkerRunnable.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/WorkerRunnable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/msmpage.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/msmpage.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Data.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Data.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$integer.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/loginScreen.png" afterPath="$PROJECT_DIR$/assets/loginScreen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$bool.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$bool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Shifty_Encryption/settings.gradle" afterPath="$PROJECT_DIR$/../Shifty_Encryption/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/btn_unselect.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_unselect.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$styleable.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/enums/State.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/enums/State.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-4.4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Com.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Com.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/gen/com/example/httpexampleactivity/BuildConfig.java" afterPath="$PROJECT_DIR$/../HttpExampleActivity/gen/com/example/httpexampleactivity/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/appcompat_v7-b7bb074fe9f2356a7d13e5eba70c6afa.jar" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/appcompat_v7-b7bb074fe9f2356a7d13e5eba70c6afa.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/jna-platform-4.1.0.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/jna-platform-4.1.0.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Group.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Group.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/mainPage.png" afterPath="$PROJECT_DIR$/assets/mainPage.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$layout.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$bool.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$bool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/House.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/House.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewShift.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewShift.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Com.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Com.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Shift.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Shift.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/sendmsm.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sendmsm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/DataPOJO.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/DataPOJO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/g.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/g.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/splashScreen.svg" afterPath="$PROJECT_DIR$/assets/splashScreen.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/BuildConfig.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/background.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/QuestionRest.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/QuestionRest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/employee_info.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/employee_info.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/DataPOJO.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/DataPOJO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/ProxyHandler.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/ProxyHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shangjiantou.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shangjiantou.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/primaryCSS.css" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/primaryCSS.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/xiajiantou.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/xiajiantou.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/start/login.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/start/login.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Employee.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Employee.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$string.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/btn_unselect.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_unselect.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/commons-codec-1.9.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/commons-codec-1.9.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/CreateShift.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/CreateShift.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewEmployee.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewEmployee.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$anim.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$anim.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Employee.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Employee.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/start/SlidingLayout.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/start/SlidingLayout.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/DataPOJO.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/DataPOJO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/que_reset.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/que_reset.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/fluent-hc-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/fluent-hc-4.4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Data.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Data.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/controlsfx-samples-8.20.8.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/controlsfx-samples-8.20.8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Shift.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Shift.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Group.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Group.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCheckLogin.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCheckLogin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fabric.properties" afterPath="$PROJECT_DIR$/app/fabric.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/HttpExampleActivity$DownloadWebpageTask.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/HttpExampleActivity$DownloadWebpageTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/.nb-gradle-properties" afterPath="$PROJECT_DIR$/../Standalone_Server/.nb-gradle-properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$menu.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/ShiftyEncryption-2.0.jar" afterPath="$PROJECT_DIR$/app/lib/ShiftyEncryption-2.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/highres.webp" afterPath="$PROJECT_DIR$/assets/highres.webp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/openjfx-dialogs-1.0.2.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/openjfx-dialogs-1.0.2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$id.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/android-support-v7-appcompat-dd6066ef8c392d644c5e695df7b233a4.jar" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/android-support-v7-appcompat-dd6066ef8c392d644c5e695df7b233a4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$string.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/fxsampler-1.0.8.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/fxsampler-1.0.8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpcore-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpcore-4.4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/background.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$integer.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/btn_half.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_half.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/shift.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$style.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleGetQA.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleGetQA.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteShift.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteShift.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/btn_select.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_select.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewHouse.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewHouse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/d.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/d.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$dimen.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$dimen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/DatabaseManager.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/DatabaseManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/shift.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/ParameterFilter.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/ParameterFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app-release.apk" afterPath="$PROJECT_DIR$/app/app-release.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$attr.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$attr.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/a.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleGetAllData.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleGetAllData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/WorkerRunnable.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/WorkerRunnable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/test/webapptest/WebAppTestTest.java" afterPath="$PROJECT_DIR$/../WebAppTest/test/webapptest/WebAppTestTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/MultiThreadedHttpServer.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/MultiThreadedHttpServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$color.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteGroup.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/start/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/start/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/anim/myanim.xml" afterPath="$PROJECT_DIR$/app/src/main/res/anim/myanim.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/House.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/House.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/license.txt" afterPath="$PROJECT_DIR$/../WebAppTest/lib/license.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/getInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/getInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/HouseActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/HouseActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Com.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Com.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/expandablelistview2_groups.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/expandablelistview2_groups.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Employee.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Employee.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$layout.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/mail-1.4.7.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/mail-1.4.7.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleResetPassword.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleResetPassword.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/HttpExampleActivity.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/HttpExampleActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$bool.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$bool.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/ShiftyEncryption-2.0.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/ShiftyEncryption-2.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/enums/Data.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/enums/Data.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/sendmsm.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sendmsm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/createlist.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/createlist.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/mainPage.png" afterPath="$PROJECT_DIR$/assets/mainPage.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/shift.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/gen/com/example/httpexampleactivity/R.java" afterPath="$PROJECT_DIR$/../HttpExampleActivity/gen/com/example/httpexampleactivity/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew" afterPath="$PROJECT_DIR$/gradlew" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/ShiftHistory.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/ShiftHistory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/addemployee.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/addemployee.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/l.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Type.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Type.java" />
     </list>
     <ignored path="gradle.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -214,8 +230,923 @@
   <component name="FavoritesManager">
     <favorites_list name="gradle" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.22222222" vertical-offset="104" max-vertical-offset="1037">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SlidingLayout.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/start/SlidingLayout.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3060" max-vertical-offset="6596">
+              <caret line="180" column="0" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/start/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="3570">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MSMpage.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/MSMpage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1836" max-vertical-offset="5304">
+              <caret line="108" column="48" selection-start-line="108" selection-start-column="48" selection-end-line="108" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SendMSM.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/SendMSM.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="3723">
+              <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionRest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/QuestionRest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="2414">
+              <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/start/login.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1853" max-vertical-offset="2465">
+              <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="que_reset.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/que_reset.xml">
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getInfo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/util/getInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1768">
+              <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecoverPass.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/RecoverPass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1513" max-vertical-offset="1836">
+              <caret line="89" column="21" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="C:\Users\William\Documents\KeyStore\primaryKeyStore" />
+    <option name="KEY_ALIAS" value="shifty_key" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="tasksExpandState">
+      <map>
+        <entry key="" value="true" />
+      </map>
+    </option>
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="Shifty" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value=":app" />
+                <option name="path" value="$PROJECT_DIR$/app" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="Shifty" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="availableTasks">
+      <map>
+        <entry key="$PROJECT_DIR$/app">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the Android dependencies of the project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="androidDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles all variants of all applications and secondary packages." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles all the Test applications." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="assembleAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles all Debug builds." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="assembleDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the android (on device) tests for the Debug build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="assembleDebugAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the unit tests for the Debug build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="assembleDebugUnitTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles all Release builds." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="assembleRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the unit tests for the Release build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="assembleReleaseUnitTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="checkDebugManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="checkReleaseManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileDebugAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileDebugAndroidTestAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileDebugAndroidTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileDebugAndroidTestNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileDebugAndroidTestRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileDebugAndroidTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileDebugJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileDebugNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileDebugRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileDebugSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileDebugUnitTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileDebugUnitTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileLint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileReleaseAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileReleaseJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileReleaseNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileReleaseRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileReleaseSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileReleaseUnitTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileReleaseUnitTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs and runs the tests for Debug build on connected devices." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="connectedAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all device checks on currently connected devices." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="connectedCheck" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uploads an APK to Crashlytics for distribution." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="crashlyticsUploadDistributionDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uploads an APK to Crashlytics for distribution." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="crashlyticsUploadDistributionRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all device checks using Device Providers and Test Servers." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="deviceCheck" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="dexDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="dexDebugAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="dexRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="fabricGenerateResourcesDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="fabricGenerateResourcesRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="generateDebugAndroidTestAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="generateDebugAndroidTestBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="generateDebugAndroidTestResValues" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="generateDebugAndroidTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="generateDebugAndroidTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="generateDebugAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="generateDebugBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="generateDebugResValues" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="generateDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="generateDebugSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="generateReleaseAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="generateReleaseBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="generateReleaseResValues" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="generateReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="generateReleaseSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the Debug build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="installDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the android (on device) tests for the Debug build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="installDebugAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs lint on all variants." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="lint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs lint on the Debug build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="lintDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs lint on the Release build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="lintRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs lint on just the fatal issues in the Release build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="lintVitalRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="mergeDebugAndroidTestAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="mergeDebugAndroidTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="mergeDebugAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="mergeDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="mergeReleaseAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="mergeReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Creates a version of android.jar that's suitable for unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="mockableAndroidJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="packageDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="packageDebugAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="packageRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="preBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="preCompileDebugUnitTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="preCompileReleaseUnitTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="preDebugAndroidTestBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="preDebugBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="preDexDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="preDexDebugAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="preDexRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="preReleaseBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.crashlytics.sdk.android:answers:1.1.2" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComCrashlyticsSdkAndroidAnswers112Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.crashlytics.sdk.android:beta:1.1.2" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComCrashlyticsSdkAndroidBeta112Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.crashlytics.sdk.android:crashlytics:2.2.3" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComCrashlyticsSdkAndroidCrashlytics223Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareDebugAndroidTestDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareDebugDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare io.fabric.sdk.android:fabric:1.3.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareIoFabricSdkAndroidFabric130Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareReleaseDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="processDebugAndroidTestJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="processDebugAndroidTestManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="processDebugAndroidTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="processDebugJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="processDebugManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="processDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="processReleaseJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="processReleaseManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="processReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the signing info for each variant." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="signingReport" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Run all unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Run unit tests for the Debug build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="testDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Run unit tests for the Release build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="testRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstall all applications." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="uninstallAll" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstalls the Debug build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="uninstallDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstalls the android (on device) tests for the Debug build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="uninstallDebugAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstalls the Release build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="uninstallRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="validateDebugSigning" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="zipalignDebug" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4289426843069" />
+      </map>
+    </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.1.0/gradle-1.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.1.0/gradle-1.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/1.1.0/gradle-core-1.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/1.1.0/gradle-core-1.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/24.1.0/lint-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/24.1.0/lint-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-gradle/5.1/proguard-gradle-5.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-gradle/5.1/proguard-gradle-5.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/1.1.0/builder-1.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/1.1.0/builder-1.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.4/ecj-4.4-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.4/ecj-4.4.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/24.1.0/lint-checks-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/24.1.0/lint-checks-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.1/proguard-base-5.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.1/proguard-base-5.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/24.1.0/sdk-common-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/24.1.0/sdk-common-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/1.1.0/builder-model-1.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/1.1.0/builder-model-1.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/24.1.0/manifest-merger-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/24.1.0/manifest-merger-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/1.1.0/builder-test-api-1.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/1.1.0/builder-test-api-1.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/24.1.0/ddmlib-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/24.1.0/ddmlib-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/squareup/javawriter/2.5.0/javawriter-2.5.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/squareup/javawriter/2.5.0/javawriter-2.5.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/24.1.0/sdklib-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/24.1.0/sdklib-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/24.1.0/common-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/24.1.0/common-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.3/asm-5.0.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/24.1.0/lint-api-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/24.1.0/lint-api-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/24.1.0/annotations-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/24.1.0/annotations-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/24.1.0/dvlib-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/24.1.0/dvlib-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/24.1.0/layoutlib-api-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/24.1.0/layoutlib-api-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/17.0/guava-17.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/17.0/guava-17.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/app">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.1.0/gradle-1.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.1.0/gradle-1.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/1.1.0/gradle-core-1.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/1.1.0/gradle-core-1.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/24.1.0/lint-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/24.1.0/lint-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-gradle/5.1/proguard-gradle-5.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-gradle/5.1/proguard-gradle-5.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/1.1.0/builder-1.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/1.1.0/builder-1.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.4/ecj-4.4-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.4/ecj-4.4.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/24.1.0/lint-checks-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/24.1.0/lint-checks-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.1/proguard-base-5.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.1/proguard-base-5.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/24.1.0/sdk-common-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/24.1.0/sdk-common-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/1.1.0/builder-model-1.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/1.1.0/builder-model-1.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/24.1.0/manifest-merger-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/24.1.0/manifest-merger-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/1.1.0/builder-test-api-1.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/1.1.0/builder-test-api-1.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/24.1.0/ddmlib-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/24.1.0/ddmlib-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/squareup/javawriter/2.5.0/javawriter-2.5.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/squareup/javawriter/2.5.0/javawriter-2.5.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/24.1.0/sdklib-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/24.1.0/sdklib-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/24.1.0/common-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/24.1.0/common-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.3/asm-5.0.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/24.1.0/lint-api-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/24.1.0/lint-api-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/24.1.0/annotations-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/24.1.0/annotations-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/24.1.0/dvlib-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/24.1.0/dvlib-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/24.1.0/layoutlib-api-24.1.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/24.1.0/layoutlib-api-24.1.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/17.0/guava-17.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/17.0/guava-17.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.4/6d220441ca681dddc55a189eae81a437309128b8/httpclient-4.4.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/fluent-hc/4.4-alpha1/62e94a3e7b395577689efc2439d0d5b224f43bc7/fluent-hc-4.4-alpha1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-io/1.3.2/b6dde38349ba9bb5e6ea6320531eae969985dae5/commons-io-1.3.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.mail/mail/1.4.7/9add058589d5d85adeb625859bf2c5eeaaedf12d/mail-1.4.7.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.crashlytics.sdk.android/crashlytics/2.2.3/feebb6cabe648d3d207b25a1c29039789487c459/crashlytics-2.2.3.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4/e9b3863fd9c8a273ceed4a7fae10f40bb10a2328/httpcore-4.4.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.9/9ce04e34240f674bc72680f8b843b1457383161a/commons-codec-1.9.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/e6cb541461c2834bdea3eb920f1884d1eb508b50/activation-1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.crashlytics.sdk.android/answers/1.1.2/ed296a685026c8ad31b5206946f497786cdaeff/answers-1.1.2.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.fabric.sdk.android/fabric/1.3.0/ca24b26846e6e75bd523679f515e8356f4a7041c/fabric-1.3.0.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.crashlytics.sdk.android/beta/1.1.2/42291d3475b024588a351a6dcddbe4b02b7b0e89/beta-1.1.2.aar" />
+                            <option value="$MODULE_DIR$/lib/ShiftyEncryption-2.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.fabric.tools/gradle/1.18.0/41b39ac660e849a855bc54398f03e5327564b897/gradle-1.18.0.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$/app" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="app" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/ant-1.9.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/ant-launcher-1.9.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-base-services-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-base-services-groovy-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-cli-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-core-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-docs-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-launcher-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-messaging-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-model-core-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-model-groovy-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-native-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-open-api-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-resources-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-tooling-api-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-ui-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-wrapper-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/groovy-all-2.3.6.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/ant-antlr-1.9.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-announce-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-antlr-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-build-comparison-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-build-init-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-code-quality-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-cunit-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-dependency-management-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-diagnostics-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-ear-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-ide-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-ide-native-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-ivy-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-jacoco-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-javascript-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-jetty-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-language-groovy-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-language-java-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-language-jvm-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-language-native-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-maven-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-osgi-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-platform-base-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-platform-jvm-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-platform-native-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-plugin-development-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-plugin-use-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-plugins-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-publish-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-reporting-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-resources-http-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-scala-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-signing-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-sonar-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/login.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/util/HolderClass.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/createlist.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/service/CreateList.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/msmpage.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/service/CreateShift.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/recover_pass.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/util/getInfo.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/que_reset.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/service/RecoverPass.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/service/QuestionRest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/start/login.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/service/MSMpage.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -249,8 +1180,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -259,9 +1189,132 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shifty" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shifty" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shifty" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shifty" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shifty" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="start" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shifty" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shifty" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,8 +1332,15 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_21_64" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../KeyStore/primaryKeyStore" />
+    <property name="ExportApk.ApkPath" value="C:\Users\William\Documents\UCD\Senior-Design\Shifty\app" />
+    <property name="ExportApk.Flavors" value="" />
+    <property name="ExportApk.BuildType" value="release" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Android Application.app">
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -307,6 +1367,47 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -350,7 +1451,31 @@
       <envs />
       <method />
     </configuration>
-    <list size="0" />
+    <configuration default="false" name="app" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="app" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <RunnerSettings RunnerId="AndroidDebugRunner" />
+      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Android Application.app" />
+    </list>
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="HTML_FILE_NAME" />
@@ -369,6 +1494,11 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -386,17 +1516,17 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29073483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32800853" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37060702" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13781698" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -410,8 +1540,39 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2917847" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296582" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286119" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13781698" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -431,6 +1592,309 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1037">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/start/SlidingLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3060" max-vertical-offset="6596">
+          <caret line="180" column="0" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/start/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="3570">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/MSMpage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1836" max-vertical-offset="5304">
+          <caret line="108" column="48" selection-start-line="108" selection-start-column="48" selection-end-line="108" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/SendMSM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="3723">
+          <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/QuestionRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="2414">
+          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/start/login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1853" max-vertical-offset="2465">
+          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/que_reset.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/util/getInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1768">
+          <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/RecoverPass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1513" max-vertical-offset="1836">
+          <caret line="89" column="21" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="1037">
+          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="1037">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-32.11111" vertical-offset="1173" max-vertical-offset="2244">
+          <caret line="120" column="40" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/util/HolderClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="833">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/createlist.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.185185" vertical-offset="279" max-vertical-offset="935">
+          <caret line="31" column="37" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/msmpage.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1921">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/sendmsm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37250996" vertical-offset="0" max-vertical-offset="1004">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/shift.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/CreateShift.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="366" max-vertical-offset="8670">
+          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/CreateList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3890" max-vertical-offset="4573">
+          <caret line="301" column="5" selection-start-line="257" selection-start-column="3" selection-end-line="301" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/ShiftHistory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22900763" vertical-offset="394" max-vertical-offset="1156">
+          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/util/HouseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33282444" vertical-offset="292" max-vertical-offset="1343">
+          <caret line="44" column="77" selection-start-line="44" selection-start-column="74" selection-end-line="44" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/recover_pass.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/start/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2244">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/start/SlidingLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2788" max-vertical-offset="6273">
+          <caret line="180" column="0" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/util/getInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="1598">
+          <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/SendMSM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="3094">
+          <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/que_reset.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/start/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3060">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/RecoverPass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="746" max-vertical-offset="1530">
+          <caret line="89" column="21" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/QuestionRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="2414">
+          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/start/login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1122" max-vertical-offset="1921">
+          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/MSMpage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1836" max-vertical-offset="5304">
+          <caret line="108" column="48" selection-start-line="108" selection-start-column="48" selection-end-line="108" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22222222" vertical-offset="104" max-vertical-offset="1037">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
 

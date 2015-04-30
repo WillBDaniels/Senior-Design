@@ -1,7 +1,5 @@
 package com.util;
 
-import android.os.StrictMode;
-
 import com.google.gson.Gson;
 
 import java.io.BufferedReader;
@@ -19,10 +17,12 @@ public class getInfo {
     public static DataPOJO currentPojo = new DataPOJO();
     public static String employeeID;
     public static String employeeName;
-    public static String postToServer(Type type, Action action, String json) {
-        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+    private String returnValue = "";
+    public static String secretQuestion = "";
+    public static String secretAnswer = "";
 
-        StrictMode.setThreadPolicy(policy);
+
+    public static String postToServer(Type type, Action action, String json) {
         String line = "";
 
         try {
@@ -68,9 +68,9 @@ public class getInfo {
         } catch (Throwable t) {
 
             t.printStackTrace(System.err);
-            return "unable to connect";
+            return  "unable to connect";
         }
-        return line;
+        return  line;
     }
 
     public static void refreshData(){

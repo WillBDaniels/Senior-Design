@@ -1,24 +1,10 @@
 package com.service;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.google.gson.Gson;
-import edu.csci.teamshifty.R;
-import com.util.Action;
-import com.util.DataPOJO;
-import com.util.Employee;
-import com.util.Group;
-import com.util.Type;
-import com.util.getInfo;
-import com.util.userInfo;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
-import android.telephony.SmsManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,8 +16,24 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.gson.Gson;
+import com.util.Action;
+import com.util.DataPOJO;
+import com.util.Employee;
+import com.util.Group;
+import com.util.HolderClass;
+import com.util.Type;
+import com.util.getInfo;
+import com.util.userInfo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import edu.csci.teamshifty.R;
 
 public class CreateList extends Activity {
 
@@ -221,15 +223,6 @@ public class CreateList extends Activity {
 					List<String> temp = new ArrayList<String>();
 					int a = namecode.hashCode();
 					int code = a;
-					temp.add("create_group");
-					temp.add("managerID=" + userId);
-					temp.add("groupName=\"" + listname.getText().toString()
-							+ "\"");
-					temp.add("groupID=" + userId + code);
-					for (String tmp : id) {
-						temp.add("\"" + tmp + "\"");
-					}
-					temp.add("Done");
                     Group group = new Group();
                     List<Group> groupList = new ArrayList<>();
                     DataPOJO groupPOJO = new DataPOJO();
@@ -246,32 +239,66 @@ public class CreateList extends Activity {
                     groupList.add(group);
                     groupPOJO.setGroupList(groupList);
                     Gson gson = new Gson();
-                    groupPOJO = gson.fromJson((getInfo.postToServer(Type.SHIFTY, Action.ADDGROUP, gson.toJson(groupPOJO, DataPOJO.class))), DataPOJO.class);
-					Toast.makeText(getApplicationContext(), temp.toString(),
-							Toast.LENGTH_LONG).show();
-					if (listname.getText().toString().length() > 60) {
-						Toast.makeText(getApplicationContext(),
-								"Name is too long", Toast.LENGTH_LONG)
-								.show();
-						numbers.clear();
-						names.clear();
-						id.clear();
-					} else {
-                        getInfo.refreshData();
-						Toast.makeText(getApplicationContext(), "success",
-								Toast.LENGTH_LONG).show();
-						finish();
-					}
-				} else {
-					Toast.makeText(getApplicationContext(), "list name exists",
-							Toast.LENGTH_LONG).show();
-					numbers.clear();
-					names.clear();
-					id.clear();
-				}
+                    HolderClass hc = new HolderClass();
+                    hc.setJson(gson.toJson(groupPOJO, DataPOJO.class));
+                    hc.setType(Type.SHIFTY);
+                    hc.setAction(Action.ADDGROUP);
+                    new CreateGroupOperation().execute(hc);
 
-			}
-		});
+			} else {
+                    Toast.makeText(getApplicationContext(), "list name exists",
+                            Toast.LENGTH_LONG).show();
+                    numbers.clear();
+                    names.clear();
+                    id.clear();
+                }
+		}
+	});
+    }
+    private class CreateGroupOperation extends AsyncTask<HolderClass, Void, String> {
 
-	}
+        @Override
+        protected String doInBackground(HolderClass... params) {
+            String returnValue = getInfo.postToServer(params[0].getType(), params[0].getAction(), params[0].getJson());
+            getInfo.refreshData();
+
+            return returnValue;
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            Gson gson = new Gson();
+            DataPOJO returnPOJO = gson.fromJson(result, DataPOJO.class);
+            if (returnPOJO.getReturnMessage().isEmpty()) {
+                ((ProgressBar) findViewById(R.id.progressBar2)).setVisibility(View.INVISIBLE);
+                Toast.makeText(getApplicationContext(), "Group created successfully!",
+                        Toast.LENGTH_LONG).show();
+
+                Toast.makeText(getApplicationContext(), "success",
+                        Toast.LENGTH_LONG).show();
+                finish();
+            }else{
+                ((ProgressBar) findViewById(R.id.progressBar2)).setVisibility(View.INVISIBLE);
+                Toast.makeText(getApplicationContext(), "Group creation error!",
+                        Toast.LENGTH_LONG).show();
+
+                Toast.makeText(getApplicationContext(), "success",
+                        Toast.LENGTH_LONG).show();
+                finish();
+            }
+
+
+
+
+        }
+
+        @Override
+        protected void onPreExecute() {
+            ((ProgressBar)findViewById(R.id.progressBar2)).setVisibility(View.VISIBLE);
+        }
+
+        @Override
+        protected void onProgressUpdate(Void... values) {}
+    }
+
 }

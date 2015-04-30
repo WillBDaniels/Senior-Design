@@ -1,26 +1,12 @@
 package com.service;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.google.gson.Gson;
-import edu.csci.teamshifty.R;
-import com.start.MainActivity;
-import com.util.Action;
-import com.util.DataPOJO;
-import com.util.House;
-import com.util.Shift;
-import com.util.Type;
-import com.util.getInfo;
-import com.util.userInfo;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.telephony.SmsManager;
-import android.text.InputType;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -29,12 +15,25 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.RadioGroup.OnCheckedChangeListener;
+import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.gson.Gson;
+import com.util.Action;
+import com.util.DataPOJO;
+import com.util.HolderClass;
+import com.util.House;
+import com.util.Shift;
+import com.util.Type;
+import com.util.getInfo;
+import com.util.userInfo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import edu.csci.teamshifty.R;
 
 @SuppressLint("NewApi")
 public class MSMpage extends Activity {
@@ -122,7 +121,8 @@ public class MSMpage extends Activity {
             }
     });
         for(House tmp : getInfo.currentPojo.getHouseList()){
-            house = insert(house, "House" + tmp.getHouseName());
+            house = insert(house, tmp.getHouseID() + "~~" + tmp.getHouseName());
+            lay.add(tmp.getHouseID() + "~~" + tmp.getHouseName());
         }
 		back.setOnClickListener(new Button.OnClickListener() {
 
@@ -192,13 +192,11 @@ public class MSMpage extends Activity {
                     houseList.add(house);
                     addShift.setHouseList(houseList);
                     Gson gson = new Gson();
-
-                    String response = getInfo.postToServer(Type.SHIFTY, Action.ADDSHIFT, gson.toJson(addShift, DataPOJO.class));
-                    System.out.println(response);
-						Toast.makeText(getApplicationContext(),"Success",
-								Toast.LENGTH_LONG).show();
-						finish();
-
+                    HolderClass hc = new HolderClass();
+                    hc.setAction(Action.ADDSHIFT);
+                    hc.setType(Type.SHIFTY);
+                    hc.setJson(gson.toJson(addShift, DataPOJO.class));
+                    new CreateShiftOperation().execute(hc);
 				} else {
 					selected.setText("Please confirm information!!");
 				}
@@ -247,6 +245,52 @@ public class MSMpage extends Activity {
 			}
 		});
 	}
+
+    private class CreateShiftOperation extends AsyncTask<HolderClass, Void, String> {
+
+        @Override
+        protected String doInBackground(HolderClass... params) {
+            String returnValue = getInfo.postToServer(params[0].getType(), params[0].getAction(), params[0].getJson());
+            getInfo.refreshData();
+
+            return returnValue;
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            Gson gson = new Gson();
+            DataPOJO returnPOJO = gson.fromJson(result, DataPOJO.class);
+            if (returnPOJO.getReturnMessage().isEmpty()) {
+                ((ProgressBar) findViewById(R.id.progressBar3)).setVisibility(View.INVISIBLE);
+                Toast.makeText(getApplicationContext(), "Shift created successfully!",
+                        Toast.LENGTH_LONG).show();
+
+                Toast.makeText(getApplicationContext(), "success",
+                        Toast.LENGTH_LONG).show();
+                finish();
+            }else{
+                ((ProgressBar) findViewById(R.id.progressBar3)).setVisibility(View.INVISIBLE);
+                Toast.makeText(getApplicationContext(), "Shift creation error!",
+                        Toast.LENGTH_LONG).show();
+
+                Toast.makeText(getApplicationContext(), "success",
+                        Toast.LENGTH_LONG).show();
+                finish();
+            }
+
+
+
+
+        }
+
+        @Override
+        protected void onPreExecute() {
+            ((ProgressBar)findViewById(R.id.progressBar3)).setVisibility(View.VISIBLE);
+        }
+
+        @Override
+        protected void onProgressUpdate(Void... values) {}
+    }
 
 	private static String[] insert(String[] arr, String str) {
 		int size = arr.length;
