@@ -18,198 +18,198 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0e92db5-1fd4-4056-9683-a8ab004d29aa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/resources.ap_" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/resources.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/DisplayMessageActivity.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/DisplayMessageActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-cache-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-cache-4.4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/msmpage.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/msmpage.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/userInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/userInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Type.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Type.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/xiajiantou.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/xiajiantou.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/controlsfx-8.20.8.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/controlsfx-8.20.8.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$style.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shift.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/addemployee2.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/addemployee2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/expandablelistview2_child.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/expandablelistview2_child.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteEmployee.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteEmployee.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Action.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Action.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/shifthistory.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/shifthistory.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$dimen.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpmime-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpmime-4.4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shifty.iml" afterPath="$PROJECT_DIR$/Shifty.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/HttpExampleActivity.apk" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/HttpExampleActivity.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Shifty_Encryption/src/test/java/edu/csci/shiftyencryption/ShiftyCipherTest.java" afterPath="$PROJECT_DIR$/../Shifty_Encryption/src/test/java/edu/csci/shiftyencryption/ShiftyCipherTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/JSONHandler.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/JSONHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/CreateList.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/CreateList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/SendMSM.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/SendMSM.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$anim.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$anim.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/recover_pass.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/recover_pass.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/libs/ShiftyEncryption-2.0.jar" afterPath="$PROJECT_DIR$/../HttpExampleActivity/libs/ShiftyEncryption-2.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Group.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Group.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleGetQA.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleGetQA.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/que_reset.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/que_reset.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="$PROJECT_DIR$/gradlew.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/gen/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/../HttpExampleActivity/gen/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/shift.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Shifty_Encryption/src/main/java/edu/csci/shiftyencryption/ShiftyCipher.java" afterPath="$PROJECT_DIR$/../Shifty_Encryption/src/main/java/edu/csci/shiftyencryption/ShiftyCipher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/i.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/i.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Shifty_Encryption/settings.gradle" afterPath="$PROJECT_DIR$/../Shifty_Encryption/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/MSMpage.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/MSMpage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/DataPOJO.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/DataPOJO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$color.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/commons-logging-1.2.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/commons-logging-1.2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/employee_info.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/employee_info.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/highres.png" afterPath="$PROJECT_DIR$/assets/highres.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$integer.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$drawable.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Action.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Action.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$bool.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$bool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$attr.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/splashScreen.png" afterPath="$PROJECT_DIR$/assets/splashScreen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Shift.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Shift.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/start/Main.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/start/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/images.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/images.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/proxy-vole_20131209.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/proxy-vole_20131209.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/shift.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/shift.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpcore-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpcore-4.4.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewShift.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewShift.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewHouse.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewHouse.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewGroup.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewGroup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/House.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/House.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/n.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/n.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/house.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/house.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/loginScreen.png" afterPath="$PROJECT_DIR$/assets/loginScreen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Group.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Group.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/jna-platform-4.1.0.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/jna-platform-4.1.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/shift.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Group.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Group.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/highres.webp" afterPath="$PROJECT_DIR$/assets/highres.webp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$drawable.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/start/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/start/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app-release.apk" afterPath="$PROJECT_DIR$/app/app-release.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Action.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Action.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/android-support-v4-2eab63073c92076a5a0b9fe64e5206ae.jar" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/android-support-v4-2eab63073c92076a5a0b9fe64e5206ae.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/splashScreen.png" afterPath="$PROJECT_DIR$/assets/splashScreen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/libs/ShiftyEncryption-2.0.jar" afterPath="$PROJECT_DIR$/../Standalone_Server/libs/ShiftyEncryption-2.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/ShiftyEncryption-2.0.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/ShiftyEncryption-2.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/controlsfx-samples-8.20.8.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/controlsfx-samples-8.20.8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$style.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-win-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-win-4.4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/jna-4.1.0.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/jna-4.1.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shift.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Shifty_Encryption/src/main/java/edu/csci/shiftyencryption/ShiftyCipher.java" afterPath="$PROJECT_DIR$/../Shifty_Encryption/src/main/java/edu/csci/shiftyencryption/ShiftyCipher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/o.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/o.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteShift.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteShift.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$style.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/highres.png" afterPath="$PROJECT_DIR$/assets/highres.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleResetPassword.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleResetPassword.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleUpdateEmployee.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleUpdateEmployee.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/controlsfx-8.20.8.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/controlsfx-8.20.8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$anim.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$anim.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$anim.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$anim.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/DataPOJO.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/DataPOJO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/shift.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/employee_info.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/employee_info.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/a.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/background.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fabric.properties" afterPath="$PROJECT_DIR$/app/fabric.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/appcompat_v7-b7bb074fe9f2356a7d13e5eba70c6afa.jar" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/appcompat_v7-b7bb074fe9f2356a7d13e5eba70c6afa.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/SendMSM.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/SendMSM.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/d.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/d.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/images.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/images.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/gson-2.3.1.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/gson-2.3.1.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/HttpExampleActivity.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/HttpExampleActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/gen/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/../HttpExampleActivity/gen/android/support/v7/appcompat/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteEmployee.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteEmployee.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/createlist.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/createlist.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Employee.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Employee.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/btn_select.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_select.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew" afterPath="$PROJECT_DIR$/gradlew" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Com.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Com.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/House.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/House.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/shift.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/shift.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Employee.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Employee.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCheckLogin.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCheckLogin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/resources.ap_" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/resources.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/RecoverPass.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/RecoverPass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/android-support-v7-appcompat-dd6066ef8c392d644c5e695df7b233a4.jar" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/android-support-v7-appcompat-dd6066ef8c392d644c5e695df7b233a4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/.nb-gradle-properties" afterPath="$PROJECT_DIR$/../Standalone_Server/.nb-gradle-properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/ParameterFilter.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/ParameterFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/commons-logging-1.2.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/commons-logging-1.2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteHouse.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteHouse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Data.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Data.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Type.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Type.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/anim/myanim.xml" afterPath="$PROJECT_DIR$/app/src/main/res/anim/myanim.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/DataPOJO.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/DataPOJO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/getInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/getInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpmime-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpmime-4.4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$id.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/HouseActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/HouseActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/l.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/start/login.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/start/login.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/QuestionRest.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/QuestionRest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/shifthistory.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/shifthistory.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$bool.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$bool.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Shifty_Encryption/settings.gradle" afterPath="$PROJECT_DIR$/../Shifty_Encryption/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/msmpage.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/msmpage.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$attr.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$attr.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleGetAllData.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleGetAllData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Shift.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Shift.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/House.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/House.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/shift.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/CreateShift.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/CreateShift.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/JSONDeserializer.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/JSONDeserializer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/mainPage.png" afterPath="$PROJECT_DIR$/assets/mainPage.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/WorkerRunnable.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/WorkerRunnable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$styleable.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/MSMpage.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/MSMpage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Employee.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Employee.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/loginScreen.png" afterPath="$PROJECT_DIR$/assets/loginScreen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/House.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/House.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/HttpExampleActivity$DownloadWebpageTask.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/HttpExampleActivity$DownloadWebpageTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/gen/com/example/httpexampleactivity/BuildConfig.java" afterPath="$PROJECT_DIR$/../HttpExampleActivity/gen/com/example/httpexampleactivity/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/house.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/house.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-cache-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-cache-4.4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$dimen.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$dimen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Type.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Type.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/expandablelistview2_groups.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/expandablelistview2_groups.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/openjfx-dialogs-1.0.2.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/openjfx-dialogs-1.0.2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/gen/com/example/httpexampleactivity/R.java" afterPath="$PROJECT_DIR$/../HttpExampleActivity/gen/com/example/httpexampleactivity/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/start/SlidingLayout.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/start/SlidingLayout.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/enums/State.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/enums/State.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/btn_unselect.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_unselect.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/splashScreen.svg" afterPath="$PROJECT_DIR$/assets/splashScreen.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="$PROJECT_DIR$/gradlew.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/proxy-vole_20131209.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/proxy-vole_20131209.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Com.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Com.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/login.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/fluent-hc-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/fluent-hc-4.4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shangjiantou.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shangjiantou.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$integer.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/JSONHandler.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/JSONHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/ShiftyEncryption-2.0.jar" afterPath="$PROJECT_DIR$/app/lib/ShiftyEncryption-2.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/HttpExampleActivity.apk" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/HttpExampleActivity.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/xiajiantou.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/xiajiantou.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/userInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/userInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Data.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Data.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$color.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/enums/Data.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/enums/Data.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/fxsampler-1.0.8.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/fxsampler-1.0.8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/primaryCSS.css" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/primaryCSS.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/btn_half.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_half.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/license.txt" afterPath="$PROJECT_DIR$/../WebAppTest/lib/license.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$styleable.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$styleable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Shifty_Encryption/build.gradle" afterPath="$PROJECT_DIR$/../Shifty_Encryption/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/login.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteHouse.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteHouse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/libs/ShiftyEncryption-2.0.jar" afterPath="$PROJECT_DIR$/../Standalone_Server/libs/ShiftyEncryption-2.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/o.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/o.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/RecoverPass.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/RecoverPass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/QuestionRest.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/QuestionRest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$styleable.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/android-support-v4-2eab63073c92076a5a0b9fe64e5206ae.jar" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/android-support-v4-2eab63073c92076a5a0b9fe64e5206ae.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Shift.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Shift.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/JSONDeserializer.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/JSONDeserializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Data.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Data.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/gson-2.3.1.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/gson-2.3.1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleUpdateEmployee.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleUpdateEmployee.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/enums/State.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/enums/State.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpclient-4.4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Com.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Com.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/gen/com/example/httpexampleactivity/BuildConfig.java" afterPath="$PROJECT_DIR$/../HttpExampleActivity/gen/com/example/httpexampleactivity/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/appcompat_v7-b7bb074fe9f2356a7d13e5eba70c6afa.jar" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/appcompat_v7-b7bb074fe9f2356a7d13e5eba70c6afa.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/jna-platform-4.1.0.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/jna-platform-4.1.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Group.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Group.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/DataPOJO.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/DataPOJO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/g.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/g.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/splashScreen.svg" afterPath="$PROJECT_DIR$/assets/splashScreen.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/BuildConfig.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/ProxyHandler.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/ProxyHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shangjiantou.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shangjiantou.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/primaryCSS.css" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/primaryCSS.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/start/login.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/start/login.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Employee.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Employee.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$string.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/btn_unselect.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_unselect.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/commons-codec-1.9.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/commons-codec-1.9.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/CreateShift.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/CreateShift.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewEmployee.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewEmployee.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$anim.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$anim.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Employee.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Employee.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/start/SlidingLayout.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/start/SlidingLayout.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/DataPOJO.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/DataPOJO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/que_reset.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/que_reset.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/fluent-hc-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/fluent-hc-4.4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Data.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Data.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/controlsfx-samples-8.20.8.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/controlsfx-samples-8.20.8.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Shift.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Shift.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Group.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Group.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCheckLogin.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCheckLogin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fabric.properties" afterPath="$PROJECT_DIR$/app/fabric.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/HttpExampleActivity$DownloadWebpageTask.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/HttpExampleActivity$DownloadWebpageTask.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/.nb-gradle-properties" afterPath="$PROJECT_DIR$/../Standalone_Server/.nb-gradle-properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$menu.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/ShiftyEncryption-2.0.jar" afterPath="$PROJECT_DIR$/app/lib/ShiftyEncryption-2.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/highres.webp" afterPath="$PROJECT_DIR$/assets/highres.webp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/openjfx-dialogs-1.0.2.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/openjfx-dialogs-1.0.2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$id.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/android-support-v7-appcompat-dd6066ef8c392d644c5e695df7b233a4.jar" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/dexedLibs/android-support-v7-appcompat-dd6066ef8c392d644c5e695df7b233a4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$string.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/fxsampler-1.0.8.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/fxsampler-1.0.8.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/httpcore-4.4.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/httpcore-4.4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/background.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$integer.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/btn_half.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_half.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/shift.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$style.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleGetQA.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleGetQA.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteShift.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteShift.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/btn_select.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_select.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewHouse.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewHouse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/d.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/d.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$dimen.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/DatabaseManager.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/DatabaseManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/shift.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/ParameterFilter.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/ParameterFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app-release.apk" afterPath="$PROJECT_DIR$/app/app-release.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$attr.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/a.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/a.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleGetAllData.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleGetAllData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/WorkerRunnable.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/WorkerRunnable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/test/webapptest/WebAppTestTest.java" afterPath="$PROJECT_DIR$/../WebAppTest/test/webapptest/WebAppTestTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/MultiThreadedHttpServer.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/MultiThreadedHttpServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$color.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteGroup.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteGroup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/start/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/start/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/libs/ShiftyEncryption-2.0.jar" afterPath="$PROJECT_DIR$/../HttpExampleActivity/libs/ShiftyEncryption-2.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/expandablelistview2_child.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/expandablelistview2_child.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/anim/myanim.xml" afterPath="$PROJECT_DIR$/app/src/main/res/anim/myanim.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/House.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/House.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/license.txt" afterPath="$PROJECT_DIR$/../WebAppTest/lib/license.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/getInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/getInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/HouseActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/HouseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Com.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Com.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/expandablelistview2_groups.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/expandablelistview2_groups.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Employee.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Employee.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$layout.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/mail-1.4.7.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/mail-1.4.7.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleResetPassword.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleResetPassword.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/HttpExampleActivity.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/HttpExampleActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/DisplayMessageActivity.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/DisplayMessageActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Group.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Group.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/n.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/n.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/test/webapptest/WebAppTestTest.java" afterPath="$PROJECT_DIR$/../WebAppTest/test/webapptest/WebAppTestTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/commons-codec-1.9.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/commons-codec-1.9.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$dimen.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$dimen.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$bool.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$bool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/ShiftyEncryption-2.0.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/ShiftyEncryption-2.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/enums/Data.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/enums/Data.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/sendmsm.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sendmsm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/createlist.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/createlist.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/mainPage.png" afterPath="$PROJECT_DIR$/assets/mainPage.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/shift.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/gen/com/example/httpexampleactivity/R.java" afterPath="$PROJECT_DIR$/../HttpExampleActivity/gen/com/example/httpexampleactivity/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew" afterPath="$PROJECT_DIR$/gradlew" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/ShiftHistory.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/ShiftHistory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/recover_pass.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/recover_pass.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/CreateList.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/CreateList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/start/Main.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/start/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/mail-1.4.7.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/mail-1.4.7.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewShift.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewShift.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/addemployee.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/addemployee.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/l.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Type.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Type.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/lib/jna-4.1.0.jar" afterPath="$PROJECT_DIR$/../WebAppTest/lib/jna-4.1.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/addemployee2.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/addemployee2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/util/Shift.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/util/Shift.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/DatabaseManager.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/DatabaseManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$menu.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/MultiThreadedHttpServer.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/MultiThreadedHttpServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shifty.iml" afterPath="$PROJECT_DIR$/Shifty.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteGroup.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleDeleteGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/ProxyHandler.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/ProxyHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Shifty_Encryption/src/test/java/edu/csci/shiftyencryption/ShiftyCipherTest.java" afterPath="$PROJECT_DIR$/../Shifty_Encryption/src/test/java/edu/csci/shiftyencryption/ShiftyCipherTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/BuildConfig.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/BuildConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/g.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/g.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$integer.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewEmployee.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/jsonhandler/HandleCreateNewEmployee.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/service/ShiftHistory.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/service/ShiftHistory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Action.java" afterPath="$PROJECT_DIR$/../WebAppTest/src/webapptest/Action.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/DataPOJO.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/DataPOJO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$layout.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$string.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/i.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/i.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/sendmsm.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sendmsm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$color.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$attr.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/com/example/httpexampleactivity/R$attr.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Shift.java" afterPath="$PROJECT_DIR$/../Standalone_Server/src/main/java/edu/csci/standalone_server/Structures/Shift.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R.class" afterPath="$PROJECT_DIR$/../HttpExampleActivity/bin/classes/android/support/v7/appcompat/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/shift.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/shift.png" />
     </list>
     <ignored path="gradle.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -232,11 +232,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="1037">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.06728232" vertical-offset="0" max-vertical-offset="1037">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -275,8 +275,8 @@
       <file leaf-file-name="SendMSM.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/SendMSM.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="531" max-vertical-offset="3077">
-              <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.642858" vertical-offset="710" max-vertical-offset="3077">
+              <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -292,11 +292,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="login.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/start/login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5133215" vertical-offset="1020" max-vertical-offset="2023">
-              <caret line="109" column="31" selection-start-line="109" selection-start-column="31" selection-end-line="109" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1090" max-vertical-offset="2023">
+              <caret line="106" column="53" selection-start-line="106" selection-start-column="53" selection-end-line="106" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -304,22 +304,22 @@
       </file>
       <file leaf-file-name="que_reset.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/que_reset.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
         </entry>
       </file>
       <file leaf-file-name="getInfo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/util/getInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1598">
-              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="621" max-vertical-offset="1598">
+              <caret line="78" column="63" selection-start-line="78" selection-start-column="63" selection-end-line="78" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -1143,9 +1143,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/service/RecoverPass.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/service/QuestionRest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/service/MSMpage.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/service/SendMSM.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/start/login.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -1153,7 +1153,7 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1874" />
-    <option name="height" value="1096" />
+    <option name="height" value="1216" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -1181,7 +1181,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1242,72 +1242,6 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Shifty" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="start" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Shifty" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Shifty" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="manifests" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
             </PATH_ELEMENT>
@@ -1315,7 +1249,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1334,7 +1268,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_21_64" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../KeyStore/primaryKeyStore" />
     <property name="ExportApk.ApkPath" value="C:\Users\William\Documents\UCD\Senior-Design\Shifty\app" />
@@ -1512,12 +1446,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1874" height="1216" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29073483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25779036" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1527,7 +1461,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32800853" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37060702" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32800853" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13781698" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1595,6 +1529,140 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/SendMSM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3706">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/QuestionRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="2414">
+          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/start/login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="2176">
+          <caret line="106" column="53" selection-start-line="106" selection-start-column="53" selection-end-line="106" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/que_reset.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/util/getInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1326" max-vertical-offset="1768">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/RecoverPass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1513" max-vertical-offset="1836">
+          <caret line="89" column="21" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/start/SlidingLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3060" max-vertical-offset="6596">
+          <caret line="180" column="0" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/start/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="3570">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/MSMpage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1836" max-vertical-offset="5304">
+          <caret line="108" column="48" selection-start-line="108" selection-start-column="48" selection-end-line="108" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/SendMSM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="3706">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/QuestionRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="2414">
+          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/start/login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="2176">
+          <caret line="109" column="31" selection-start-line="109" selection-start-column="31" selection-end-line="109" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/que_reset.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/util/getInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1326" max-vertical-offset="1768">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/RecoverPass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1513" max-vertical-offset="1836">
+          <caret line="89" column="21" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1037">
@@ -1652,14 +1720,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/que_reset.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/util/getInfo.java">
@@ -1695,25 +1763,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
           <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/login.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-32.11111" vertical-offset="1173" max-vertical-offset="2244">
           <caret line="120" column="40" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="40" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/util/HolderClass.java">
@@ -1742,57 +1810,53 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/createlist.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.185185" vertical-offset="279" max-vertical-offset="935">
           <caret line="31" column="37" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="37" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/msmpage.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1921">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/sendmsm.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37250996" vertical-offset="0" max-vertical-offset="1004">
           <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/shift.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/shift.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/CreateShift.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="366" max-vertical-offset="8670">
           <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding>
-            <element signature="e#2681#2932#0" expanded="false" />
-            <element signature="e#2921#2922#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1800,11 +1864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3890" max-vertical-offset="4573">
           <caret line="301" column="5" selection-start-line="257" selection-start-column="3" selection-end-line="301" selection-end-column="5" />
-          <folding>
-            <element signature="e#2983#3374#0" expanded="false" />
-            <element signature="e#3369#3370#0" expanded="false" />
-            <element signature="e#7889#7890#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1823,14 +1882,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/recover_pass.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/start/MainActivity.java">
@@ -1849,14 +1908,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/que_reset.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/start/Main.java">
@@ -1891,34 +1950,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/start/login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="1037">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/SendMSM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="531" max-vertical-offset="3077">
-          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1090" max-vertical-offset="2023">
+          <caret line="106" column="53" selection-start-line="106" selection-start-column="53" selection-end-line="106" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/util/getInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1598">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="621" max-vertical-offset="1598">
+          <caret line="78" column="63" selection-start-line="78" selection-start-column="63" selection-end-line="78" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/start/login.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/service/SendMSM.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5133215" vertical-offset="1020" max-vertical-offset="2023">
-          <caret line="109" column="31" selection-start-line="109" selection-start-column="31" selection-end-line="109" selection-end-column="31" />
+        <state vertical-scroll-proportion="-8.642858" vertical-offset="710" max-vertical-offset="3077">
+          <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06728232" vertical-offset="0" max-vertical-offset="1037">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
           <folding />
         </state>
       </provider>
